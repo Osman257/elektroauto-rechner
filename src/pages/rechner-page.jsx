@@ -801,7 +801,7 @@ export default function ElektroAutoRechner() {
 
             {/* Copyright */}
             <div className="text-center py-4 text-sm text-gray-500">
-              <p>© 2025 Elektroauto-Rechner. Alle Angaben ohne Gewähr.</p>
+              <p>© 2025 e-Autowelt. Alle Angaben ohne Gewähr.</p>
             </div>
           </div>
         </footer>
