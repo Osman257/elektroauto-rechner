@@ -7,22 +7,24 @@ export default function InformationenPage() {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="/start" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+          <a href="/start" className="flex items-center gap-3 hover:opacity-80 hover:scale-105 transition-all duration-200">
             <Zap className="w-8 h-8 text-blue-600" />
             <h1 className="text-2xl font-bold text-gray-800">e-Autowelt</h1>
           </a>
-          <nav className="flex gap-6">
+          <nav className="flex gap-8">
             <a 
               href="/rechner" 
-              className="text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors"
+              className="relative text-lg font-medium text-gray-700 hover:text-blue-600 transition-all duration-200 pb-1 group"
             >
               e-Auto Rechner
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
             </a>
             <a 
               href="/informationen" 
-              className="text-lg font-medium text-blue-600 transition-colors"
+              className="relative text-lg font-bold text-blue-600 transition-all duration-200 pb-1"
             >
               Ratgeber
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600"></span>
             </a>
           </nav>
         </div>
@@ -175,7 +177,7 @@ export default function InformationenPage() {
               <p className="text-xl mb-6">Berechnen Sie jetzt Ihre persönliche Ersparnis mit unserem Kostenrechner!</p>
               <a 
                 href="/rechner"
-                className="inline-block bg-white text-blue-600 text-xl font-bold px-10 py-4 rounded-full hover:shadow-2xl transition-all transform hover:scale-105"
+                className="inline-block bg-white text-blue-600 text-xl font-bold px-10 py-4 rounded-full hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200"
               >
                 Zum Rechner
               </a>
@@ -188,11 +190,11 @@ export default function InformationenPage() {
       <footer className="bg-white mt-12 py-8 border-t border-gray-200">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <div className="flex flex-wrap justify-center gap-6 mb-6">
-            <a href="/impressum" className="text-base text-gray-600 hover:text-gray-900 transition-colors">
+            <a href="/impressum" className="text-base text-gray-600 hover:text-gray-900 hover:underline transition-all duration-200">
               Impressum
             </a>
             <span className="text-gray-400">|</span>
-            <a href="/datenschutz" className="text-base text-gray-600 hover:text-gray-900 transition-colors">
+            <a href="/datenschutz" className="text-base text-gray-600 hover:text-gray-900 hover:underline transition-all duration-200">
               Datenschutz
             </a>
           </div>
