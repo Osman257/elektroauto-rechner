@@ -1,5 +1,6 @@
 {
   "name": "elektroauto-rechner",
+  "type": "module",
   "version": "1.0.0",
   "description": "Elektroauto Kostenrechner - Vergleichen Sie Elektroautos mit Verbrennern",
   "private": true,
