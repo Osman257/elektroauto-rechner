@@ -43,7 +43,7 @@ export default function StartPage() {
             Lohnt sich ein Elektroauto?
           </h2>
           <p className="text-2xl text-gray-600 mb-8">
-            Finden Sie es heraus mit unserem kostenlosen Kostenrechner
+            Finden Sie es heraus mit unserem kostenlosen Elektroauto Kostenrechner
           </p>
           <a 
             href="/rechner"
