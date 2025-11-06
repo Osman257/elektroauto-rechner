@@ -197,7 +197,7 @@ export default function InformationenPage() {
             </a>
           </div>
           <div className="text-center text-sm text-gray-500">
-            <p>© 2025 Elektroauto-Rechner. Alle Angaben ohne Gewähr.</p>
+            <p>© 2025 e-Autowelt. Alle Angaben ohne Gewähr.</p>
           </div>
         </div>
       </footer>
