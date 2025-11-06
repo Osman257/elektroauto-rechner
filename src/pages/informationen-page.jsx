@@ -9,7 +9,7 @@ export default function InformationenPage() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <a href="/start" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <Zap className="w-8 h-8 text-blue-600" />
-            <h1 className="text-2xl font-bold text-gray-800">e-Auto Rechner</h1>
+            <h1 className="text-2xl font-bold text-gray-800">e-Autowelt</h1>
           </a>
           <nav className="flex gap-6">
             <a 
