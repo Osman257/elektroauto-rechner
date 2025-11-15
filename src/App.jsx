@@ -1,29 +1,33 @@
-import React from 'react';
-import StartPage from './pages/start-page';
-import RechnerPage from './pages/rechner-page';
-import InformationenPage from './pages/informationen-page';
-import ImpressumPage from './pages/impressum-page';
-import DatenschutzPage from './pages/datenschutz-page';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import StartPage from "./pages/start-page";
+import RechnerPage from "./pages/RechnerPage";
+import RatgeberPage from "./pages/RatgeberPage";
+import KaufberatungPage from "./pages/KaufberatungPage";
+import MythenPage from "./pages/MythenPage";
+import ThgQuotePage from "./pages/ThgQuotePage";
+import ImpressumPage from "./pages/impressum-page";
+import DatenschutzPage from "./pages/datenschutz-page";
 
 function App() {
-  // Simple client-side routing based on path
-  const path = window.location.pathname;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<StartPage />} />
+        <Route path="/rechner" element={<RechnerPage />} />
 
-  // Route to the correct page
-  if (path === '/' || path === '/start') {
-    return <StartPage />;
-  } else if (path === '/rechner') {
-    return <RechnerPage />;
-  } else if (path === '/informationen') {
-    return <InformationenPage />;
-  } else if (path === '/impressum') {
-    return <ImpressumPage />;
-  } else if (path === '/datenschutz') {
-    return <DatenschutzPage />;
-  } else {
-    // Default to start page for unknown routes
-    return <StartPage />;
-  }
+        {/* Ratgeber-Bereich */}
+        <Route path="/ratgeber" element={<RatgeberPage />} />
+        <Route path="/ratgeber/kaufberatung" element={<KaufberatungPage />} />
+        <Route path="/ratgeber/mythen" element={<MythenPage />} />
+        <Route path="/ratgeber/thg-quote" element={<ThgQuotePage />} />
+
+        {/* Rechtliches */}
+        <Route path="/impressum" element={<ImpressumPage />} />
+        <Route path="/datenschutz" element={<DatenschutzPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

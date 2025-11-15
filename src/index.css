@@ -10,3 +10,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* global.css oder index.css */
+.page-content {
+  padding-top: 6rem; /* ca. 96px */
+}
+@media (min-width: 768px) {
+  .page-content {
+    padding-top: 7rem;
+  }
+}

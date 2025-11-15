@@ -103,7 +103,7 @@ export default function ImpressumPage() {
           {/* Back to Start Button */}
           <div className="mt-12 text-center">
             <a 
-              href="/start"
+              href="/"
               className="inline-block bg-gradient-to-r from-blue-600 to-green-600 text-white text-lg font-bold px-8 py-3 rounded-full hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200"
             >
               Zurück zur Startseite
