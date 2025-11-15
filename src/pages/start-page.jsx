@@ -1,60 +1,90 @@
 import React from 'react';
 import { Zap, Calculator, BookOpen, TrendingDown, Leaf, Euro } from 'lucide-react';
+import Header from '../components/Header';
 
 export default function StartPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <a 
-            href="/start" 
-            className="flex items-center gap-3 hover:opacity-80 hover:scale-105 transition-all duration-200"
-          >
-            <Zap className="w-8 h-8 text-blue-600" />
-            <h1 className="text-2xl font-bold text-gray-800">e-Autowelt</h1>
-          </a>
-          <nav className="flex gap-8">
-            <a 
-              href="/rechner" 
-              className="relative text-lg font-medium text-gray-700 hover:text-blue-600 transition-all duration-200 pb-1 group"
-            >
-              e-Auto Rechner
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
-            </a>
-            <a 
-              href="/informationen" 
-              className="relative text-lg font-medium text-gray-700 hover:text-blue-600 transition-all duration-200 pb-1 group"
-            >
-              Ratgeber
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
-            </a>
-          </nav>
+      <Header activeTab="start" />
+      <div className="h-20 md:h-24"></div>
+
+      {/* Hero Section with Image */}
+      <div className="max-w-7xl mx-auto px-4 md:px-8 mt-8 mb-8 md:mt-0 md:mb-20">
+        <div className="relative h-[650px] md:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+          {/* Hero Image */}
+          <img 
+            src="/images/ratgeber/hero-elektroauto-ladestation.jpg"
+            alt="Modernes Elektroauto an Ladestation - Kostenvergleich und Nachhaltigkeit"
+            title="Elektroauto Kostenrechner - Finden Sie heraus ob sich ein E-Auto lohnt"
+            className="w-full h-full object-cover brightness-9"
+            loading="eager"
+          />
+          
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-950/95 via-blue-800/60 to-transparent"></div>
+          
+          {/* Hero Content */}
+          <div className="absolute inset-0 flex items-center">
+            <div className="max-w-6xl mx-auto px-6 md:px-12 w-full py-12 md:py-0">
+              <div className="max-w-2xl">
+                {/* Badge */}
+                <div className="inline-flex items-center gap-2 bg-white/30 backdrop-blur-md px-4 py-2 rounded-full mb-6 shadow-lg">
+                  <Zap className="w-5 h-5 text-white" />
+                  <span className="text-sm md:text-base text-white font-semibold">Kostenloser Rechner</span>
+                </div>
+                
+                {/* Headline */}
+                <h1 className="drop-shadow-2xl text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                  Lohnt sich ein Elektroauto?
+                </h1>
+                
+                {/* Subheadline */}
+                <p className="text-xl md:text-2xl text-white mb-8 leading-relaxed drop-shadow-lg">
+                  Finden Sie es heraus mit unserem kostenlosen Elektroauto Kostenrechner.
+                  
+                </p>
+                
+                {/* CTA Button */}
+                <a 
+                  href="/rechner"
+                  className="inline-flex items-center gap-2 md:gap-3 bg-gradient-to-r from-green-500 to-green-600 text-white text-base md:text-xl font-bold px-6 py-3 md:px-10 md:py-5 rounded-full hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200"
+                >
+                  <Calculator className="w-5 h-5 md:w-6 md:h-6" />
+                  Jetzt kostenlos berechnen
+                </a>
+                
+                {/* Trust Indicators */}
+                <div className="flex flex-wrap items-center gap-6 mt-8 text-white/80 text-sm md:text-base font-semibold">
+                  <div className="flex items-center gap-2">
+                    <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span>100% Kostenlos</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span>Keine Anmeldung nötig</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span>In 3 Minuten fertig</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </header>
+      </div>
 
-      {/* Spacer for fixed header */}
-      <div className="h-20"></div>
-
-      {/* Hero Section */}
-      <div className="max-w-6xl mx-auto px-4 md:px-8 py-16">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
-            Lohnt sich ein Elektroauto?
-          </h2>
-          <p className="text-2xl text-gray-600 mb-8">
-            Finden Sie es heraus mit unserem kostenlosen Elektroauto Kostenrechner
-          </p>
-          <a 
-            href="/rechner"
-            className="inline-block bg-gradient-to-r from-blue-600 to-green-600 text-white text-xl font-bold px-12 py-4 rounded-full hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200"
-          >
-            Jetzt berechnen
-          </a>
-        </div>
-
+      {/* Content Section */}
+      <div className="max-w-6xl mx-auto px-4 md:px-8 pt-8 md:pt-0">
         {/* Features Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mt-20">
+        <div className="grid md:grid-cols-3 gap-8 mb-20">
           {/* Feature 1 */}
           <div className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow">
             <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
@@ -90,7 +120,7 @@ export default function StartPage() {
         </div>
 
         {/* Stats Section */}
-        <div className="bg-white rounded-2xl p-12 shadow-xl mt-20">
+        <div className="bg-white rounded-2xl p-12 shadow-xl mb-20">
           <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">Warum Elektroauto?</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -109,7 +139,7 @@ export default function StartPage() {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl p-12 shadow-xl mt-20 text-center text-white">
+        <div className="bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl p-12 shadow-xl mb-20 text-center text-white">
           <h3 className="text-4xl font-bold mb-6">Bereit für die Berechnung?</h3>
           <p className="text-xl mb-8">Finden Sie in wenigen Minuten heraus, wie viel Sie mit einem Elektroauto sparen können.</p>
           <a 

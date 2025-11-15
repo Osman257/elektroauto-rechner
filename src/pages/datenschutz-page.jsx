@@ -72,32 +72,10 @@ export default function DatenschutzPage() {
               </p>
             </div>
             
-            <div className="pt-6 border-t-2 border-gray-200">
-              <p className="font-bold text-xl mb-3">4. Cookies & Google AdSense</p>
-              <p className="leading-relaxed mb-4">
-                Wir verwenden Google AdSense, einen Dienst der Google LLC, zur Einbindung von 
-                Werbeanzeigen. Google kann hierfür Cookies und ähnliche Technologien nutzen, um die 
-                Anzeigen anzuzeigen und zu optimieren.
-              </p>
-              <p className="leading-relaxed mb-4">
-                Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO. Sie können Ihre 
-                Einwilligung jederzeit über „Cookie-Einstellungen" widerrufen.
-              </p>
-              <p className="leading-relaxed">
-                Weitere Informationen zur Datenverarbeitung durch Google:{' '}
-                <a 
-                  href="https://policies.google.com/privacy" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 underline"
-                >
-                  https://policies.google.com/privacy
-                </a>
-              </p>
-            </div>
+
             
             <div className="pt-6 border-t-2 border-gray-200">
-              <p className="font-bold text-xl mb-3">5. Hosting</p>
+              <p className="font-bold text-xl mb-3">4. Hosting</p>
               <p className="leading-relaxed">
                 Unsere Website wird bei einem Dienstleister in Deutschland gehostet, der im Rahmen 
                 einer Auftragsverarbeitung nach Art. 28 DSGVO für uns tätig ist. Dieser Dienstleister 
@@ -107,7 +85,7 @@ export default function DatenschutzPage() {
             </div>
             
             <div className="pt-6 border-t-2 border-gray-200">
-              <p className="font-bold text-xl mb-3">6. Betroffenenrechte</p>
+              <p className="font-bold text-xl mb-3">5. Betroffenenrechte</p>
               <p className="leading-relaxed mb-4">
                 Sie haben jederzeit das Recht auf:
               </p>
@@ -123,7 +101,7 @@ export default function DatenschutzPage() {
             </div>
             
             <div className="pt-6 border-t-2 border-gray-200">
-              <p className="font-bold text-xl mb-3">7. Kontakt</p>
+              <p className="font-bold text-xl mb-3">6. Kontakt</p>
               <p className="leading-relaxed">
                 Bei Fragen zum Datenschutz kontaktieren Sie uns bitte über die oben genannte 
                 E-Mail-Adresse.
@@ -153,7 +131,7 @@ export default function DatenschutzPage() {
           {/* Back to Start Button */}
           <div className="mt-12 text-center">
             <a 
-              href="/start"
+              href="/"
               className="inline-block bg-gradient-to-r from-blue-600 to-green-600 text-white text-lg font-bold px-8 py-3 rounded-full hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200"
             >
               Zurück zur Startseite
