@@ -124,8 +124,10 @@ export default function ElektroAutoRechner() {
         <div id="rechner" className="bg-white rounded-2xl shadow-2xl p-4 md:p-8 mb-4 md:mb-6">
           {/* Allgemeine Parameter */}
           <div className="gap-2 bg-gray-50 rounded-xl p-4 md:p-6 mb-4 md:mb-8">
-            <Gauge className="w-6 h-6 text-orange-600" />
-            <h3 className="text-lg md:text-lg md:text-xl font-bold text-gray-800 mb-6">Allgemeine Parameter</h3>
+            <div className="flex items-center gap-2 mb-4">
+  <Gauge className="w-6 h-6 text-orange-600" />
+  <h3 className="text-lg md:text-xl font-bold text-gray-800">Allgemeine Parameter</h3>
+</div>
             <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <label className="block text-sm md:text-base font-medium text-gray-700 gap 4 mb-3">

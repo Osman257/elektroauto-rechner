@@ -33,7 +33,7 @@ export default function Header({ activeTab = '' }) {
               : 'relative text-lg font-medium text-gray-700 hover:text-blue-600 transition-all duration-200 pb-1 group'
             }
           >
-            Rechner
+            Kostenrechner
             {activeTab === 'rechner' ? (
                             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600"></span>
                             ) : (

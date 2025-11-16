@@ -41,7 +41,7 @@ export default function KaufberatungPage() {
                   <ShoppingCart className="w-6 h-6 md:w-8 md:h-8" />
                 </div>
                 <span className="text-xs md:text-sm bg-white/30 backdrop-blur-md px-3 py-1 rounded-full font-semibold shadow-lg">📖 8 Min. Lesezeit</span>
-                <span className="text-xs md:text-sm bg-white/30 backdrop-blur-md px-3 py-1 rounded-full font-semibold shadow-lg">Aktualisiert am 20. März 2025</span>
+                <span className="text-xs md:text-sm bg-white/30 backdrop-blur-md px-3 py-1 rounded-full font-semibold shadow-lg">📅 Januar 2025</span>
               </div>
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight">
                 Elektroauto Kaufberatung 2025: Der komplette Guide
@@ -56,13 +56,30 @@ export default function KaufberatungPage() {
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed mb-4">
                 Alles was Sie vor dem Kauf eines Elektroautos wissen müssen: Reichweite, Lademöglichkeiten, Modellvergleich und worauf Sie wirklich achten sollten.
               </p>
-              <p className="text-sm md:text-base text-gray-700 leading-relaxed">
-                Der Kauf eines Elektroautos ist eine wichtige Entscheidung. Im Gegensatz zu Verbrennern gibt es einige Besonderheiten zu beachten. Dieser Guide hilft Ihnen, das perfekte E-Auto für Ihre Bedürfnisse zu finden.
-              </p>
+              <div className="bg-blue-50 rounded-xl p-6">
+                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                  Der Kauf eines Elektroautos ist eine wichtige Entscheidung. Im Gegensatz zu Verbrennern gibt es einige Besonderheiten zu beachten. 
+                  <strong> Dieser Guide hilft Ihnen, das perfekte E-Auto für Ihre Bedürfnisse zu finden.</strong>
+                </p>
+              </div>
             </div>
 
+            {/* Inhaltsverzeichnis */}
+            <nav className="bg-gray-50 rounded-xl p-6 mb-8 md:mb-12">
+              <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-4">
+                Inhaltsverzeichnis
+              </h2>
+              <ol className="space-y-2 text-sm md:text-base">
+                <li><a href="#reichweite" className="text-blue-600 hover:underline">1. Reichweite: Wie viel brauche ich wirklich?</a></li>
+                <li><a href="#ladeinfrastruktur" className="text-blue-600 hover:underline">2. Lademöglichkeiten: Zuhause, Arbeit oder unterwegs?</a></li>
+                <li><a href="#kosten" className="text-blue-600 hover:underline">3. Kosten: Was kostet ein E-Auto wirklich?</a></li>
+                <li><a href="#modellauswahl" className="text-blue-600 hover:underline">4. Modellauswahl: Welches E-Auto passt zu mir?</a></li>
+                <li><a href="#checkliste" className="text-blue-600 hover:underline">5. Checkliste: Darauf sollten Sie achten</a></li>
+              </ol>
+            </nav>
+
             {/* Section 1: Reichweite */}
-            <section className="mb-8 md:mb-12">
+            <section id="reichweite" className="mb-8 md:mb-12">
               <h2 className="text-xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-6 flex items-center gap-3">
                 <Battery className="w-6 h-6 md:w-8 md:h-8 text-blue-600" />
                 Reichweite: Wie viel brauche ich wirklich?
@@ -78,7 +95,6 @@ export default function KaufberatungPage() {
                   src="/images/ratgeber/elektroauto-reichweite-kategorien.jpg"
                   alt="Elektroauto Reichweiten-Kategorien 2025: Stadtauto, Mittelklasse und Langstrecke im Vergleich"
                   title="Elektroauto Reichweiten"
-
                   className="w-full h-auto"
                   loading="lazy"
                 />
@@ -133,7 +149,7 @@ export default function KaufberatungPage() {
             </section>
 
             {/* Section 2: Ladeinfrastruktur */}
-            <section className="mb-8 md:mb-12">
+            <section id="ladeinfrastruktur" className="mb-8 md:mb-12">
               <h2 className="text-xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-6 flex items-center gap-3">
                 <Zap className="w-6 h-6 md:w-8 md:h-8 text-green-600" />
                 Lademöglichkeiten: Zuhause, Arbeit oder unterwegs?
@@ -147,21 +163,12 @@ export default function KaufberatungPage() {
                 <div className="bg-green-50 rounded-xl p-4 md:p-6">
                   <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600" />
-                    Option 1: Laden zuhause
+                    Option 1: Laden zuhause (ideal!)
                   </h3>
                   <ul className="space-y-2 text-sm md:text-base text-gray-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-green-600">•</span>
-                      <span><strong>Wallbox in Garage/Carport:</strong> Laden über Nacht (7-11 kW), kostet ca. 800-1.500€</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-green-600">•</span>
-                      <span><strong>Steckdose (Notlösung):</strong> Sehr langsam (2,3 kW), nur für Notfälle</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-green-600">•</span>
-                      <span><strong>Vorteil:</strong> Günstiger Haushaltsstrom (ca. 0,30 €/kWh), Auto ist morgens voll</span>
-                    </li>
+                    <li>• <strong>Eigene Wallbox:</strong> Kostet 500-2.000€ + Installation. Lädt über Nacht (11 kW = ~300 km in 6-8h)</li>
+                    <li>• <strong>Steckdose (Notlösung):</strong> Sehr langsam (2,3 kW = ~100 km in 10h), nur temporär</li>
+                    <li>• <strong>Förderung:</strong> KfW-Zuschuss für Wallbox (aktuell ausgelaufen, aber prüfen!)</li>
                   </ul>
                 </div>
 
@@ -171,120 +178,97 @@ export default function KaufberatungPage() {
                     Option 2: Laden beim Arbeitgeber
                   </h3>
                   <ul className="space-y-2 text-sm md:text-base text-gray-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-600">•</span>
-                      <span>Viele Arbeitgeber bieten kostenlose oder vergünstigte Lademöglichkeiten</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-blue-600">•</span>
-                      <span>Ideal für Pendler ohne eigene Lademöglichkeit</span>
-                    </li>
+                    <li>• Immer mehr Firmen bieten kostenlose Ladestationen</li>
+                    <li>• Auto lädt während der Arbeitszeit = praktisch & kostenlos</li>
+                    <li>• Arbeitgeber kann Wallbox steuerlich absetzen</li>
                   </ul>
                 </div>
 
-                <div className="bg-orange-50 rounded-xl p-4 md:p-6">
+                <div className="bg-purple-50 rounded-xl p-4 md:p-6">
                   <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3 flex items-center gap-2">
-                    <MapPin className="w-5 h-5 text-orange-600" />
-                    Option 3: Öffentliches Laden
+                    <CheckCircle className="w-5 h-5 text-purple-600" />
+                    Option 3: Öffentliche Ladeinfrastruktur
                   </h3>
                   <ul className="space-y-2 text-sm md:text-base text-gray-700">
-                    <li className="flex items-start gap-2">
-                      <span className="text-orange-600">•</span>
-                      <span><strong>AC-Laden (11-22 kW):</strong> An Supermärkten, Parkplätzen (0,39-0,59 €/kWh)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-orange-600">•</span>
-                      <span><strong>DC-Schnellladen (50-350 kW):</strong> An Autobahnen, Ladeparks (0,49-0,79 €/kWh)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-orange-600">•</span>
-                      <span><strong>Empfehlung:</strong> Nur als Ergänzung, nicht als Hauptlademethode (zu teuer)</span>
-                    </li>
+                    <li>• <strong>AC-Laden (11-22 kW):</strong> An Supermärkten, Parkplätzen (2-4h für voll)</li>
+                    <li>• <strong>DC-Schnellladen (50-350 kW):</strong> An Autobahnen (20-40 Min. für 80%)</li>
+                    <li>• <strong>Kosten:</strong> 30-80 Cent/kWh je nach Anbieter und Ladeleistung</li>
+                    <li>• <strong>Apps:</strong> PlugShare, EnBW, Ionity für Ladesäulen-Suche</li>
                   </ul>
+                </div>
+              </div>
+
+              <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+                <div className="flex items-start gap-3">
+                  <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <div className="font-semibold text-gray-800 text-sm md:text-base mb-1">Ohne eigene Lademöglichkeit?</div>
+                    <p className="text-xs md:text-sm text-gray-700">
+                      E-Auto nur mit öffentlichen Ladesäulen ist möglich, aber umständlicher und teurer. Prüfen Sie vorher: Gibt es Ladesäulen in der Nähe? Wie oft müssen Sie laden?
+                    </p>
+                  </div>
                 </div>
               </div>
             </section>
 
-            {/* Section 3: Kosten mit Bild */}
-            <section className="mb-8 md:mb-12">
+            {/* Section 3: Kosten */}
+            <section id="kosten" className="mb-8 md:mb-12">
               <h2 className="text-xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-6 flex items-center gap-3">
-                <Euro className="w-6 h-6 md:w-8 md:h-8 text-yellow-600" />
-                Gesamtkosten: Mehr als nur der Kaufpreis
+                <Euro className="w-6 h-6 md:w-8 md:h-8 text-green-600" />
+                Kosten: Was kostet ein E-Auto wirklich?
               </h2>
 
-              <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-6">
-                Elektroautos sind in der Anschaffung oft teurer, aber über die Nutzungsdauer günstiger. Hier ein realistischer Vergleich:
+              <p className="text-sm md:text-base text-gray-700 leading-relaxed mb-4">
+                E-Autos sind in der Anschaffung teurer, aber in den Gesamtkosten oft günstiger. Hier die wichtigsten Kostenfaktoren:
               </p>
 
-              {/* Kosten-Bild */}
-              <div className="my-8 rounded-xl overflow-hidden shadow-lg">
-                <img 
-                  src="/images/ratgeber/elektroauto-kostenvergleich-verbrenner.jpg"
-                  alt="Kostenvergleich Elektroauto vs Verbrenner über 8 Jahre: Kaufpreis, Energie, Wartung, Versicherung"
-                  title="Kostenvergleich Elektroauto oder Verbrenner"
-                  className="w-full h-auto"
-                  loading="lazy"
-                />
-                <div className="bg-gray-50 p-4 text-xs md:text-sm text-gray-600 italic">
-                  Gesamtkosten-Vergleich: E-Auto vs Verbrenner über 8 Jahre bei 15.000 km/Jahr
+              <div className="space-y-4 mb-6">
+                <div className="bg-blue-50 p-4 md:p-6 rounded-xl">
+                  <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3">💰 Anschaffungskosten</h3>
+                  <p className="text-sm md:text-base text-gray-700 mb-2">
+                    E-Autos kosten aktuell 5.000-15.000€ mehr als vergleichbare Verbrenner. Aber:
+                  </p>
+                  <ul className="text-sm md:text-base text-gray-700 space-y-1">
+                    <li>• Preise fallen kontinuierlich (Batterie-Preise -80% seit 2013)</li>
+                    <li>• Gebrauchtmarkt wächst: Nissan Leaf ab 10.000€, Renault Zoe ab 12.000€</li>
+                    <li>• Leasing oft günstiger durch bessere Restwerte</li>
+                  </ul>
+                </div>
+
+                <div className="bg-green-50 p-4 md:p-6 rounded-xl">
+                  <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-3">⚡ Betriebskosten (hier sparen Sie!)</h3>
+                  <ul className="text-sm md:text-base text-gray-700 space-y-2">
+                    <li>• <strong>Strom statt Benzin:</strong> 4-6€/100km vs. 8-12€/100km (bei Heimladung)</li>
+                    <li>• <strong>Wartung:</strong> 35% günstiger (kein Ölwechsel, Zahnriemen, Auspuff, etc.)</li>
+                    <li>• <strong>Versicherung:</strong> Oft 10-20% günstiger als Verbrenner</li>
+                    <li>• <strong>KFZ-Steuer:</strong> 10 Jahre komplett befreit (bis 2030)</li>
+                    <li>• <strong>Firmenwagen:</strong> 0,25% statt 1% Versteuerung = massive Ersparnis</li>
+                  </ul>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-r from-blue-50 to-green-50 rounded-xl p-4 md:p-6 mb-6">
-                <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-4">Beispielrechnung (15.000 km/Jahr, 8 Jahre)</h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="bg-white rounded-lg p-4">
-                    <div className="font-bold text-blue-600 mb-2 text-sm md:text-base">⚡ Elektroauto</div>
-                    <div className="space-y-1 text-xs md:text-sm text-gray-700">
-                      <div>Kaufpreis: 35.000 €</div>
-                      <div>Strom (8 Jahre): 4.320 €</div>
-                      <div>Wartung: 2.400 €</div>
-                      <div>Versicherung: 6.400 €</div>
-                      <div>Steuer: 0 €</div>
-                      <div className="pt-2 border-t font-bold">Gesamt: 48.120 €</div>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-white rounded-lg p-4">
-                    <div className="font-bold text-orange-600 mb-2 text-sm md:text-base">⛽ Verbrenner</div>
-                    <div className="space-y-1 text-xs md:text-sm text-gray-700">
-                      <div>Kaufpreis: 30.000 €</div>
-                      <div>Benzin (8 Jahre): 14.700 €</div>
-                      <div>Wartung: 4.800 €</div>
-                      <div>Versicherung: 6.000 €</div>
-                      <div>Steuer: 1.200 €</div>
-                      <div className="pt-2 border-t font-bold">Gesamt: 56.700 €</div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="mt-4 p-4 bg-green-100 rounded-lg text-center">
-                  <div className="text-lg md:text-2xl font-bold text-green-700">Ersparnis: 8.580 € über 8 Jahre</div>
-                  <div className="text-xs md:text-sm text-gray-600 mt-1">Das sind 1.073 € pro Jahr oder 89 € pro Monat!</div>
-                </div>
-              </div>
-
-              <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-                <div className="flex items-start gap-3">
-                  <TrendingUp className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <div className="font-semibold text-gray-800 text-sm md:text-base mb-1">Tipp: Nutzen Sie unseren Rechner!</div>
-                    <p className="text-xs md:text-sm text-gray-700 mb-3">
-                      Die Ersparnis hängt stark von Ihren individuellen Werten ab. Mit unserem kostenlosen Rechner können Sie Ihre persönliche Situation durchrechnen.
-                    </p>
-                    <a
-                      href="/rechner"
-                      className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold text-xs md:text-sm hover:bg-blue-700 transition-colors"
-                    >
-                      Zum Kostenrechner →
-                    </a>
-                  </div>
+              <div className="bg-gradient-to-br from-blue-50 to-green-50 p-6 md:p-8 rounded-xl">
+                <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-4">
+                  💡 Rechnet sich ein E-Auto für mich?
+                </h3>
+                <p className="text-sm md:text-base text-gray-700 mb-4">
+                  Über 8 Jahre Nutzungsdauer spart ein E-Auto trotz höherer Anschaffung oft 5.000-10.000€. 
+                  Je mehr Sie fahren, desto schneller amortisiert sich der Mehrpreis.
+                </p>
+                <div className="flex gap-4">
+                  <a 
+                    href="/rechner"
+                    className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all"
+                  >
+                    <TrendingUp className="w-5 h-5" />
+                    Zum Kostenrechner
+                  </a>
                 </div>
               </div>
             </section>
 
             {/* Section 4: Modellauswahl */}
-            <section className="mb-8 md:mb-12">
+            <section id="modellauswahl" className="mb-8 md:mb-12">
               <h2 className="text-xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-6 flex items-center gap-3">
                 <Car className="w-6 h-6 md:w-8 md:h-8 text-purple-600" />
                 Modellauswahl: Welches E-Auto passt zu mir?
@@ -338,7 +322,7 @@ export default function KaufberatungPage() {
             </section>
 
             {/* Section 5: Checkliste */}
-            <section className="mb-8 md:mb-12">
+            <section id="checkliste" className="mb-8 md:mb-12">
               <h2 className="text-xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-6">
                 Checkliste: Darauf sollten Sie achten
               </h2>
@@ -368,12 +352,20 @@ export default function KaufberatungPage() {
             {/* Fazit */}
             <div className="bg-gradient-to-r from-green-600 to-blue-600 rounded-xl p-6 md:p-8 text-white mt-12">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                Fazit: E-Auto rechnet sich Langfristig
+                Fazit: Ist ein Elektroauto das Richtige für mich?
               </h2>
-              <p className="text-base md:text-lg leading-relaxed">
-                Wenn man langfristig denkt und häufig unter 200km am Tag fährt, lohnt sich ein E-Auto. Wirtschaftliche Studien zeigen das der preisliche Unterschied zu einem Verbrenner immer 
-                geringer wird. 
-                <strong> Die Fakten sprechen eine klare Sprache – probieren Sie es aus!</strong>
+              <p className="text-base md:text-lg leading-relaxed mb-4">
+                Ein Elektroauto lohnt sich besonders, wenn Sie:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-base md:text-lg mb-6">
+                <li>Regelmäßig zuhause oder beim Arbeitgeber laden können</li>
+                <li>Täglich weniger als 200 km fahren</li>
+                <li>Langfristig denken und Gesamtkosten betrachten</li>
+                <li>Wert auf Umweltschutz legen</li>
+              </ul>
+              <p className="text-lg font-semibold">
+                Der beste erste Schritt: Nutzen Sie unseren kostenlosen Kostenrechner, um herauszufinden, 
+                ob und wie viel Sie mit einem Elektroauto sparen können.
               </p>
             </div>
           </div>

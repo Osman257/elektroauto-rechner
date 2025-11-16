@@ -18,6 +18,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Ladezeit Artikel -->
+<url>
+  <loc>https://e-autowelt.de/ratgeber/ladezeit</loc>
+  <lastmod>2025-01-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
   <url>
     <loc>https://e-autowelt.com/impressum</loc>
     <lastmod>2025-11-06</lastmod>

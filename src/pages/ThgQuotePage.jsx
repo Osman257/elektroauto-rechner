@@ -88,7 +88,7 @@ export default function ThgQuotePage() {
               
               <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
                 Die <strong>Treibhausgasminderungsquote (THG-Quote)</strong> ist ein staatliches Instrument 
-                zur CO₂-Reduktion im Verkehrssektor. Einfach erklärt:
+                zur CO₂-Reduktion im Verkehrssektor. Hier eine vereinfachte Darstellung:
               </p>
 
               {/* IMAGE 1: THG-Quote System erklärt */}
@@ -226,8 +226,7 @@ export default function ThgQuotePage() {
                       </h3>
                       <p className="text-sm md:text-base text-gray-700 mb-3">
                         Erstellen Sie einen Account beim Anbieter. Laden Sie ein Foto oder Scan Ihrer 
-                        Zulassungsbescheinigung Teil I (Fahrzeugschein) hoch. <strong>Wichtig:</strong> 
-                        Gut lesbar fotografieren!
+                        Zulassungsbescheinigung Teil I (Fahrzeugschein) hoch. 
                       </p>
                       <div className="bg-white/50 p-3 rounded-lg">
                         <p className="text-xs md:text-sm text-gray-600">
@@ -248,7 +247,7 @@ export default function ThgQuotePage() {
                       </h3>
                       <p className="text-sm md:text-base text-gray-700">
                         Der Anbieter prüft Ihre Daten und beantragt beim Umweltbundesamt die Zertifizierung 
-                        Ihrer CO₂-Einsparung. Dieser Prozess dauert 2-8 Wochen. Sie müssen nichts tun!
+                        Ihrer CO₂-Einsparung. Dieser Prozess dauert 2-8 Wochen. Ab jetzt können Sie nur noch warten.
                       </p>
                     </div>
                   </div>
@@ -274,7 +273,7 @@ export default function ThgQuotePage() {
                 <h4 className="font-bold text-gray-800 mb-2">⏱️ Zeitrahmen:</h4>
                 <p className="text-sm md:text-base text-gray-700">
                   Von der Anmeldung bis zur Auszahlung dauert es je nach Anbieter <strong>2-12 Wochen</strong>. 
-                  Sofortauszahler zahlen innerhalb von 2-3 Werktagen, Flex-Modelle erst nach Zertifizierung.
+                  Sofortauszahler zahlen innerhalb von 2-3 Werktagen, Flex-Modelle erst nach der Zertifizierung.
                 </p>
               </div>
             </section>
@@ -287,7 +286,7 @@ export default function ThgQuotePage() {
               </h2>
 
               <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
-                Es gibt dutzende THG-Anbieter. Hier sind die Top-Empfehlungen 2025:
+                Es gibt dutzende THG-Anbieter, hier sind einige Beispiele:
               </p>
 
 
@@ -300,9 +299,7 @@ export default function ThgQuotePage() {
                         🥇 eQuota 
                       </h3>
                       <div className="flex items-center gap-2 mb-2">
-                        <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">
-                          Beste Prämie
-                        </span>
+
                       </div>
                     </div>
                     <div className="text-right">
@@ -337,9 +334,7 @@ export default function ThgQuotePage() {
                         🥈 geld-für-eAuto
                       </h3>
                       <div className="flex items-center gap-2 mb-2">
-                        <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">
-                          Schnellste Auszahlung
-                        </span>
+
                       </div>
                     </div>
                     <div className="text-right">
@@ -374,9 +369,7 @@ export default function ThgQuotePage() {
                         🥉 ADAC e-Charge
                       </h3>
                       <div className="flex items-center gap-2 mb-2">
-                        <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-semibold">
-                          Vertrauenswürdig
-                        </span>
+     
                       </div>
                     </div>
                     <div className="text-right">
