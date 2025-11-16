@@ -30,6 +30,7 @@ export default function KaufberatungPage() {
             <img 
               src="/images/ratgeber/elektroauto-kaufberatung-hero.jpg"
               alt="Elektroauto wird geladen - Kaufberatung 2025"
+              title="Elektroauto Kaufberatung 2025"
               className="w-full h-full object-cover opacity-90"
               loading="eager"
             />
@@ -76,6 +77,8 @@ export default function KaufberatungPage() {
                 <img 
                   src="/images/ratgeber/elektroauto-reichweite-kategorien.jpg"
                   alt="Elektroauto Reichweiten-Kategorien 2025: Stadtauto, Mittelklasse und Langstrecke im Vergleich"
+                  title="Elektroauto Reichweiten"
+
                   className="w-full h-auto"
                   loading="lazy"
                 />
@@ -218,6 +221,7 @@ export default function KaufberatungPage() {
                 <img 
                   src="/images/ratgeber/elektroauto-kostenvergleich-verbrenner.jpg"
                   alt="Kostenvergleich Elektroauto vs Verbrenner über 8 Jahre: Kaufpreis, Energie, Wartung, Versicherung"
+                  title="Kostenvergleich Elektroauto oder Verbrenner"
                   className="w-full h-auto"
                   loading="lazy"
                 />

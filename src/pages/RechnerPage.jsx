@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { Droplets, Zap, Euro, TrendingDown, Leaf, PiggyBank, Gauge} from 'lucide-react';
 import Header from '../components/Header';
 
+
 export default function ElektroAutoRechner() {
   const [kaufpreisElektro, setKaufpreisElektro] = useState(35000);
   const [kaufpreisVerbrenner, setKaufpreisVerbrenner] = useState(30000);
