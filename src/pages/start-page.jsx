@@ -17,6 +17,8 @@ export default function StartPage() {
             src="/images/ratgeber/hero-elektroauto-ladestation.jpg"
             alt="Modernes Elektroauto an Ladestation - Kostenvergleich und Nachhaltigkeit"
             title="Elektroauto Kostenrechner - Finden Sie heraus ob sich ein E-Auto lohnt"
+            meta name="description" content="Kostenloser Elektroauto Rechner: Vergleichen Sie E-Auto vs Verbrenner Kosten über die gesamte Laufzeit. Anschaffung, Betrieb, Wartung, Steuern - alle Kosten auf einen Blick!"
+
             className="w-full h-full object-cover brightness-9"
             loading="eager"
           />
