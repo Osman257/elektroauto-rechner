@@ -303,7 +303,7 @@ export default function MythenPage() {
                   </p>
                   <p>
                     <strong>Selbst mit Kohlestrom besser als Diesel:</strong> Moderne Kraftwerke haben 40% Wirkungsgrad. 
-                    Verbrenner nur 20-25%. E-Motor: 90% Wirkungsgrad. Rechnung geht auf!
+                    Verbrenner nur 20-25%. E-Motor: 90% Wirkungsgrad.
                   </p>
                 </div>
               </div>
@@ -534,7 +534,7 @@ export default function MythenPage() {
                   </p>
                   <p>
                     <strong>Zusätzlicher Strombedarf überschaubar:</strong> 20 Mio. E-Autos brauchen ~50 TWh/Jahr extra. 
-                    Deutschland produziert 500 TWh/Jahr. Das sind nur <strong>10% mehr Bedarf</strong> – machbar!
+                    Deutschland produziert 500 TWh/Jahr. Das sind nur <strong>10% mehr Bedarf</strong>.
                   </p>
                 </div>
               </div>
@@ -576,7 +576,7 @@ export default function MythenPage() {
                 <div className="space-y-3 text-sm md:text-base text-gray-700">
                   <p>
                     <strong>Kobalt-Anteil sinkt drastisch:</strong> Moderne Batterien (LFP, LNMO) brauchen 
-                    <strong>kein Kobalt</strong> mehr! Tesla Model 3 Standard: 0% Kobalt. Trend: Weg vom Kobalt.
+                    kein Kobalt mehr! Tesla Model 3 Standard: 0% Kobalt. Der Trend geht Weg vom Kobalt.
                   </p>
                   <p>
                     <strong>Lithium ist reichlich vorhanden:</strong> Vorkommen reichen für 3 Milliarden E-Autos. 
@@ -630,12 +630,12 @@ export default function MythenPage() {
                 <h3 className="font-bold text-gray-800 mb-3">✅ Die Fakten:</h3>
                 <div className="space-y-3 text-sm md:text-base text-gray-700">
                   <p>
-                    <strong>Anschaffungspreis höher, aber Gesamtkosten niedriger!</strong> 
-                    Über 8 Jahre spart ein E-Auto 5.000-10.000€ durch niedrigere Betriebs-, Wartungs- und Steuerkosten.
+                    <strong>Anschaffungspreis höher, aber Gesamtkosten niedriger! </strong> 
+                     Über 8 Jahre spart ein E-Auto 5.000-10.000€ durch niedrigere Betriebs-, Wartungs- und Steuerkosten.
                   </p>
                   <p>
-                    <strong>Einstiegsmodelle ab 25.000€:</strong> Dacia Spring, Fiat 500e, VW ID.3 – bezahlbar! 
-                    Gebrauchtmarkt wächst: Nissan Leaf ab 10.000€, Renault Zoe ab 12.000€.
+                    <strong>Einstiegsmodelle ab 25.000€:</strong> Dacia Spring, Fiat 500e, VW ID.3 sind bezahlbare Modelle! 
+                    Der Gebrauchtmarkt wächst z.B. gibt es den Nissan Leaf ab 10.000€ oder den Renault Zoe ab 12.000€.
                   </p>
                   <p>
                     <strong>Firmenwagenregelung:</strong> 0,25% statt 1% Versteuerung = massive Ersparnis für Dienstwagennutzer!

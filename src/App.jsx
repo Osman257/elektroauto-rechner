@@ -6,6 +6,7 @@ import RatgeberPage from "./pages/RatgeberPage";
 import KaufberatungPage from "./pages/KaufberatungPage";
 import MythenPage from "./pages/MythenPage";
 import ThgQuotePage from "./pages/ThgQuotePage";
+import LadezeitPage from './pages/LadezeitPage';
 import ImpressumPage from "./pages/impressum-page";
 import DatenschutzPage from "./pages/datenschutz-page";
 
@@ -21,6 +22,8 @@ function App() {
         <Route path="/ratgeber/kaufberatung" element={<KaufberatungPage />} />
         <Route path="/ratgeber/mythen" element={<MythenPage />} />
         <Route path="/ratgeber/thg-quote" element={<ThgQuotePage />} />
+        <Route path="/ratgeber/ladezeit" element={<LadezeitPage />} />
+
 
         {/* Rechtliches */}
         <Route path="/impressum" element={<ImpressumPage />} />

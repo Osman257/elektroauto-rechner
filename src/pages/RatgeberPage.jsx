@@ -201,62 +201,111 @@ export default function RatgeberPage() {
           </div>
         </section>
 
-        {/* Mythen & Fakten Section */}
-        <section id="technik" className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 flex items-center gap-3">
-            <Lightbulb className="w-8 h-8 text-yellow-600" />
-            Mythen & Fakten
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            
-            {/* Artikel Card 3 - Mythen */}
-            <a href="/ratgeber/mythen" className="group">
-              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
-                {/* Artikel Bild */}
-                <div className="relative h-48 bg-gradient-to-br from-yellow-500 to-orange-500 overflow-hidden">
-                  <img 
-                    src="/images/ratgeber/elektroauto-mythen-hero.jpg"
-                    alt="Elektroauto Mythen aufgeklärt - Fakten statt Vorurteile"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                    loading="lazy"
-                  />
-                  <div className="absolute top-4 left-4">
-       
-                  </div>
-                </div>
-                
-                {/* Content */}
-                <div className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <Lightbulb className="w-5 h-5 text-yellow-600" />
-                    <span className="text-sm font-semibold text-yellow-600 uppercase">Mythen & Fakten</span>
-                  </div>
-                  
-                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-yellow-600 transition-colors">
-                    Die 10 größten E-Auto Mythen
-                  </h3>
-                  
-                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
-                    Reichweitenangst, explodierende Batterien, Umweltsünde? Wir räumen mit den hartnäckigsten 
-                    Vorurteilen auf und zeigen die wissenschaftlich belegten Fakten.
-                  </p>
-                  
-                  {/* Meta Info */}
-                  <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
-                    <div className="flex items-center gap-1">
-                    
-                    </div>
-                    <span className="text-yellow-600 font-semibold group-hover:underline flex items-center gap-1">
-                      Weiterlesen <ArrowRight className="w-3 h-3" />
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </a>
+{/* Mythen & Fakten Section */}
+<section id="technik" className="mb-16">
+  <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+    <Lightbulb className="w-8 h-8 text-yellow-600" />
+    Mythen & Fakten
+  </h2>
+  <div className="grid md:grid-cols-3 gap-6">
+    
+    {/* Artikel Card 1 - Mythen (BESTEHEND) */}
+    <a href="/ratgeber/mythen" className="group">
+      <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+        {/* Artikel Bild */}
+        <div className="relative h-48 bg-gradient-to-br from-yellow-500 to-orange-500 overflow-hidden">
+          <img 
+            src="/images/ratgeber/elektroauto-mythen-hero.jpg"
+            alt="Elektroauto Mythen aufgeklärt - Fakten statt Vorurteile"
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            loading="lazy"
+          />
+          <div className="absolute top-4 left-4">
+   
+          </div>
+        </div>
+        
+        {/* Content */}
+        <div className="p-6">
+          <div className="flex items-center gap-2 mb-3">
+            <Lightbulb className="w-5 h-5 text-yellow-600" />
+            <span className="text-sm font-semibold text-yellow-600 uppercase">Mythen & Fakten</span>
+          </div>
+          
+          <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-yellow-600 transition-colors">
+            Die 10 größten E-Auto Mythen
+          </h3>
+          
+          <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+            Reichweitenangst, explodierende Batterien, Umweltsünde? Wir räumen mit den hartnäckigsten 
+            Vorurteilen auf und zeigen die wissenschaftlich belegten Fakten.
+          </p>
+          
+          {/* Meta Info */}
+          <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+            <div className="flex items-center gap-1">
+
+
+            </div>
+            <span className="text-yellow-600 font-semibold group-hover:underline flex items-center gap-1">
+              Weiterlesen <ArrowRight className="w-3 h-3" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    {/* Artikel Card 2 - LADEZEIT (NEU!) */}
+    <a href="/ratgeber/ladezeit" className="group">
+      <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+        {/* Artikel Bild */}
+        <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-500 overflow-hidden">
+          <img 
+            src="/images/ratgeber/elektroauto-laden-ladezeit-hero.jpg"
+            alt="Wie lange lädt ein E-Auto? Ladezeiten-Guide 2025"
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            loading="lazy"
+          />
+          <div className="absolute top-4 left-4">
 
           </div>
-        </section>
+          <div className="absolute top-4 right-4">
+ 
+          </div>
+        </div>
+        
+        {/* Content */}
+        <div className="p-6">
+          <div className="flex items-center gap-2 mb-3">
+            <Zap className="w-5 h-5 text-blue-600" />
+            <span className="text-sm font-semibold text-blue-600 uppercase">Fakten & Technik</span>
+          </div>
+          
+          <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors">
+            Wie lange lädt ein E-Auto?
+          </h3>
+          
+          <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+            Von 20 Minuten bis 24 Stunden – alle Ladezeiten im Vergleich. Steckdose, Wallbox, Schnellladen + Formel zur Berechnung.
+          </p>
+          
+          {/* Meta Info */}
+          <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+            <div className="flex items-center gap-1">
+  
+            </div>
+            <span className="text-blue-600 font-semibold group-hover:underline flex items-center gap-1">
+              Weiterlesen <ArrowRight className="w-3 h-3" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </a>
 
+    {/* Platz für 3. Artikel in dieser Kategorie (später) */}
+
+  </div>
+</section>
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl p-8 md:p-12 text-center text-white shadow-xl">
           <Zap className="w-16 h-16 mx-auto mb-6 opacity-90" />
