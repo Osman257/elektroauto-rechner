@@ -1,34 +1,13 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Zap } from 'lucide-react';
+import Header from '../components/Header';
 
 export default function ImpressumPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="/start" className="flex items-center gap-3 hover:opacity-80 hover:scale-105 transition-all duration-200">
-            <Zap className="w-8 h-8 text-blue-600" />
-            <h1 className="text-2xl font-bold text-gray-800">e-Autowelt</h1>
-          </a>
-          <nav className="flex gap-8">
-            <a 
-              href="/rechner" 
-              className="relative text-lg font-medium text-gray-700 hover:text-blue-600 transition-all duration-200 pb-1 group"
-            >
-              e-Auto Rechner
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
-            </a>
-            <a 
-              href="/informationen" 
-              className="relative text-lg font-medium text-gray-700 hover:text-blue-600 transition-all duration-200 pb-1 group"
-            >
-              Ratgeber
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
-            </a>
-          </nav>
-        </div>
-      </header>
+      <Header activeTab="impressum" />
 
       {/* Spacer for fixed header */}
       <div className="h-20"></div>

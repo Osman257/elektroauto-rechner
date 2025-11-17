@@ -1,10 +1,16 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Lightbulb, XCircle, CheckCircle, Snowflake, Battery, DollarSign, Leaf, AlertTriangle, Zap, ArrowLeft, Calculator } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function MythenPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>10 Elektroauto Mythen aufgeklärt - Fakten statt Vorurteile | e-Autowelt</title>
+        <meta name="description" content="10 größte Elektroauto Mythen aufgeklärt: Reichweite, Batterie, Umwelt - wir zeigen wissenschaftlich belegte Fakten statt Vorurteile!" />
+      </Helmet>
       {/* Wiederverwendbarer Header */}
       <Header activeTab="ratgeber" />
 
@@ -28,7 +34,6 @@ export default function MythenPage() {
             <img 
               src="/images/ratgeber/elektroauto-mythen-hero.jpg"
               alt="Elektroauto Mythen aufgeklärt - Fakten statt Vorurteile 2025"
-              title="Die 10 größten Elektroauto Mythen im Faktencheck"
               className="w-full h-full object-cover opacity-90"
               loading="eager"
             />
@@ -106,7 +111,6 @@ export default function MythenPage() {
                 <img 
                   src="/images/ratgeber/elektroauto-reichweiten-vergleich-2025.jpg"
                   alt="Elektroauto Reichweiten Vergleich 2025: Moderne E-Autos erreichen 350-600 km Reichweite"
-                  title="Reichweiten moderner Elektroautos im Vergleich"
                   className="w-full h-auto"
                   loading="lazy"
                 />
@@ -168,7 +172,6 @@ export default function MythenPage() {
                 <img 
                   src="/images/ratgeber/elektroauto-brand-statistik-vergleich.jpg"
                   alt="Elektroauto vs Verbrenner Brand-Statistik: E-Autos brennen 10x seltener"
-                  title="Brand-Statistik E-Auto vs Verbrenner - Der Faktencheck"
                   className="w-full h-auto"
                   loading="lazy"
                 />
@@ -233,7 +236,6 @@ export default function MythenPage() {
                 <img 
                   src="/images/ratgeber/elektroauto-co2-bilanz-lebenszyklus.jpg"
                   alt="CO2-Bilanz E-Auto vs Verbrenner über Lebenszyklus: E-Auto 30-50% weniger Emissionen"
-                  title="Lebenszyklus CO2-Bilanz Elektroauto vs Verbrenner"
                   className="w-full h-auto"
                   loading="lazy"
                 />
@@ -617,7 +619,6 @@ export default function MythenPage() {
                 <img 
                   src="/images/ratgeber/elektroauto-kosten-vergleich-verbrenner.jpg"
                   alt="Elektroauto Gesamtkosten vs Verbrenner: 5.000-10.000€ Ersparnis über 8 Jahre"
-                  title="Total Cost of Ownership: E-Auto vs Verbrenner Kostenvergleich"
                   className="w-full h-auto"
                   loading="lazy"
                 />

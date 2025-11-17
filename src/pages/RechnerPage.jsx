@@ -1,4 +1,5 @@
 import React, { useState, useMemo } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Droplets, Zap, Euro, TrendingDown, Leaf, PiggyBank, Gauge} from 'lucide-react';
 import Header from '../components/Header';
 
@@ -103,6 +104,11 @@ export default function ElektroAutoRechner() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
       {/* Header */}
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>Elektroauto Kostenrechner 2025 - E-Auto vs Verbrenner | e-Autowelt</title>
+        <meta name="description" content="Kostenloser Elektroauto Rechner: Vergleichen Sie die Kosten von E-Auto und Verbrenner über die Nutzungsdauer. Anschaffung, Betrieb, Wartung, Steuern - alle Kosten auf einen Blick!" />
+      </Helmet>
 {/* Header */}
       <Header activeTab="rechner" />
       <div className="h-20 md:h-24"></div>
@@ -667,7 +673,7 @@ export default function ElektroAutoRechner() {
                     <p className="text-lg font-semibold text-gray-700">Gesamt</p>
                     <p className="text-base text-gray-500">über {nutzungsdauer} Jahre</p>
                   </div>
-                  <p className={`text-3xl md:text-5xl font-bold ${berechnung.ersparnisPositiv ? 'text-green-700' : 'text-red-700'}`}>
+                  <p className={`text-3xl md:text-4xl font-bold ${berechnung.ersparnisPositiv ? 'text-green-700' : 'text-red-700'}`}>
                     {berechnung.ersparnisPositiv ? '+' : ''}{parseFloat(berechnung.ersparnis).toLocaleString('de-DE')} €
                   </p>
                 </div>
@@ -675,7 +681,7 @@ export default function ElektroAutoRechner() {
                 {/* Jährlich */}
                 <div className="flex justify-between items-center bg-white rounded-lg p-6">
                   <p className="text-lg font-semibold text-gray-700">Jährlich</p>
-                  <p className={`text-3xl md:text-5xl font-bold ${berechnung.ersparnisPositiv ? 'text-green-700' : 'text-red-700'}`}>
+                  <p className={`text-3xl md:text-4xl font-bold ${berechnung.ersparnisPositiv ? 'text-green-700' : 'text-red-700'}`}>
                     {berechnung.ersparnisPositiv ? '+' : ''}{parseFloat(berechnung.ersparnisProJahr).toLocaleString('de-DE')} €
                   </p>
                 </div>
@@ -683,7 +689,7 @@ export default function ElektroAutoRechner() {
                 {/* Monatlich */}
                 <div className="flex justify-between items-center bg-white rounded-lg p-6">
                   <p className="text-lg font-semibold text-gray-700">Monatlich</p>
-                  <p className={`text-3xl md:text-5xl font-bold ${berechnung.ersparnisPositiv ? 'text-green-700' : 'text-red-700'}`}>
+                  <p className={`text-3xl md:text-4xl font-bold ${berechnung.ersparnisPositiv ? 'text-green-700' : 'text-red-700'}`}>
                     {berechnung.ersparnisPositiv ? '+' : ''}{parseFloat(berechnung.ersparnisProMonat).toLocaleString('de-DE')} €
                   </p>
                 </div>

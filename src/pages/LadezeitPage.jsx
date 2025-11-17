@@ -1,10 +1,16 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { ArrowLeft, Zap, Clock, Battery, TrendingUp, Calculator, CheckCircle, AlertTriangle, Home, Gauge } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function LadezeitPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>Wie lange lädt ein E-Auto? Ladezeiten-Guide 2025 | e-Autowelt</title>
+        <meta name="description" content="Wie lange lädt ein E-Auto? Von 20 Min bis 24h - alle Ladezeiten im Vergleich. Steckdose, Wallbox, Schnellladen + Berechnungsformel erklärt!" />
+      </Helmet>
       {/* Header */}
       <Header activeTab="ratgeber" />
 
@@ -30,7 +36,6 @@ export default function LadezeitPage() {
             <img 
               src="/images/ratgeber/elektroauto-laden-ladezeit-hero.jpg"
               alt="Elektroauto wird an Schnellladestation geladen - Ladezeiten im Vergleich"
-              title="Wie lange lädt ein E-Auto? Kompletter Guide 2025"
               className="w-full h-full object-cover opacity-90"
               loading="eager"
             />
@@ -158,7 +163,6 @@ export default function LadezeitPage() {
                 <img 
                   src="/images/ratgeber/elektroauto-ladezeiten-vergleich.jpg"
                   alt="Ladezeiten-Vergleich Elektroauto: Steckdose vs Wallbox vs Schnellladen"
-                  title="E-Auto Ladezeiten im direkten Vergleich"
                   className="w-full h-auto"
                   loading="lazy"
                 />
@@ -312,7 +316,6 @@ export default function LadezeitPage() {
                   <img 
                     src="/images/ratgeber/elektroauto-schnellladen-hpc.jpg"
                     alt="Elektroauto an High Power Charging Station (HPC) - Schnellladen mit 350 kW"
-                    title="HPC Schnellladen: In 20 Minuten zu 80% Ladung"
                     className="w-full h-auto"
                     loading="lazy"
                   />

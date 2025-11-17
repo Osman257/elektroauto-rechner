@@ -1,10 +1,16 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { BookOpen, ShoppingCart, Lightbulb, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function RatgeberPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
+            {/* SEO Meta Tags */}
+      <Helmet>
+        <title>Elektroauto Ratgeber 2025 - Kaufberatung, Kosten & Tipps | e-Autowelt</title>
+        <meta name="description" content="Umfassender Elektroauto Ratgeber: Kaufberatung, Kosten, THG-Quote, Mythen aufgeklärt. Wissenschaftlich fundiert & praxisnah. Ihr Weg zum E-Auto!" />
+      </Helmet>
       {/* Header */}
       <Header activeTab="ratgeber" />
       <div className="h-20 md:h-24"></div>
@@ -16,7 +22,6 @@ export default function RatgeberPage() {
           <img 
             src="/images/ratgeber/ratgeber-hero.jpg"
             alt="Elektroauto Ratgeber 2025 - Expertenwissen und Kaufberatung"
-            title="Alles Wissenswerte über Elektroautos"
             className="w-full h-full object-cover brightness-35"
             loading="eager"
           />
@@ -173,7 +178,7 @@ export default function RatgeberPage() {
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">
                     <DollarSign className="w-5 h-5 text-green-600" />
-                    <span className="text-sm font-semibold text-green-600 uppercase">Förderung</span>
+                    <span className="text-sm font-semibold text-green-600 uppercase">Thg-quote</span>
                   </div>
                   
                   <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-green-600 transition-colors">
@@ -229,7 +234,7 @@ export default function RatgeberPage() {
         <div className="p-6">
           <div className="flex items-center gap-2 mb-3">
             <Lightbulb className="w-5 h-5 text-yellow-600" />
-            <span className="text-sm font-semibold text-yellow-600 uppercase">Mythen & Fakten</span>
+            <span className="text-sm font-semibold text-yellow-600 uppercase">Mythen</span>
           </div>
           
           <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-yellow-600 transition-colors">
@@ -278,7 +283,7 @@ export default function RatgeberPage() {
         <div className="p-6">
           <div className="flex items-center gap-2 mb-3">
             <Zap className="w-5 h-5 text-blue-600" />
-            <span className="text-sm font-semibold text-blue-600 uppercase">Fakten & Technik</span>
+            <span className="text-sm font-semibold text-blue-600 uppercase">Ladezeit</span>
           </div>
           
           <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Zap, Calculator, BookOpen, TrendingDown, Leaf, Euro } from 'lucide-react';
 import Header from '../components/Header';
 
@@ -12,13 +13,15 @@ export default function StartPage() {
       {/* Hero Section with Image */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 mt-8 mb-8 md:mt-0 md:mb-20">
         <div className="relative h-[650px] md:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+               {/* SEO Meta Tags */}
+      <Helmet>
+        <title>Elektroauto Kostenrechner 2025 - E-Auto vs Verbrenner | e-Autowelt</title>
+        <meta name="description" content="Kostenloser Elektroauto Rechner: Vergleichen Sie die Kosten von E-Auto und Verbrenner über die Nutzungsdauer. Anschaffung, Betrieb, Wartung, Steuern - alle Kosten auf einen Blick!" />
+      </Helmet>
           {/* Hero Image */}
           <img 
             src="/images/ratgeber/hero-elektroauto-ladestation.jpg"
             alt="Modernes Elektroauto an Ladestation - Kostenvergleich und Nachhaltigkeit"
-            title="Elektroauto Kostenrechner - Finden Sie heraus ob sich ein E-Auto lohnt"
-            meta name="description" content="Kostenloser Elektroauto Rechner: Vergleichen Sie E-Auto vs Verbrenner Kosten über die gesamte Laufzeit. Anschaffung, Betrieb, Wartung, Steuern - alle Kosten auf einen Blick!"
-
             className="w-full h-full object-cover brightness-9"
             loading="eager"
           />
@@ -85,6 +88,9 @@ export default function StartPage() {
 
       {/* Content Section */}
       <div className="max-w-6xl mx-auto px-4 md:px-8 pt-8 md:pt-0">
+                        <h2 className="drop-shadow-2xl text-2xl md:text-4xl lg:text-5xl font-bold text-black mb-6 leading-tight">
+                  Kostenrechner für Elektroautos
+                </h2>
         {/* Features Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">
           {/* Feature 1 */}
@@ -123,7 +129,7 @@ export default function StartPage() {
 
         {/* Stats Section */}
         <div className="bg-white rounded-2xl p-12 shadow-xl mb-20">
-          <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">Warum Elektroauto?</h3>
+          <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">Vorteile von Elektroautos</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-5xl font-bold text-green-600 mb-2">40-50%</div>
