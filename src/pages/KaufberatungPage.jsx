@@ -41,7 +41,7 @@ export default function KaufberatungPage() {
                   <ShoppingCart className="w-6 h-6 md:w-8 md:h-8" />
                 </div>
                 <span className="text-xs md:text-sm bg-white/30 backdrop-blur-md px-3 py-1 rounded-full font-semibold shadow-lg">📖 8 Min. Lesezeit</span>
-                <span className="text-xs md:text-sm bg-white/30 backdrop-blur-md px-3 py-1 rounded-full font-semibold shadow-lg">📅 Januar 2025</span>
+                <span className="text-xs md:text-sm bg-white/30 backdrop-blur-md px-3 py-1 rounded-full font-semibold shadow-lg">Aktualisiert am 1. September 2025</span>
               </div>
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight">
                 Elektroauto Kaufberatung 2025: Der komplette Guide
