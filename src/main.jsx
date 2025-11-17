@@ -4,8 +4,12 @@ import App from './App';
 import './index.css';
 import { HelmetProvider } from 'react-helmet-async';  // ← NEUE Zeile ganz oben hinzufügen
 
+const helmetContext = {};
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+    <HelmetProvider context={helmetContext}>
+      <App />
+    </HelmetProvider>
+  </React.StrictMode>,
+)
