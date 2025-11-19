@@ -15,7 +15,7 @@ export default function DatenschutzPage() {
         <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
           <div className="flex items-center gap-4 mb-8">
             <Shield className="w-12 h-12 text-blue-600" />
-            <h2 className="text-4xl font-bold text-gray-800">Datenschutzerklärung</h2>
+            <h1 className="text-3xl font-bold text-gray-800">Datenschutzerklärung</h1>
           </div>
           
           <div className="text-lg text-gray-700 space-y-8">

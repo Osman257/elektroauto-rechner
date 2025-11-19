@@ -1,16 +1,21 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Lightbulb, XCircle, CheckCircle, Snowflake, Battery, DollarSign, Leaf, AlertTriangle, Zap, ArrowLeft, Calculator } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function MythenPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>10 Elektroauto Mythen aufgeklärt - Fakten statt Vorurteile | e-Autowelt</title>
-        <meta name="description" content="10 größte Elektroauto Mythen aufgeklärt: Reichweite, Batterie, Umwelt - wir zeigen wissenschaftlich belegte Fakten statt Vorurteile!" />
-      </Helmet>
+<SEO
+  title="10 Elektroauto Mythen aufgeklärt - Fakten statt Vorurteile | e-Autowelt"
+  description="10 größte Elektroauto Mythen aufgeklärt: Reichweite, Batterie, Umwelt - wir zeigen wissenschaftlich belegte Fakten statt Vorurteile!"
+  canonicalPath="/ratgeber/mythen"
+  keywords="elektroauto mythen, e-auto vorurteile, elektroauto fakten, e-auto wahrheit, elektroauto reichweite"
+  ogImage="/images/ratgeber/mythen-og.jpg"
+  ogType="article"
+  publishedDate="2025-01-15T10:00:00Z"
+  modifiedDate="2025-01-15T10:00:00Z"
+/>
       {/* Wiederverwendbarer Header */}
       <Header activeTab="ratgeber" />
 

@@ -1,16 +1,21 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { DollarSign, Zap, TrendingUp, CheckCircle, Users, Award, ArrowLeft, Calculator, AlertCircle, Euro } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function ThgQuotePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>THG-Quote 2025: Bis zu 400€ verdienen - Anbieter-Vergleich | e-Autowelt</title>
-        <meta name="description" content="THG-Quote 2025: Verdienen Sie bis zu 400€ jährlich mit Ihrem E-Auto. Anbieter-Vergleich, Anleitung & alle Infos zum CO2-Zertifikate verkaufen!" />
-      </Helmet>
+<SEO
+  title="THG-Quote 2025: Bis zu 400€ verdienen - Anbieter-Vergleich | e-Autowelt"
+  description="THG-Quote 2025: Verdienen Sie bis zu 400€ jährlich mit Ihrem E-Auto. Anbieter-Vergleich, Anleitung & alle Infos zum CO2-Zertifikate verkaufen!"
+  canonicalPath="/ratgeber/thg-quote"
+  keywords="thg-quote, thg-prämie, elektroauto prämie, co2-zertifikate verkaufen, thg-quote 2025, elektroauto geld verdienen"
+  ogImage="/images/ratgeber/thg-quote-og.jpg"
+  ogType="article"
+  publishedDate="2025-01-15T10:00:00Z"
+  modifiedDate="2025-01-15T10:00:00Z"
+/>
       {/* Wiederverwendbarer Header */}
       <Header activeTab="ratgeber" />
 

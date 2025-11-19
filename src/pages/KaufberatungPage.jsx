@@ -1,16 +1,21 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { ArrowLeft, Car, ShoppingCart, Battery, Zap, MapPin, Euro, TrendingUp, CheckCircle, AlertTriangle } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function KaufberatungPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>Elektroauto Kaufberatung 2025: Welches E-Auto passt zu mir? | e-Autowelt</title>
-        <meta name="description" content="Elektroauto Kaufberatung 2025: Reichweite, Ladezeiten, Modelle im Vergleich. Der komplette Guide für Ihre Entscheidung - wissenschaftlich fundiert!" />
-      </Helmet>
+<SEO
+  title="Elektroauto Kaufberatung 2025: Welches E-Auto passt zu mir? | e-Autowelt"
+  description="Elektroauto Kaufberatung 2025: Reichweite, Ladezeiten, Modelle im Vergleich. Der komplette Guide für Ihre Entscheidung - wissenschaftlich fundiert!"
+  canonicalPath="/ratgeber/kaufberatung"
+  keywords="elektroauto kaufen, e-auto kaufberatung, elektroauto vergleich, welches e-auto kaufen, e-auto modelle"
+  ogImage="/images/ratgeber/kaufberatung-og.jpg"
+  ogType="article"
+  publishedDate="2025-01-15T10:00:00Z"
+  modifiedDate="2025-01-15T10:00:00Z"
+/>
       {/* Header */}
       <Header activeTab="ratgeber" />
 
