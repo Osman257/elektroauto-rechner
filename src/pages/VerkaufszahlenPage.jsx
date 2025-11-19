@@ -42,7 +42,7 @@ export default function VerkaufszahlenPage() {
               src="/images/ratgeber/elektroauto-verkaufszahlen-deutschland-2025.jpg"
               alt="Elektroauto Verkaufszahlen Deutschland 2025 - Statistiken und Marktentwicklung"
               className="w-full h-full object-cover opacity-90"
-              loading="eager"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-white">

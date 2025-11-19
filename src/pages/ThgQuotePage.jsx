@@ -40,7 +40,7 @@ export default function ThgQuotePage() {
               src="/images/ratgeber/thg-quote-geld-verdienen-hero.jpg"
               alt="THG-Quote 2025: Bis zu 400€ Prämie für E-Auto-Besitzer verdienen"
               className="w-full h-full object-cover opacity-90"
-              loading="eager"
+              loading="lazy"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-white">
