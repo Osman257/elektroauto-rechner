@@ -1,16 +1,19 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import { BookOpen, ShoppingCart, Lightbulb, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar } from 'lucide-react';
+import SEO from '../components/SEO';
+import { BookOpen, ShoppingCart, Lightbulb, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function RatgeberPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
-            {/* SEO Meta Tags */}
-      <Helmet>
-        <title>Elektroauto Ratgeber 2025 - Kaufberatung, Kosten & Tipps | e-Autowelt</title>
-        <meta name="description" content="Umfassender Elektroauto Ratgeber: Kaufberatung, Kosten, THG-Quote, Mythen aufgeklärt. Wissenschaftlich fundiert & praxisnah. Ihr Weg zum E-Auto!" />
-      </Helmet>
+<SEO
+  title="Elektroauto Ratgeber 2025 - Kaufberatung, Kosten & Tipps | e-Autowelt"
+  description="Umfassender Elektroauto Ratgeber: Kaufberatung, Kosten, THG-Quote, Mythen aufgeklärt. Wissenschaftlich fundiert & praxisnah. Ihr Weg zum E-Auto!"
+  canonicalPath="/ratgeber"
+  keywords="elektroauto ratgeber, e-auto kaufberatung, elektroauto tipps, e-auto guide, elektromobilität"
+  ogImage="/images/og-ratgeber.jpg"
+  ogType="website"
+/>
       {/* Header */}
       <Header activeTab="ratgeber" />
       <div className="h-20 md:h-24"></div>
@@ -260,7 +263,7 @@ export default function RatgeberPage() {
       </div>
     </a>
 
-    {/* Artikel Card 2 - LADEZEIT (NEU!) */}
+    {/* Artikel Card 2 - LADEZEIT */}
     <a href="/ratgeber/ladezeit" className="group">
       <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
         {/* Artikel Bild */}
@@ -282,11 +285,11 @@ export default function RatgeberPage() {
         {/* Content */}
         <div className="p-6">
           <div className="flex items-center gap-2 mb-3">
-            <Zap className="w-5 h-5 text-blue-600" />
-            <span className="text-sm font-semibold text-blue-600 uppercase">Ladezeit</span>
+            <Zap className="w-5 h-5 text-yellow-600" />
+            <span className="text-sm font-semibold text-yellow-600 uppercase">Ladezeit</span>
           </div>
           
-          <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors">
+          <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-yellow-600 transition-colors">
             Wie lange lädt ein E-Auto?
           </h3>
           
@@ -299,7 +302,7 @@ export default function RatgeberPage() {
             <div className="flex items-center gap-1">
   
             </div>
-            <span className="text-blue-600 font-semibold group-hover:underline flex items-center gap-1">
+            <span className="text-yellow-600 font-semibold group-hover:underline flex items-center gap-1">
               Weiterlesen <ArrowRight className="w-3 h-3" />
             </span>
           </div>
@@ -307,7 +310,52 @@ export default function RatgeberPage() {
       </div>
     </a>
 
-    {/* Platz für 3. Artikel in dieser Kategorie (später) */}
+    {/* Artikel Card 3 - Verkaufszahlen (NEU!) */}
+    <a href="/ratgeber/verkaufszahlen" className="group">
+      <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+        {/* Artikel Bild */}
+        <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-500 overflow-hidden">
+          <img 
+            src="/images/ratgeber/elektroauto-verkaufszahlen-deutschland-2025.jpg"
+            alt="Wie lange lädt ein E-Auto? Ladezeiten-Guide 2025"
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+            loading="lazy"
+          />
+          <div className="absolute top-4 left-4">
+
+          </div>
+          <div className="absolute top-4 right-4">
+ 
+          </div>
+        </div>
+        
+        {/* Content */}
+        <div className="p-6">
+          <div className="flex items-center gap-2 mb-3">
+            <BarChart2 className="w-5 h-5 text-yellow-600" />
+            <span className="text-sm font-semibold text-yellow-600 uppercase">Statistik</span>
+          </div>
+          
+          <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-yellow-600 transition-colors">
+            Elektroauto Verkaufszahlen in Deutschland (2025)
+          </h3>
+          
+          <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                Der deutsche Elektroauto-Markt entwickelt sich rasant: Mit über 524.000 Neuzulassungen im Jahr 2024 und einem Marktanteil von 18,4% markiert die Elektromobilität einen entscheidenden Wendepunkt in der Automobilindustrie. Hier finden Sie alle aktuellen Verkaufszahlen, Marktanteile und Prognosen für 2025.
+          </p>
+          
+          {/* Meta Info */}
+          <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+            <div className="flex items-center gap-1">
+  
+            </div>
+            <span className="text-yellow-600 font-semibold group-hover:underline flex items-center gap-1">
+              Weiterlesen <ArrowRight className="w-3 h-3" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </a>
 
   </div>
 </section>

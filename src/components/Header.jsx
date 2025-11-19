@@ -34,6 +34,8 @@ export default function Header({ activeTab = '' }) {
       articles: [
         { title: 'Die 10 größten Mythen', url: '/ratgeber/mythen' },
         { title: 'Wie lange lädt ein E-Auto?', url: '/ratgeber/ladezeit' },
+        { title: 'Elektroauto Verkaufszahlen Deutschland 2025', url: '/ratgeber/verkaufszahlen' },
+
       ]
     }
   };

@@ -1,11 +1,20 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { Zap, Calculator, BookOpen, TrendingDown, Leaf, Euro } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function StartPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
+       {/* SEO Component */}
+      <SEO
+        title="Elektroauto Kostenrechner 2025 - E-Auto vs Verbrenner | e-Autowelt"
+        description="Kostenloser Elektroauto Rechner: Vergleichen Sie E-Auto vs Verbrenner über 8 Jahre. Anschaffung, Betrieb, Wartung, Steuern - alle Kosten auf einen Blick!"
+        canonicalPath="/"
+        keywords="elektroauto rechner, e-auto kosten, kostenvergleich elektroauto, e-auto vs verbrenner"
+        ogImage="/images/og-rechner.jpg"
+        ogType="website"
+      />
       {/* Header */}
       <Header activeTab="start" />
       <div className="h-20 md:h-24"></div>
@@ -13,11 +22,6 @@ export default function StartPage() {
       {/* Hero Section with Image */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 mt-8 mb-8 md:mt-0 md:mb-20">
         <div className="relative h-[650px] md:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
-               {/* SEO Meta Tags */}
-      <Helmet>
-        <title>Elektroauto Kostenrechner 2025 - E-Auto vs Verbrenner | e-Autowelt</title>
-        <meta name="description" content="Kostenloser Elektroauto Rechner: Vergleichen Sie die Kosten von E-Auto und Verbrenner über die Nutzungsdauer. Anschaffung, Betrieb, Wartung, Steuern - alle Kosten auf einen Blick!" />
-      </Helmet>
           {/* Hero Image */}
           <img 
             src="/images/ratgeber/hero-elektroauto-ladestation.jpg"
@@ -88,8 +92,8 @@ export default function StartPage() {
 
       {/* Content Section */}
       <div className="max-w-6xl mx-auto px-4 md:px-8 pt-8 md:pt-0">
-                        <h2 className="drop-shadow-2xl text-2xl md:text-4xl lg:text-5xl font-bold text-black mb-6 leading-tight">
-                  Kostenrechner für Elektroautos
+                        <h2 className="text-center drop-shadow-2xl text-2xl md:text-4xl lg:text-5xl font-bold text-black mb-6 leading-tight">
+                  Elektromobilität verstehen: Ratgeber & Rechner für Einsteiger und Profis
                 </h2>
         {/* Features Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-20">

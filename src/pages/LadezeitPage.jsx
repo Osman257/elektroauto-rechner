@@ -1,16 +1,21 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 import { ArrowLeft, Zap, Clock, Battery, TrendingUp, Calculator, CheckCircle, AlertTriangle, Home, Gauge } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function LadezeitPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>Wie lange lädt ein E-Auto? Ladezeiten-Guide 2025 | e-Autowelt</title>
-        <meta name="description" content="Wie lange lädt ein E-Auto? Von 20 Min bis 24h - alle Ladezeiten im Vergleich. Steckdose, Wallbox, Schnellladen + Berechnungsformel erklärt!" />
-      </Helmet>
+<SEO
+  title="Wie lange lädt ein E-Auto? Ladezeiten-Guide 2025 | e-Autowelt"
+  description="Wie lange lädt ein E-Auto? Von 20 Min bis 24h - alle Ladezeiten im Vergleich. Steckdose, Wallbox, Schnellladen + Berechnungsformel erklärt!"
+  canonicalPath="/ratgeber/ladezeit"
+  keywords="elektroauto ladezeit, e-auto laden, wie lange lädt elektroauto, wallbox ladezeit, schnellladen, ladegeschwindigkeit"
+  ogImage="/images/ratgeber/ladezeit-og.jpg"
+  ogType="article"
+  publishedDate="2025-01-15T10:00:00Z"
+  modifiedDate="2025-01-15T10:00:00Z"
+/>
       {/* Header */}
       <Header activeTab="ratgeber" />
 

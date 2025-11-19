@@ -14,7 +14,7 @@ export default function ImpressumPage() {
 
       <div className="max-w-4xl mx-auto px-4 md:px-8 py-12">
         <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-8">Impressum</h2>
+          <h1 className="text-3xl font-bold text-gray-800 mb-8">Impressum</h1>
           
           <div className="text-lg text-gray-700 space-y-6">
             <div>
