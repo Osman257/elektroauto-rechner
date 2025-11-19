@@ -23,10 +23,10 @@ export default function RatgeberPage() {
         <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
           {/* Hero Image */}
           <img 
-            src="/images/ratgeber/ratgeber-hero.jpg"
+            src="/images/ratgeber/ratgeber-hero.webp"
             alt="Elektroauto Ratgeber 2025 - Expertenwissen und Kaufberatung"
             className="w-full h-full object-cover brightness-35"
-            loading="eager"
+            loading="lazy"
           />
           
           {/* Gradient Overlay */}

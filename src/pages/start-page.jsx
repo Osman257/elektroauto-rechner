@@ -24,10 +24,10 @@ export default function StartPage() {
         <div className="relative h-[650px] md:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
           {/* Hero Image */}
           <img 
-            src="/images/ratgeber/hero-elektroauto-ladestation.jpg"
+            src="/images/ratgeber/hero-elektroauto-ladestation.webp"
             alt="Modernes Elektroauto an Ladestation - Kostenvergleich und Nachhaltigkeit"
             className="w-full h-full object-cover brightness-9"
-            loading="eager"
+            loading="lazy"
           />
           
           {/* Gradient Overlay */}
