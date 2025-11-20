@@ -6,6 +6,7 @@ import RatgeberPage from "./pages/RatgeberPage";
 import KaufberatungPage from "./pages/KaufberatungPage";
 import MythenPage from "./pages/MythenPage";
 import ThgQuotePage from "./pages/ThgQuotePage";
+import WertverlustPage from './pages/WertverlustPage';
 import VerkaufszahlenPage from "./pages/VerkaufszahlenPage";
 import LadezeitPage from './pages/LadezeitPage';
 import ImpressumPage from "./pages/impressum-page";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/ratgeber/mythen" element={<MythenPage />} />
         <Route path="/ratgeber/thg-quote" element={<ThgQuotePage />} />
         <Route path="/ratgeber/ladezeit" element={<LadezeitPage />} />
+        <Route path="/ratgeber/wertverlust" element={<WertverlustPage />} />
         <Route path="/ratgeber/verkaufszahlen" element={<VerkaufszahlenPage />} />
 
 

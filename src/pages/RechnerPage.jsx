@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
-import { Helmet } from 'react-helmet-async';
-import { Droplets, Zap, Euro, TrendingDown, Leaf, PiggyBank, Gauge} from 'lucide-react';
+import SEO from '../components/SEO';
+import { Droplets, Zap, Euro, Calculator, CheckCircle, ArrowDown, TrendingDown, Leaf, PiggyBank, Gauge} from 'lucide-react';
 import Header from '../components/Header';
 
 
@@ -104,28 +104,85 @@ export default function ElektroAutoRechner() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
       {/* Header */}
-      {/* SEO Meta Tags */}
-      <Helmet>
-        <title>Elektroauto Kostenrechner 2025 - E-Auto vs Verbrenner | e-Autowelt</title>
-        <meta name="description" content="Kostenloser Elektroauto Rechner: Vergleichen Sie die Kosten von E-Auto und Verbrenner über die Nutzungsdauer. Anschaffung, Betrieb, Wartung, Steuern - alle Kosten auf einen Blick!" />
-      </Helmet>
+            <SEO
+        title="Elektroauto Kostenrechner 2025 - E-Auto vs Verbrenner | e-Autowelt"
+        description="Kostenloser Elektroauto Rechner: Vergleichen Sie die Kosten von E-Auto und Verbrenner über die Nutzungsdauer. Anschaffung, Betrieb, Wartung, Steuern - alle Kosten auf einen Blick!"
+        canonicalPath="/ratgeber/rechner"
+        keywords="elektroauto rechner, e-auto kosten, e-auto kostenrechner, e-auto kostenvergleich, e-auto reichweitenrechner"
+        ogImage="/images/ratgeber/rechner-og.jpg"
+        ogType="rechner"
+        publishedDate="2025-01-19T10:00:00Z"
+        modifiedDate="2025-01-19T10:00:00Z"
+      />
 {/* Header */}
       <Header activeTab="rechner" />
       <div className="h-20 md:h-24"></div>
       {/* Spacer for fixed header */}
-      <div className="h-20"></div>
+      <div className="max-w-7xl mx-auto px-4 md:px-8 mt-8 mb-8 md:mt-0 md:mb-20">
+  
+{/* IMPROVED HERO - FIXED */}
+<div className="relative h-[420px] md:h-[480px] rounded-2xl overflow-hidden shadow-2xl">
+  
+  {/* Background Image */}
+  <div className="absolute inset-0">
+    <img 
+      src="/images/ratgeber/elektroauto-rechner-hero.webp"
+      alt="Elektroauto Kostenrechner 2025"
+      className="w-full h-full object-cover opacity-95"
+      loading="lazy"
+    />
+    {/* Overlays */}
+    <div className="absolute inset-0 bg-gradient-to-r from-blue-950/95 via-slate-900/80 to-blue-950/70"></div>
+    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-slate-900/40"></div>
+  </div>
 
-      <div className="max-w-6xl mx-auto px-3 md:px-4">
-        {/* SEO: H1 Headline */}
-        <div className="text-center mb-6 md:mb-8 px-4">
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4 md:mb-6">
-            Elektroauto Kostenrechner 2025
-          </h1>
-          <p className="text-sm md:text-xl text-gray-600 max-w-3xl mx-auto">
-            Vergleichen Sie die Gesamtkosten eines Elektroautos mit einem Verbrenner über die Nutzungsdauer.
-          </p>
+  {/* Animated Blobs */}
+  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+    <div className="absolute bottom-20 left-20 w-96 h-96 bg-green-500/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+  </div>
+
+  {/* Content */}
+  <div className="relative max-w-7xl mx-auto px-4 py-8 md:py-16">
+    <div className="max-w-4xl mx-auto text-center">
+      
+      {/* Badge */}
+      <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full mb-6 border border-white/20 shadow-xl">
+        <Calculator className="w-4 h-4 text-green-300" />
+        <span className="text-sm font-semibold text-white">Kostenloser Rechner 2025</span>
+      </div>
+      
+      {/* Headline */}
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
+        <span className="text-white">Elektroauto</span>
+        <br />
+        <span className="bg-gradient-to-r from-green-300 via-blue-300 to-green-400 bg-clip-text text-transparent drop-shadow-lg">
+          Kostenrechner
+        </span>
+      </h1>
+      
+      {/* Subheadline */}
+      <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-100 mb-8 leading-relaxed max-w-3xl mx-auto">
+        Vergleichen Sie <strong className="text-green-300">alle Kosten</strong> von Elektro- und Verbrennerfahrzeugen 
+        über <strong className="text-blue-300">die Nutzungsdauer</strong> – transparent & wissenschaftlich fundiert
+      </p>
+
+      {/* Trust Badges */}
+      <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10">
+        <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+          <CheckCircle className="w-5 h-5 text-green-300" />
+          <span className="text-white/90 text-sm md:text-base whitespace-nowrap">100% Kostenlos</span>
         </div>
+        <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
+          <CheckCircle className="w-5 h-5 text-blue-300" />
+          <span className="text-white/90 text-sm md:text-base whitespace-nowrap">Keine Anmeldung</span>
+        </div>
+      </div>
 
+      
+    </div>
+  </div>
+</div>
         {/* Rechner Section */}
         <div id="rechner" className="bg-white rounded-2xl shadow-2xl p-4 md:p-8 mb-4 md:mb-6">
           {/* Allgemeine Parameter */}

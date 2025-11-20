@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '../components/SEO';
-import { BookOpen, ShoppingCart, Lightbulb, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar } from 'lucide-react';
+import { BookOpen, ShoppingCart, Lightbulb, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function RatgeberPage() {
@@ -64,9 +64,6 @@ export default function RatgeberPage() {
         <div className="mb-16">
           <div className="bg-white rounded-2xl p-8 md:p-10 shadow-lg">
             <div className="flex items-start gap-4 mb-6">
-              <div className="bg-blue-100 p-3 rounded-xl flex-shrink-0">
-                <BookOpen className="w-8 h-8 text-blue-600" />
-              </div>
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
                   Ihr kompletter E-Auto Guide
@@ -97,7 +94,6 @@ export default function RatgeberPage() {
         {/* Kaufberatung Section */}
         <section id="kaufberatung" className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 flex items-center gap-3">
-            <ShoppingCart className="w-8 h-8 text-blue-600" />
             Kaufberatung & Modelle
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
@@ -113,9 +109,6 @@ export default function RatgeberPage() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
                   />
-                  <div className="absolute top-4 left-4">
-   
-                  </div>
                 </div>
                 
                 {/* Content */}
@@ -153,12 +146,11 @@ export default function RatgeberPage() {
         {/* Kosten & Förderung Section */}
         <section id="kosten" className="mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 flex items-center gap-3">
-            <DollarSign className="w-8 h-8 text-green-600" />
             Kosten, Förderung & Sparen
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             
-            {/* Artikel Card 2 - THG-Quote */}
+            {/* Artikel Card 1 - THG-Quote */}
             <a href="/ratgeber/thg-quote" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
                 {/* Artikel Bild */}
@@ -169,12 +161,6 @@ export default function RatgeberPage() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
                   />
-                  <div className="absolute top-4 left-4">
-             
-                  </div>
-                  <div className="absolute top-4 right-4">
-              
-                  </div>
                 </div>
                 
                 {/* Content */}
@@ -206,159 +192,185 @@ export default function RatgeberPage() {
               </div>
             </a>
 
+            {/* Artikel Card 2 - Wertverlust */}
+            <a href="/ratgeber/wertverlust" className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+                {/* Artikel Bild */}
+                <div className="relative h-48 bg-gradient-to-br from-red-500 to-orange-500 overflow-hidden">
+                  <img 
+                    src="/images/ratgeber/elektroauto-wertverlust-vs-verbrenner.webp"
+                    alt="Elektroauto Wertverlust vs Verbrenner"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <TrendingDown className="w-5 h-5 text-green-600" />
+                    <span className="text-sm font-semibold text-green-600 uppercase">Wertverlust</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-green-600 transition-colors">
+                    Wertverlust bei Elektroautos
+                  </h3>
+                  
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                    Restwert-Vergleich 2025: E-Autos verlieren 38-50% in 3 Jahren, Verbrenner 29-32%. Alle Fakten, Ursachen & wertstabile Modelle.
+                  </p>
+                  
+                  {/* Meta Info */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-1">
+            
+                    </div>
+                    <span className="text-green-600 font-semibold group-hover:underline flex items-center gap-1">
+                      Weiterlesen <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
           </div>
         </section>
 
-{/* Mythen & Fakten Section */}
-<section id="technik" className="mb-16">
-  <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 flex items-center gap-3">
-    <Lightbulb className="w-8 h-8 text-yellow-600" />
-    Mythen & Fakten
-  </h2>
-  <div className="grid md:grid-cols-3 gap-6">
-    
-    {/* Artikel Card 1 - Mythen (BESTEHEND) */}
-    <a href="/ratgeber/mythen" className="group">
-      <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
-        {/* Artikel Bild */}
-        <div className="relative h-48 bg-gradient-to-br from-yellow-500 to-orange-500 overflow-hidden">
-          <img 
-            src="/images/ratgeber/elektroauto-mythen-hero.jpg"
-            alt="Elektroauto Mythen aufgeklärt - Fakten statt Vorurteile"
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-            loading="lazy"
-          />
-          <div className="absolute top-4 left-4">
-   
-          </div>
-        </div>
-        
-        {/* Content */}
-        <div className="p-6">
-          <div className="flex items-center gap-2 mb-3">
-            <Lightbulb className="w-5 h-5 text-yellow-600" />
-            <span className="text-sm font-semibold text-yellow-600 uppercase">Mythen</span>
-          </div>
-          
-          <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-yellow-600 transition-colors">
-            Die 10 größten E-Auto Mythen
-          </h3>
-          
-          <p className="text-sm text-gray-600 mb-4 line-clamp-3">
-            Reichweitenangst, explodierende Batterien, Umweltsünde? Wir räumen mit den hartnäckigsten 
-            Vorurteilen auf und zeigen die wissenschaftlich belegten Fakten.
-          </p>
-          
-          {/* Meta Info */}
-          <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
-            <div className="flex items-center gap-1">
+        {/* Mythen & Fakten Section */}
+        <section id="technik" className="mb-16">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 flex items-center gap-3">
+            Mythen & Fakten
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            
+            {/* Artikel Card 1 - Mythen (BESTEHEND) */}
+            <a href="/ratgeber/mythen" className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+                {/* Artikel Bild */}
+                <div className="relative h-48 bg-gradient-to-br from-yellow-500 to-orange-500 overflow-hidden">
+                  <img 
+                    src="/images/ratgeber/elektroauto-mythen-hero.jpg"
+                    alt="Elektroauto Mythen aufgeklärt - Fakten statt Vorurteile"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Lightbulb className="w-5 h-5 text-yellow-600" />
+                    <span className="text-sm font-semibold text-yellow-600 uppercase">Mythen</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-yellow-600 transition-colors">
+                    Die 10 größten E-Auto Mythen
+                  </h3>
+                  
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                    Reichweitenangst, explodierende Batterien, Umweltsünde? Wir räumen mit den hartnäckigsten 
+                    Vorurteilen auf und zeigen die wissenschaftlich belegten Fakten.
+                  </p>
+                  
+                  {/* Meta Info */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-1">
 
 
-            </div>
-            <span className="text-yellow-600 font-semibold group-hover:underline flex items-center gap-1">
-              Weiterlesen <ArrowRight className="w-3 h-3" />
-            </span>
-          </div>
-        </div>
-      </div>
-    </a>
+                    </div>
+                    <span className="text-yellow-600 font-semibold group-hover:underline flex items-center gap-1">
+                      Weiterlesen <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
 
-    {/* Artikel Card 2 - LADEZEIT */}
-    <a href="/ratgeber/ladezeit" className="group">
-      <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
-        {/* Artikel Bild */}
-        <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-500 overflow-hidden">
-          <img 
-            src="/images/ratgeber/elektroauto-laden-ladezeit-hero.jpg"
-            alt="Wie lange lädt ein E-Auto? Ladezeiten-Guide 2025"
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-            loading="lazy"
-          />
-          <div className="absolute top-4 left-4">
+            {/* Artikel Card 2 - LADEZEIT */}
+            <a href="/ratgeber/ladezeit" className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+                {/* Artikel Bild */}
+                <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-500 overflow-hidden">
+                  <img 
+                    src="/images/ratgeber/elektroauto-laden-ladezeit-hero.jpg"
+                    alt="Wie lange lädt ein E-Auto? Ladezeiten-Guide 2025"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Zap className="w-5 h-5 text-yellow-600" />
+                    <span className="text-sm font-semibold text-yellow-600 uppercase">Ladezeit</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-yellow-600 transition-colors">
+                    Wie lange lädt ein E-Auto?
+                  </h3>
+                  
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                    Von 20 Minuten bis 24 Stunden – alle Ladezeiten im Vergleich. Steckdose, Wallbox, Schnellladen + Formel zur Berechnung.
+                  </p>
+                  
+                  {/* Meta Info */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-1">
+          
+                    </div>
+                    <span className="text-yellow-600 font-semibold group-hover:underline flex items-center gap-1">
+                      Weiterlesen <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            {/* Artikel Card 3 - Verkaufszahlen (NEU!) */}
+            <a href="/ratgeber/verkaufszahlen" className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+                {/* Artikel Bild */}
+                <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-500 overflow-hidden">
+                  <img 
+                    src="/images/ratgeber/elektroauto-verkaufszahlen-deutschland-2025.jpg"
+                    alt="Elektroauto Verkaufszahlen Deutschland 2025"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <BarChart2 className="w-5 h-5 text-yellow-600" />
+                    <span className="text-sm font-semibold text-yellow-600 uppercase">Statistik</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-yellow-600 transition-colors">
+                    Elektroauto Verkaufszahlen in Deutschland (2025)
+                  </h3>
+                  
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                    Der deutsche Elektroauto-Markt entwickelt sich rasant: Mit über 524.000 Neuzulassungen im Jahr 2024 und einem Marktanteil von 18,4% markiert die Elektromobilität einen entscheidenden Wendepunkt in der Automobilindustrie. Hier finden Sie alle aktuellen Verkaufszahlen, Marktanteile und Prognosen für 2025.
+                  </p>
+                  
+                  {/* Meta Info */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-1">
+          
+                    </div>
+                    <span className="text-yellow-600 font-semibold group-hover:underline flex items-center gap-1">
+                      Weiterlesen <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
 
           </div>
-          <div className="absolute top-4 right-4">
- 
-          </div>
-        </div>
-        
-        {/* Content */}
-        <div className="p-6">
-          <div className="flex items-center gap-2 mb-3">
-            <Zap className="w-5 h-5 text-yellow-600" />
-            <span className="text-sm font-semibold text-yellow-600 uppercase">Ladezeit</span>
-          </div>
-          
-          <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-yellow-600 transition-colors">
-            Wie lange lädt ein E-Auto?
-          </h3>
-          
-          <p className="text-sm text-gray-600 mb-4 line-clamp-3">
-            Von 20 Minuten bis 24 Stunden – alle Ladezeiten im Vergleich. Steckdose, Wallbox, Schnellladen + Formel zur Berechnung.
-          </p>
-          
-          {/* Meta Info */}
-          <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
-            <div className="flex items-center gap-1">
-  
-            </div>
-            <span className="text-yellow-600 font-semibold group-hover:underline flex items-center gap-1">
-              Weiterlesen <ArrowRight className="w-3 h-3" />
-            </span>
-          </div>
-        </div>
-      </div>
-    </a>
+        </section>
 
-    {/* Artikel Card 3 - Verkaufszahlen (NEU!) */}
-    <a href="/ratgeber/verkaufszahlen" className="group">
-      <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
-        {/* Artikel Bild */}
-        <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-500 overflow-hidden">
-          <img 
-            src="/images/ratgeber/elektroauto-verkaufszahlen-deutschland-2025.jpg"
-            alt="Wie lange lädt ein E-Auto? Ladezeiten-Guide 2025"
-            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-            loading="lazy"
-          />
-          <div className="absolute top-4 left-4">
-
-          </div>
-          <div className="absolute top-4 right-4">
- 
-          </div>
-        </div>
-        
-        {/* Content */}
-        <div className="p-6">
-          <div className="flex items-center gap-2 mb-3">
-            <BarChart2 className="w-5 h-5 text-yellow-600" />
-            <span className="text-sm font-semibold text-yellow-600 uppercase">Statistik</span>
-          </div>
-          
-          <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-yellow-600 transition-colors">
-            Elektroauto Verkaufszahlen in Deutschland (2025)
-          </h3>
-          
-          <p className="text-sm text-gray-600 mb-4 line-clamp-3">
-                Der deutsche Elektroauto-Markt entwickelt sich rasant: Mit über 524.000 Neuzulassungen im Jahr 2024 und einem Marktanteil von 18,4% markiert die Elektromobilität einen entscheidenden Wendepunkt in der Automobilindustrie. Hier finden Sie alle aktuellen Verkaufszahlen, Marktanteile und Prognosen für 2025.
-          </p>
-          
-          {/* Meta Info */}
-          <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
-            <div className="flex items-center gap-1">
-  
-            </div>
-            <span className="text-yellow-600 font-semibold group-hover:underline flex items-center gap-1">
-              Weiterlesen <ArrowRight className="w-3 h-3" />
-            </span>
-          </div>
-        </div>
-      </div>
-    </a>
-
-  </div>
-</section>
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl p-8 md:p-12 text-center text-white shadow-xl">
           <Zap className="w-16 h-16 mx-auto mb-6 opacity-90" />
@@ -373,11 +385,9 @@ export default function RatgeberPage() {
             href="/rechner"
             className="inline-flex items-center gap-3 bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-200"
           >
-
             Jetzt Kosten berechnen
           </a>
         </div>
-
       </div>
 
       {/* Footer */}
