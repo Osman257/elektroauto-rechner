@@ -21,6 +21,8 @@ export default function Header({ activeTab = '' }) {
       title: 'Kaufberatung',
       articles: [
         { title: 'Kaufberatung 2025', url: '/ratgeber/kaufberatung' },
+        { title: 'Wertverlust E-Autos', url: '/ratgeber/wertverlust' },
+
       ]
     },
     kosten: {
