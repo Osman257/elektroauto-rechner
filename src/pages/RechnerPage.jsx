@@ -121,7 +121,7 @@ export default function ElektroAutoRechner() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 mt-8 mb-8 md:mt-0 md:mb-20">
   
 {/* IMPROVED HERO - FIXED */}
-<div className="relative h-[420px] md:h-[480px] rounded-2xl overflow-hidden shadow-2xl">
+<div className="relative h-[450px] md:h-[480px] rounded-2xl overflow-hidden shadow-2xl">
   
   {/* Background Image */}
   <div className="absolute inset-0">
@@ -186,9 +186,9 @@ export default function ElektroAutoRechner() {
         {/* Rechner Section */}
         <div id="rechner" className="bg-white rounded-2xl shadow-2xl p-4 md:p-8 mb-4 md:mb-6">
           {/* Allgemeine Parameter */}
-          <div className="gap-2 bg-gray-50 rounded-xl p-4 md:p-6 mb-4 md:mb-8">
+          <div className="gap-2 bg-green-50 rounded-xl p-4 md:p-6 mb-4 md:mb-8">
             <div className="flex items-center gap-2 mb-4">
-  <Gauge className="w-6 h-6 text-orange-600" />
+  <Gauge className="w-6 h-6 text-green-600" />
   <h3 className="text-lg md:text-xl font-bold text-gray-800">Allgemeine Parameter</h3>
 </div>
             <div className="grid md:grid-cols-2 gap-12">
@@ -203,7 +203,7 @@ export default function ElektroAutoRechner() {
                   step="1000"
                   value={jahreskilometer}
                   onChange={(e) => setJahreskilometer(Number(e.target.value))}
-                  className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer"
+                  className="range-slider-mobile slider-green"
                 />
               </div>
 
@@ -218,7 +218,7 @@ export default function ElektroAutoRechner() {
                   step="1"
                   value={nutzungsdauer}
                   onChange={(e) => setNutzungsdauer(Number(e.target.value))}
-                  className="w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer"
+                  className="range-slider-mobile slider-green"
                 />
               </div>
             </div>
@@ -244,7 +244,7 @@ export default function ElektroAutoRechner() {
                     step="1000"
                     value={kaufpreisElektro}
                     onChange={(e) => setKaufpreisElektro(Number(e.target.value))}
-                    className="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-blue"
                   />
                 </div>
 
@@ -259,7 +259,7 @@ export default function ElektroAutoRechner() {
                     step="0.5"
                     value={verbrauchElektro}
                     onChange={(e) => setVerbrauchElektro(Number(e.target.value))}
-                    className="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-blue"
                   />
                 </div>
 
@@ -275,7 +275,7 @@ export default function ElektroAutoRechner() {
                       step="0.01"
                       value={strompreis}
                       onChange={(e) => setStrompreis(Number(e.target.value))}
-                      className="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-blue"
                     />
                   </div>
                 )}
@@ -291,7 +291,7 @@ export default function ElektroAutoRechner() {
                     step="50"
                     value={versicherungElektroProJahr}
                     onChange={(e) => setVersicherungElektroProJahr(Number(e.target.value))}
-                    className="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-blue"
                   />
                 </div>
 
@@ -306,7 +306,7 @@ export default function ElektroAutoRechner() {
                     step="10"
                     value={steuerElektroProJahr}
                     onChange={(e) => setSteuerElektroProJahr(Number(e.target.value))}
-                    className="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-blue"
                   />
                   <p className="text-sm text-gray-500 mt-1">*E-Autos in DE aktuell bis 2030 befreit</p>
                 </div>
@@ -332,7 +332,7 @@ export default function ElektroAutoRechner() {
                     step="1000"
                     value={kaufpreisVerbrenner}
                     onChange={(e) => setKaufpreisVerbrenner(Number(e.target.value))}
-                    className="w-full h-2 bg-orange-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-orange"
                   />
                 </div>
 
@@ -347,7 +347,7 @@ export default function ElektroAutoRechner() {
                     step="0.5"
                     value={verbrauchVerbrenner}
                     onChange={(e) => setVerbrauchVerbrenner(Number(e.target.value))}
-                    className="w-full h-2 bg-orange-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-orange"
                   />
                 </div>
 
@@ -362,7 +362,7 @@ export default function ElektroAutoRechner() {
                     step="0.05"
                     value={benzinpreis}
                     onChange={(e) => setBenzinpreis(Number(e.target.value))}
-                    className="w-full h-2 bg-orange-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-orange"
                   />
                 </div>
 
@@ -377,7 +377,7 @@ export default function ElektroAutoRechner() {
                     step="50"
                     value={versicherungVerbrennerProJahr}
                     onChange={(e) => setVersicherungVerbrennerProJahr(Number(e.target.value))}
-                    className="w-full h-2 bg-orange-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-orange"
                   />
                 </div>
 
@@ -392,7 +392,7 @@ export default function ElektroAutoRechner() {
                     step="10"
                     value={steuerVerbrennerProJahr}
                     onChange={(e) => setSteuerVerbrennerProJahr(Number(e.target.value))}
-                    className="w-full h-2 bg-orange-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-orange"
                   />
                 </div>
               </div>
@@ -441,7 +441,7 @@ export default function ElektroAutoRechner() {
                       step="500"
                       value={staatlicheFoerderung}
                       onChange={(e) => setStaatlicheFoerderung(Number(e.target.value))}
-                      className="w-full h-2 bg-purple-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-purple"
                     />
                     <p className="text-sm text-gray-500 mt-1">*Bezieht sich nur auf das Elektroauto</p>
                   </div>
@@ -462,7 +462,7 @@ export default function ElektroAutoRechner() {
                         step="0.01"
                         value={strompreisZuhause}
                         onChange={(e) => setStrompreisZuhause(Number(e.target.value))}
-                        className="w-full h-2 bg-purple-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-purple"
                       />
                     </div>
                     <div>
@@ -476,7 +476,7 @@ export default function ElektroAutoRechner() {
                         step="0.01"
                         value={strompreisOeffentlich}
                         onChange={(e) => setStrompreisOeffentlich(Number(e.target.value))}
-                        className="w-full h-2 bg-purple-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-purple"
                       />
                     </div>
                     <div>
@@ -490,7 +490,7 @@ export default function ElektroAutoRechner() {
                         step="0.01"
                         value={strompreisPV}
                         onChange={(e) => setStrompreisPV(Number(e.target.value))}
-                        className="w-full h-2 bg-purple-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-purple"
                       />
                       <p className="text-sm text-gray-500 mt-1">*Eigenkosten PV-Anlage</p>
                     </div>
@@ -512,7 +512,7 @@ export default function ElektroAutoRechner() {
                         step="5"
                         value={anteilZuhause}
                         onChange={(e) => setAnteilZuhause(Number(e.target.value))}
-                        className="w-full h-2 bg-purple-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-purple"
                       />
                     </div>
                     <div>
@@ -526,7 +526,7 @@ export default function ElektroAutoRechner() {
                         step="5"
                         value={anteilOeffentlich}
                         onChange={(e) => setAnteilOeffentlich(Number(e.target.value))}
-                        className="w-full h-2 bg-purple-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-purple"
                       />
                     </div>
                     <div>
@@ -540,7 +540,7 @@ export default function ElektroAutoRechner() {
                         step="5"
                         value={anteilPV}
                         onChange={(e) => setAnteilPV(Number(e.target.value))}
-                        className="w-full h-2 bg-purple-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-purple"
                       />
                     </div>
                     <p className="text-sm text-gray-500">Gesamt: {anteilZuhause + anteilOeffentlich + anteilPV}%</p>
@@ -562,7 +562,7 @@ export default function ElektroAutoRechner() {
                         step="60"
                         value={parkgebuehrenErsparnis}
                         onChange={(e) => setParkgebuehrenErsparnis(Number(e.target.value))}
-                        className="w-full h-2 bg-purple-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-purple"
                       />
                       <p className="text-sm text-gray-500 mt-1">*Befreiung/Ermäßigung in vielen Städten</p>
                     </div>
@@ -577,7 +577,7 @@ export default function ElektroAutoRechner() {
                         step="10"
                         value={thgQuote}
                         onChange={(e) => setThgQuote(Number(e.target.value))}
-                        className="w-full h-2 bg-purple-200 rounded-lg appearance-none cursor-pointer"
+                    className="range-slider-mobile slider-purple"
                       />
                       <p className="text-sm text-gray-500 mt-1">*Treibhausgasminderungs-Quote verkaufen</p>
                     </div>

@@ -179,25 +179,21 @@ export default function WertverlustPage() {
                 </h3>
                 <div className="space-y-3 text-sm md:text-base text-gray-700">
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                     <div>
                       <strong>Junge E-Autos (unter 12 Monate):</strong> Sind tatsächlich wertstabiler als Verbrenner mit durchschnittlich 75% Restwert vs. 73% bei Benzinern. Dies liegt an hoher Nachfrage und Garantien.
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <AlertTriangle className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
                     <div>
                       <strong>3-5 Jahre alte E-Autos:</strong> Verlieren überproportional an Wert. Hauptgründe sind Technologiesprünge (Reichweite, Ladegeschwindigkeit) und Unsicherheit über Batteriezustand.
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <AlertTriangle className="w-5 h-5 text-orange-600 flex-shrink-0 mt-0.5" />
                     <div>
                       <strong>Premium-Segment besonders betroffen:</strong> Porsche Taycan (-65%), BMW iX (-60%), Mercedes EQS (-55%) haben die höchsten Wertverluste, da Käufer neueste Technologie erwarten.
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
                     <div>
                       <strong>Tesla als Ausnahme:</strong> Model 3 und Model Y verlieren nur 15-25% in 3 Jahren dank transparenter Preispolitik und hoher Elektrokompetenz-Wahrnehmung.
                     </div>
@@ -222,7 +218,6 @@ export default function WertverlustPage() {
                 {/* Jahr 1 */}
                 <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded-r-xl">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">1</div>
                     <h3 className="text-lg font-bold text-gray-800">Jahr 1: E-Autos im Vorteil</h3>
                   </div>
                   <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
@@ -251,7 +246,6 @@ export default function WertverlustPage() {
                 {/* Jahr 3 */}
                 <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-r-xl">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">3</div>
                     <h3 className="text-lg font-bold text-gray-800">Jahr 3: Kipppunkt für E-Autos</h3>
                   </div>
                   <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
@@ -280,7 +274,6 @@ export default function WertverlustPage() {
                 {/* Jahr 5 */}
                 <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">5</div>
                     <h3 className="text-lg font-bold text-gray-800">Jahr 5: Maximaler Unterschied</h3>
                   </div>
                   <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-700">

@@ -158,7 +158,7 @@ export default function ThgQuotePage() {
                 <div className="bg-green-50 p-4 rounded-lg">
                   <h4 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-green-600" />
-                    ✅ Berechtigt:
+                    Berechtigt:
                   </h4>
                   <ul className="space-y-2 text-sm md:text-base text-gray-700">
                     <li>• Vollelektrische Autos (BEV)</li>
@@ -172,7 +172,7 @@ export default function ThgQuotePage() {
                 <div className="bg-red-50 p-4 rounded-lg">
                   <h4 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
                     <AlertCircle className="w-5 h-5 text-red-600" />
-                    ❌ NICHT berechtigt:
+                    NICHT berechtigt:
                   </h4>
                   <ul className="space-y-2 text-sm md:text-base text-gray-700">
                     <li>• Plug-in-Hybride (PHEV)</li>
@@ -305,7 +305,7 @@ export default function ThgQuotePage() {
                   <div className="flex items-start justify-between mb-4">
                     <div>
                       <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">
-                        🥇 eQuota 
+                        eQuota 
                       </h3>
                       <div className="flex items-center gap-2 mb-2">
 
@@ -340,7 +340,7 @@ export default function ThgQuotePage() {
                   <div className="flex items-start justify-between mb-4">
                     <div>
                       <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">
-                        🥈 geld-für-eAuto
+                        geld-für-eAuto
                       </h3>
                       <div className="flex items-center gap-2 mb-2">
 
@@ -375,7 +375,7 @@ export default function ThgQuotePage() {
                   <div className="flex items-start justify-between mb-4">
                     <div>
                       <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-2">
-                        🥉 ADAC e-Charge
+                        ADAC e-Charge
                       </h3>
                       <div className="flex items-center gap-2 mb-2">
      
@@ -409,7 +409,6 @@ export default function ThgQuotePage() {
 
               <div className="bg-blue-50 p-6 rounded-xl mt-8">
                 <h4 className="font-bold text-gray-800 mb-3 flex items-center gap-2">
-                  <Users className="w-5 h-5 text-blue-600" />
                   Welches Modell ist das richtige für mich?
                 </h4>
                 <div className="space-y-2 text-sm md:text-base text-gray-700">
@@ -433,7 +432,7 @@ export default function ThgQuotePage() {
 
               <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 md:p-8">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-6">
-                  📋 Checkliste: Das brauchen Sie
+                  Checkliste: Das brauchen Sie
                 </h3>
                 <div className="space-y-3">
                   {[

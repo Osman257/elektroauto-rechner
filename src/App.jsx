@@ -9,6 +9,7 @@ import ThgQuotePage from "./pages/ThgQuotePage";
 import WertverlustPage from './pages/WertverlustPage';
 import VerkaufszahlenPage from "./pages/VerkaufszahlenPage";
 import LadezeitPage from './pages/LadezeitPage';
+import GebrauchtKaufenPage from './pages/GebrauchtKaufenPage';
 import ImpressumPage from "./pages/impressum-page";
 import DatenschutzPage from "./pages/datenschutz-page";
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/ratgeber/thg-quote" element={<ThgQuotePage />} />
         <Route path="/ratgeber/ladezeit" element={<LadezeitPage />} />
         <Route path="/ratgeber/wertverlust" element={<WertverlustPage />} />
+        <Route path="/ratgeber/gebrauchtwagen" element={<GebrauchtKaufenPage />} />
         <Route path="/ratgeber/verkaufszahlen" element={<VerkaufszahlenPage />} />
 
 
