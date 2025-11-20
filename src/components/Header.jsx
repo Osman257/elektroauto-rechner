@@ -21,7 +21,7 @@ export default function Header({ activeTab = '' }) {
       title: 'Kaufberatung',
       articles: [
         { title: 'Kaufberatung 2025', url: '/ratgeber/kaufberatung' },
-        { title: 'Wertverlust E-Autos', url: '/ratgeber/wertverlust' },
+        { title: 'Gebrauchtwagen Guide', url: '/ratgeber/gebrauchtwagen' },
 
       ]
     },
@@ -29,6 +29,8 @@ export default function Header({ activeTab = '' }) {
       title: 'Kosten & Förderung',
       articles: [
         { title: 'THG-Quote verdienen', url: '/ratgeber/thg-quote' },
+        { title: 'Wertverlust E-Autos', url: '/ratgeber/wertverlust' },
+
       ]
     },
     mythen: {

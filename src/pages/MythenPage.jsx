@@ -96,7 +96,6 @@ export default function MythenPage() {
             {/* Mythos 1 */}
             <section id="mythos1" className="mb-12 md:mb-16">
               <div className="flex items-start gap-4 mb-4">
-                <XCircle className="w-8 h-8 md:w-10 md:h-10 text-red-600 flex-shrink-0" />
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
                     Mythos 1: E-Autos haben zu wenig Reichweite
@@ -157,7 +156,6 @@ export default function MythenPage() {
             {/* Mythos 2 */}
             <section id="mythos2" className="mb-12 md:mb-16">
               <div className="flex items-start gap-4 mb-4">
-                <XCircle className="w-8 h-8 md:w-10 md:h-10 text-red-600 flex-shrink-0" />
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
                     Mythos 2: E-Auto Batterien explodieren / brennen häufig
@@ -221,7 +219,6 @@ export default function MythenPage() {
             {/* Mythos 3 */}
             <section id="mythos3" className="mb-12 md:mb-16">
               <div className="flex items-start gap-4 mb-4">
-                <XCircle className="w-8 h-8 md:w-10 md:h-10 text-red-600 flex-shrink-0" />
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
                     Mythos 3: Die Batterieproduktion ist so umweltschädlich
@@ -282,7 +279,6 @@ export default function MythenPage() {
             {/* Mythos 4 */}
             <section id="mythos4" className="mb-12 md:mb-16">
               <div className="flex items-start gap-4 mb-4">
-                <XCircle className="w-8 h-8 md:w-10 md:h-10 text-red-600 flex-shrink-0" />
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
                     Mythos 4: E-Autos fahren mit Kohlestrom
@@ -332,7 +328,6 @@ export default function MythenPage() {
             {/* Mythos 5 */}
             <section id="mythos5" className="mb-12 md:mb-16">
               <div className="flex items-start gap-4 mb-4">
-                <XCircle className="w-8 h-8 md:w-10 md:h-10 text-red-600 flex-shrink-0" />
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
                     Mythos 5: Laden dauert ewig
@@ -395,7 +390,6 @@ export default function MythenPage() {
             {/* Mythos 6 */}
             <section id="mythos6" className="mb-12 md:mb-16">
               <div className="flex items-start gap-4 mb-4">
-                <XCircle className="w-8 h-8 md:w-10 md:h-10 text-red-600 flex-shrink-0" />
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
                     Mythos 6: E-Autos funktionieren nicht im Winter
@@ -447,7 +441,6 @@ export default function MythenPage() {
             {/* Mythos 7 */}
             <section id="mythos7" className="mb-12 md:mb-16">
               <div className="flex items-start gap-4 mb-4">
-                <XCircle className="w-8 h-8 md:w-10 md:h-10 text-red-600 flex-shrink-0" />
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
                     Mythos 7: Batterien halten nur 5 Jahre
@@ -513,7 +506,6 @@ export default function MythenPage() {
             {/* Mythos 8 */}
             <section id="mythos8" className="mb-12 md:mb-16">
               <div className="flex items-start gap-4 mb-4">
-                <XCircle className="w-8 h-8 md:w-10 md:h-10 text-red-600 flex-shrink-0" />
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
                     Mythos 8: Das Stromnetz kollabiert
@@ -563,7 +555,6 @@ export default function MythenPage() {
             {/* Mythos 9 */}
             <section id="mythos9" className="mb-12 md:mb-16">
               <div className="flex items-start gap-4 mb-4">
-                <XCircle className="w-8 h-8 md:w-10 md:h-10 text-red-600 flex-shrink-0" />
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
                     Mythos 9: Lithium & Kobalt werden knapp / sind unethisch
@@ -604,7 +595,6 @@ export default function MythenPage() {
             {/* Mythos 10 */}
             <section id="mythos10" className="mb-8">
               <div className="flex items-start gap-4 mb-4">
-                <XCircle className="w-8 h-8 md:w-10 md:h-10 text-red-600 flex-shrink-0" />
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
                     Mythos 10: E-Autos sind zu teuer

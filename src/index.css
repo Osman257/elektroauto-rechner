@@ -19,3 +19,80 @@ body {
     padding-top: 7rem;
   }
 }
+/* Base Slider - Mobile Optimized */
+.range-slider-mobile {
+  @apply w-full h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer touch-none select-none;
+}
+
+/* Webkit Base (Chrome, Safari) */
+.range-slider-mobile::-webkit-slider-thumb {
+  @apply appearance-none 
+         w-8 h-8 sm:w-6 sm:h-6 
+         rounded-full 
+         border-2 border-white 
+         shadow-lg 
+         cursor-grab 
+         active:cursor-grabbing 
+         active:scale-110 
+         transition-all;
+}
+
+/* Firefox Base */
+.range-slider-mobile::-moz-range-thumb {
+  @apply w-8 h-8 sm:w-6 sm:h-6 
+         rounded-full 
+         border-2 border-white 
+         border-none 
+         shadow-lg 
+         cursor-grab;
+}
+
+/* YELLOW Variant */
+.range-slider-mobile.slider-yellow::-webkit-slider-thumb {
+  @apply bg-yellow-600 hover:bg-yellow-700;
+}
+
+.range-slider-mobile.slider-yellow::-moz-range-thumb {
+  @apply bg-yellow-600;
+}
+
+/* BLUE Variant */
+.range-slider-mobile.slider-blue::-webkit-slider-thumb {
+  @apply bg-blue-600 hover:bg-blue-700;
+}
+
+.range-slider-mobile.slider-blue::-moz-range-thumb {
+  @apply bg-blue-600;
+}
+
+/* ORANGE Variant */
+.range-slider-mobile.slider-orange::-webkit-slider-thumb {
+  @apply bg-orange-600 hover:bg-orange-700;
+}
+
+.range-slider-mobile.slider-orange::-moz-range-thumb {
+  @apply bg-orange-600;
+}
+
+/* GREEN Variant */
+.range-slider-mobile.slider-green::-webkit-slider-thumb {
+  @apply bg-green-600 hover:bg-green-700;
+}
+
+.range-slider-mobile.slider-green::-moz-range-thumb {
+  @apply bg-green-600;
+}
+
+/* PURPLE Variant (optional) */
+.range-slider-mobile.slider-purple::-webkit-slider-thumb {
+  @apply bg-purple-600 hover:bg-purple-700;
+}
+
+.range-slider-mobile.slider-purple::-moz-range-thumb {
+  @apply bg-purple-600;
+}
+
+/* Focus State für alle */
+.range-slider-mobile:focus {
+  @apply outline-none ring-2 ring-offset-2 ring-blue-500;
+}
