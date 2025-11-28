@@ -8,6 +8,7 @@ import {
   Calculator,
   DollarSign, 
   Info,
+  KeyRound,
   Settings,
   FileText,
   Shield
@@ -62,7 +63,7 @@ export default function GebrauchtKaufenPage() {
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-white">
               <div className="flex items-center gap-3 mb-3">
                 <div className="bg-white/30 backdrop-blur-md p-2 rounded-lg shadow-lg">
-                  <ShoppingCart className="w-6 h-6 md:w-8 md:h-8" />
+                  <KeyRound className="w-6 h-6 md:w-8 md:h-8" />
                 </div>
                 <span className="text-xs md:text-sm bg-white/30 backdrop-blur-md px-3 py-1 rounded-full font-semibold shadow-lg">📖 14 Min. Lesezeit</span>
                 <span className="text-xs md:text-sm bg-white/30 backdrop-blur-md px-3 py-1 rounded-full font-semibold shadow-lg">Aktualisiert am 20. Januar 2025</span>

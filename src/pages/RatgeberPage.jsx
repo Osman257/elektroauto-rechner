@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '../components/SEO';
-import { BookOpen, ShoppingCart, Lightbulb, AlertTriangle, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
+import { BookOpen, ShoppingCart, Lightbulb, KeyRound, AlertTriangle, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function RatgeberPage() {
@@ -155,7 +155,7 @@ export default function RatgeberPage() {
                 {/* Content */}
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-3">
-                    <TrendingDown className="w-5 h-5 text-blue-600" />
+                    <KeyRound className="w-5 h-5 text-blue-600" />
                     <span className="text-sm font-semibold text-blue-600 uppercase">Gebrauchtwagen</span>
                   </div>
                   
