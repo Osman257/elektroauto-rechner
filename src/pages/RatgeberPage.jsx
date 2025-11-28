@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '../components/SEO';
-import { BookOpen, ShoppingCart, Lightbulb, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
+import { BookOpen, ShoppingCart, Lightbulb, AlertTriangle, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function RatgeberPage() {
@@ -393,6 +393,49 @@ Der Markt für gebrauchte Elektroautos boomt: 2024 wurden in Deutschland über 1
                   
                   <p className="text-sm text-gray-600 mb-4 line-clamp-3">
                     Der deutsche Elektroauto-Markt entwickelt sich rasant: Mit über 524.000 Neuzulassungen im Jahr 2024 und einem Marktanteil von 18,4% markiert die Elektromobilität einen entscheidenden Wendepunkt in der Automobilindustrie. Hier finden Sie alle aktuellen Verkaufszahlen, Marktanteile und Prognosen für 2025.
+                  </p>
+                  
+                  {/* Meta Info */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-1">
+          
+                    </div>
+                    <span className="text-yellow-600 font-semibold group-hover:underline flex items-center gap-1">
+                      Weiterlesen <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+        
+
+         {/* Artikel Card 4 - Schieben Panne (NEU!) */}
+            <a href="/ratgeber/e-auto-schieben" className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+                {/* Artikel Bild */}
+                <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-500 overflow-hidden">
+                  <img 
+                    src="/images/ratgeber/e-auto-schieben-hero.webp"
+                    alt="Elektroauto Verkaufszahlen Deutschland 2025"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <AlertTriangle className="w-5 h-5 text-yellow-600" />
+                    <span className="text-sm font-semibold text-yellow-600 uppercase">Panne</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-yellow-600 transition-colors">
+                Kann man ein E-Auto schieben wenn es leer ist? 
+                  </h3>
+                  
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                Die Batterie ist leer, das E-Auto steht mitten auf der Straße – kann man es einfach zur Seite schieben wie einen Verbrenner mit leerem Tank? Diese Frage stellen sich viele E-Auto-Fahrer, besonders wenn sie zum ersten Mal mit einer leeren Batterie konfrontiert werden. Die kurze Antwort: <strong>Ja, aber mit Einschränkungen und Vorsicht.</strong> Die längere Antwort ist komplexer und hängt vom Fahrzeugmodell, der Situation und technischen Details ab.
                   </p>
                   
                   {/* Meta Info */}
