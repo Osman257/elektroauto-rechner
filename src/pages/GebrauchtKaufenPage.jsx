@@ -1001,7 +1001,7 @@ Der Kauf eines gebrauchten Elektroautos kann 2025 eine ausgezeichnete Entscheidu
             Nutzen Sie unseren kostenlosen Rechner, um herauszufinden, wie viel Sie mit einem Elektroauto sparen können!
           </p>
           <a 
-            href="/rechner"
+            href="/rechner/kostenrechner"
             className="inline-flex items-center gap-3 bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-200"
           >
             <Calculator className="w-5 h-5" />

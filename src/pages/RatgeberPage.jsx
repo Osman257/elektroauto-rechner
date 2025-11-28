@@ -44,7 +44,7 @@ export default function RatgeberPage() {
                 
                 {/* Headline */}
                 <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-2xl">
-                  Elektroauto Ratgeber 2025
+                  Elektroauto Ratgeber
                 </h1>
                 
                 {/* Subheadline */}
@@ -422,7 +422,7 @@ Der Markt für gebrauchte Elektroautos boomt: 2024 wurden in Deutschland über 1
             Elektroauto im Vergleich zu einem Verbrenner sparen können.
           </p>
           <a 
-            href="/rechner"
+            href="/rechner/kostenrechner"
             className="inline-flex items-center gap-3 bg-white text-blue-600 font-bold px-8 py-4 rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-200"
           >
             Jetzt Kosten berechnen

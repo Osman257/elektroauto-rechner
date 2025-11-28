@@ -892,7 +892,7 @@ export default function WertverlustPage() {
             <div className="mt-8 bg-blue-50 rounded-xl p-6">
               <h3 className="text-lg font-bold text-gray-800 mb-4">📚 Weitere hilfreiche Artikel:</h3>
               <div className="space-y-2">
-                <a href="/rechner" className="block text-blue-600 hover:underline text-sm md:text-base">
+                <a href="/rechner/kostenrechner" className="block text-blue-600 hover:underline text-sm md:text-base">
                   → Kostenrechner: E-Auto vs Verbrenner über 8 Jahre vergleichen
                 </a>
                 <a href="/ratgeber/kaufberatung" className="block text-blue-600 hover:underline text-sm md:text-base">

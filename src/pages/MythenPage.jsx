@@ -653,7 +653,7 @@ export default function MythenPage() {
                       mit einem E-Auto sparen – individuell berechnet für Ihre Situation!
                     </p>
                     <a 
-                      href="/rechner" 
+                      href="/rechner/kostenrechner" 
                       className="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
                     >
                       Zum Kostenrechner

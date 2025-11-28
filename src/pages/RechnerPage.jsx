@@ -107,15 +107,15 @@ export default function ElektroAutoRechner() {
             <SEO
         title="Elektroauto Kostenrechner 2025 - E-Auto vs Verbrenner | e-Autowelt"
         description="Kostenloser Elektroauto Rechner: Vergleichen Sie die Kosten von E-Auto und Verbrenner über die Nutzungsdauer. Anschaffung, Betrieb, Wartung, Steuern - alle Kosten auf einen Blick!"
-        canonicalPath="/ratgeber/rechner"
-        keywords="elektroauto rechner, e-auto kosten, e-auto kostenrechner, e-auto kostenvergleich, e-auto reichweitenrechner"
+        canonicalPath="/rechner/kostenrechner"
+        keywords="elektroauto rechner, e-auto kosten, tco eauto, e-auto kostenrechner, eauto kostenvergleich, e-auto kostenvergleich, e-auto reichweitenrechner, elektroauto kostenvergleich"
         ogImage="/images/ratgeber/rechner-og.jpg"
         ogType="rechner"
         publishedDate="2025-01-19T10:00:00Z"
         modifiedDate="2025-01-19T10:00:00Z"
       />
 {/* Header */}
-      <Header activeTab="rechner" />
+      <Header activeTab="rechner/kostenrechner" />
       <div className="h-20 md:h-24"></div>
       {/* Spacer for fixed header */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 mt-8 mb-8 md:mt-0 md:mb-20">
@@ -401,20 +401,20 @@ export default function ElektroAutoRechner() {
 
           {/* Expert Mode Toggle */}
           <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl p-4 mb-8">
-            <div className="flex items-center justify-between">
-              <div>
+            <div className="flex items-center justify-between gap-4">
+              <div className="flex-1 min-w-0">
                 <h3 className="text-lg font-bold text-gray-800">Expertenmodus</h3>
                 <p className="text-sm text-gray-600">Erweiterte Einstellungen für detaillierte Berechnung</p>
               </div>
               <button
                 onClick={() => setExpertenModus(!expertenModus)}
-                className={`relative inline-flex h-8 w-16 items-center rounded-full transition-colors ${
+                className={`flex-shrink-0 relative inline-flex h-8 w-16 items-center rounded-full transition-colors ${
                   expertenModus ? 'bg-blue-600' : 'bg-gray-300'
                 }`}
               >
                 <span
                   className={`inline-block h-6 w-6 transform rounded-full bg-white transition-transform ${
-                    expertenModus ? 'translate-x-9' : 'translate-x-1'
+                    expertenModus ? 'translate-x-8' : 'translate-x-1'
                   }`}
                 />
               </button>
@@ -730,7 +730,7 @@ export default function ElektroAutoRechner() {
                     <p className="text-lg font-semibold text-gray-700">Gesamt</p>
                     <p className="text-base text-gray-500">über {nutzungsdauer} Jahre</p>
                   </div>
-                  <p className={`text-3xl md:text-4xl font-bold ${berechnung.ersparnisPositiv ? 'text-green-700' : 'text-red-700'}`}>
+                  <p className={`text-2xl md:text-4xl font-bold ${berechnung.ersparnisPositiv ? 'text-green-700' : 'text-red-700'}`}>
                     {berechnung.ersparnisPositiv ? '+' : ''}{parseFloat(berechnung.ersparnis).toLocaleString('de-DE')} €
                   </p>
                 </div>
@@ -738,7 +738,7 @@ export default function ElektroAutoRechner() {
                 {/* Jährlich */}
                 <div className="flex justify-between items-center bg-white rounded-lg p-6">
                   <p className="text-lg font-semibold text-gray-700">Jährlich</p>
-                  <p className={`text-3xl md:text-4xl font-bold ${berechnung.ersparnisPositiv ? 'text-green-700' : 'text-red-700'}`}>
+                  <p className={`text-2xl md:text-4xl font-bold ${berechnung.ersparnisPositiv ? 'text-green-700' : 'text-red-700'}`}>
                     {berechnung.ersparnisPositiv ? '+' : ''}{parseFloat(berechnung.ersparnisProJahr).toLocaleString('de-DE')} €
                   </p>
                 </div>
@@ -746,7 +746,7 @@ export default function ElektroAutoRechner() {
                 {/* Monatlich */}
                 <div className="flex justify-between items-center bg-white rounded-lg p-6">
                   <p className="text-lg font-semibold text-gray-700">Monatlich</p>
-                  <p className={`text-3xl md:text-4xl font-bold ${berechnung.ersparnisPositiv ? 'text-green-700' : 'text-red-700'}`}>
+                  <p className={`text-2xl md:text-4xl font-bold ${berechnung.ersparnisPositiv ? 'text-green-700' : 'text-red-700'}`}>
                     {berechnung.ersparnisPositiv ? '+' : ''}{parseFloat(berechnung.ersparnisProMonat).toLocaleString('de-DE')} €
                   </p>
                 </div>
@@ -764,12 +764,12 @@ export default function ElektroAutoRechner() {
                 <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
                   <div>
                     <p className="text-xl font-semibold text-gray-700 mb-1">CO₂-Ersparnis</p>
-                    <p className={`text-3xl md:text-5xl font-bold text-yellow-700`}>
+                    <p className={`text-2xl md:text-5xl font-bold text-yellow-700`}>
                       {berechnung.co2Ersparnis} t
                     </p>
                   </div>
                   <div className="text-right">
-                    <p className="text-lg text-gray-700 font-medium mb-2">Entspricht</p>
+                    <p className="text-lg text-gray-700 font-medium mb-1">Entspricht</p>
                     <p className="text-2xl font-bold text-yellow-800">
                       {Math.round(parseFloat(berechnung.co2Ersparnis) / 0.8)} Hin- und Rückflüge
                     </p>
