@@ -266,7 +266,7 @@ export default function KaufberatungPage() {
                 </p>
                 <div className="flex gap-4">
                   <a 
-                    href="/rechner"
+                    href="/rechner/kostenrechner"
                     className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all"
                   >
                     <TrendingUp className="w-5 h-5" />

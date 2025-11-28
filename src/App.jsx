@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import StartPage from "./pages/start-page";
+import RechnerOverview from "./pages/RechnerOverview";
+import GebrauchtwagenBatterieRechner from './pages/GebrauchtwagenBatterieRechner';
 import RechnerPage from "./pages/RechnerPage";
 import RatgeberPage from "./pages/RatgeberPage";
 import KaufberatungPage from "./pages/KaufberatungPage";
@@ -18,7 +20,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<StartPage />} />
-        <Route path="/rechner" element={<RechnerPage />} />
+        <Route path="/rechner" element={<RechnerOverview />} />
+        <Route path="/rechner/kostenrechner" element={<RechnerPage />} />
+        <Route path="/rechner/gebrauchtwagenbatterierechner" element={<GebrauchtwagenBatterieRechner />} />
 
         {/* Ratgeber-Bereich */}
         <Route path="/ratgeber" element={<RatgeberPage />} />

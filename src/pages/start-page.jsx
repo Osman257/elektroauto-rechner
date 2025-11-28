@@ -9,7 +9,7 @@ export default function StartPage() {
        {/* SEO Component */}
       <SEO
         title="Elektroauto Kostenrechner 2025 - E-Auto vs Verbrenner | e-Autowelt"
-        description="Kostenloser Elektroauto Rechner: Vergleichen Sie E-Auto vs Verbrenner über 8 Jahre. Anschaffung, Betrieb, Wartung, Steuern - alle Kosten auf einen Blick!"
+        description="Kostenloser Elektroauto Rechner: Vergleichen Sie E-Auto vs Verbrenner über die Nutzungsdauer. Anschaffung, Betrieb, Wartung, Steuern - alle Kosten auf einen Blick!"
         canonicalPath="/"
         keywords="elektroauto rechner, e-auto kosten, kostenvergleich elektroauto, e-auto vs verbrenner"
         ogImage="/images/og-rechner.jpg"
@@ -56,7 +56,7 @@ export default function StartPage() {
                 
                 {/* CTA Button */}
                 <a 
-                  href="/rechner"
+                  href="/rechner/kostenrechner"
                   className="inline-flex items-center gap-2 md:gap-3 bg-gradient-to-r from-green-500 to-green-600 text-white text-base md:text-xl font-bold px-6 py-3 md:px-10 md:py-5 rounded-full hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200"
                 >
                   <Calculator className="w-5 h-5 md:w-6 md:h-6" />
@@ -155,7 +155,7 @@ export default function StartPage() {
           <h3 className="text-4xl font-bold mb-6">Bereit für die Berechnung?</h3>
           <p className="text-xl mb-8">Finden Sie in wenigen Minuten heraus, wie viel Sie mit einem Elektroauto sparen können.</p>
           <a 
-            href="/rechner"
+            href="/rechner/kostenrechner"
             className="inline-block bg-white text-blue-600 text-xl font-bold px-12 py-4 rounded-full hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200"
           >
             Zum Rechner

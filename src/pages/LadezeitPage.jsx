@@ -653,7 +653,7 @@ export default function LadezeitPage() {
                 <a href="/ratgeber/kaufberatung" className="block text-blue-600 hover:underline text-sm md:text-base">
                   → Elektroauto Kaufberatung 2025: Welches E-Auto passt zu mir?
                 </a>
-                <a href="/rechner" className="block text-blue-600 hover:underline text-sm md:text-base">
+                <a href="/rechner/kostenrechner" className="block text-blue-600 hover:underline text-sm md:text-base">
                   → Kostenrechner: Lohnt sich ein Elektroauto für mich?
                 </a>
                 <a href="/ratgeber/thg-quote" className="block text-blue-600 hover:underline text-sm md:text-base">
