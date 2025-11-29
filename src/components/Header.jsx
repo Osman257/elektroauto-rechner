@@ -31,6 +31,7 @@ export default function Header({ activeTab = '' }) {
       articles: [
         { title: 'Kaufberatung 2025', url: '/ratgeber/kaufberatung' },
         { title: 'Gebrauchtwagen Guide', url: '/ratgeber/gebrauchtwagen' },
+        { title: 'Effizienteste Elektroautos 2025', url: '/ratgeber/effiziente-elektroautos' },
       ]
     },
     kosten: {

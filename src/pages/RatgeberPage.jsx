@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '../components/SEO';
-import { BookOpen, ShoppingCart, Lightbulb, KeyRound, AlertTriangle, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
+import { BookOpen, ShoppingCart, Lightbulb, PlugZap, KeyRound, AlertTriangle, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function RatgeberPage() {
@@ -177,8 +177,50 @@ Der Markt für gebrauchte Elektroautos boomt: 2024 wurden in Deutschland über 1
                   </div>
                 </div>
               </div>
+            </a>              {/* here the new artikel starts */}
+            {/* Artikel Card 3 - Energieeffizient  */}
+            <a href="/ratgeber/effiziente-elektroautos" className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+                {/* Artikel Bild */}
+                <div className="relative h-48 bg-gradient-to-br from-yellow-500 to-orange-500 overflow-hidden">
+                  <img 
+                    src="/images/ratgeber/effiziente-elektroautos-hero.webp"
+                    alt="Welche E-Autos sind am effizientesten? Ranking der sparsamsten Elektroautos 2025 mit maximaler Reichweite: Mercedes EQS, Tesla Model 3, Hyundai Ioniq 6 & mehr."
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <PlugZap className="w-5 h-5 text-blue-600" />
+                    <span className="text-sm font-semibold text-blue-600 uppercase">Reichweite</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors">
+                  Effizienteste Elektroautos 2025                  </h3>
+                  
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                                    Reichweite ist das Kaufargument Nummer 1 bei Elektroautos. Doch nicht jedes E-Auto fährt gleich weit: Während manche Modelle nur 300 km schaffen, kommen andere mit einer Ladung über 700 km weit. Der entscheidende Faktor ist nicht nur die Batteriegröße, sondern vor allem die <strong>Effizienz</strong> – also wie sparsam das Fahrzeug mit der verfügbaren Energie umgeht. In diesem Artikel zeigen wir Ihnen die sparsamsten und reichweitenstärksten E-Autos 2025.
+
+                  </p>
+                  
+                  {/* Meta Info */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-1">
+
+
+                    </div>
+                    <span className="text-blue-600 font-semibold group-hover:underline flex items-center gap-1">
+                      Weiterlesen <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              </div>
             </a>
           </div>
+
         </section>
 
             
