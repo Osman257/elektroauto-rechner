@@ -41,6 +41,8 @@ export default function MythenPage() {
               alt="Elektroauto Mythen aufgeklärt - Fakten statt Vorurteile 2025"
               className="w-full h-full object-cover opacity-90"
               loading="lazy"
+              decoding="async"
+
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-white">
@@ -117,6 +119,8 @@ export default function MythenPage() {
                   alt="Elektroauto Reichweiten Vergleich 2025: Moderne E-Autos erreichen 350-600 km Reichweite"
                   className="w-full h-auto"
                   loading="lazy"
+              decoding="async"
+
                 />
                 <div className="bg-gray-50 p-4 text-xs md:text-sm text-gray-600 italic">
                   Reichweiten moderner E-Autos 2025: Von 300 km (Kleinwagen) bis 600 km (Premium-Modelle)
@@ -177,6 +181,8 @@ export default function MythenPage() {
                   alt="Elektroauto vs Verbrenner Brand-Statistik: E-Autos brennen 10x seltener"
                   className="w-full h-auto"
                   loading="lazy"
+              decoding="async"
+
                 />
                 <div className="bg-gray-50 p-4 text-xs md:text-sm text-gray-600 italic">
                   Brand-Statistik 2024: E-Autos brennen 10x seltener als Verbrenner (25 vs 1.530 pro 100.000 Fahrzeuge)
@@ -240,6 +246,8 @@ export default function MythenPage() {
                   alt="CO2-Bilanz E-Auto vs Verbrenner über Lebenszyklus: E-Auto 30-50% weniger Emissionen"
                   className="w-full h-auto"
                   loading="lazy"
+              decoding="async"
+
                 />
                 <div className="bg-gray-50 p-4 text-xs md:text-sm text-gray-600 italic">
                   Lebenszyklus-CO₂-Bilanz: E-Auto vs Verbrenner (inkl. Produktion, Betrieb, Entsorgung)
@@ -616,6 +624,8 @@ export default function MythenPage() {
                   alt="Elektroauto Gesamtkosten vs Verbrenner: 5.000-10.000€ Ersparnis über 8 Jahre"
                   className="w-full h-auto"
                   loading="lazy"
+              decoding="async"
+                  
                 />
                 <div className="bg-gray-50 p-4 text-xs md:text-sm text-gray-600 italic">
                   Total Cost of Ownership: E-Auto vs Verbrenner über 8 Jahre (inkl. Anschaffung, Betrieb, Wartung, Steuern)

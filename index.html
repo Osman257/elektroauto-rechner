@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <!-- 100% privacy-first analytics -->
-<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-
-    <!-- Favicons --->
+    <!-- Title EARLY für SEO -->
+    <title>e-Autowelt | Elektroauto-Rechner mit Kostenvergleich E-Auto vs Verbrenner</title>
+    
+    <!-- DNS Prefetch für externe Ressourcen -->
+    <link rel="dns-prefetch" href="https://scripts.simpleanalyticscdn.com">
+    <link rel="dns-prefetch" href="https://queue.simpleanalyticscdn.com">
+    
+    <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    
+    <!-- Critical CSS Inline (nur basics) -->
+    <style>
+      /* Prevent FOUC (Flash of Unstyled Content) */
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background: linear-gradient(to bottom right, #eff6ff, #d1fae5);
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
+      /* Prevent layout shift */
+      .min-h-screen {
+        min-height: 100vh;
+      }
+    </style>
+    
     <!-- SEO Meta Tags -->
     <meta name="description" content="Elektroautoratgeber mit kostenlosem Elektroauto Kostenrechner: Vergleichen Sie die Gesamtkosten von Elektroautos mit Verbrennern. Berechnen Sie Ersparnis und CO2-Bilanz über die Nutzungsdauer." />
     <meta name="keywords" content="elektroauto rechner, elektroauto kosten, e-auto kostenvergleich, elektroauto vs verbrenner, tco rechner, elektroauto" />
@@ -21,16 +48,15 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Elektroauto-Rechner | Kostenvergleich & CO₂-Bilanz" />
     <meta property="og:description" content="Vergleichen Sie Elektroautos mit Verbrennern. Berechnen Sie Ihre Ersparnis und CO₂-Bilanz." />
+    <meta property="og:url" content="https://e-autowelt.com" />
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Elektroauto-Rechner | Kostenvergleich & CO₂-Bilanz" />
     <meta name="twitter:description" content="Vergleichen Sie Elektroautos mit Verbrennern. Berechnen Sie Ihre Ersparnis und CO₂-Bilanz." />
     
-    <title>e-Autowelt | Elektroauto-Rechner mit Kostenvergleich E-Auto vs Verbrenner</title>
-    
-        <!-- Schema.org Markup für Google -->
-     <script type="application/ld+json">
+    <!-- Schema.org Markup für Google -->
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
@@ -44,13 +70,13 @@
       }
     }
     </script>
+    
+    <!-- Analytics async + defer für non-blocking -->
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript>
+      <img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
+    </noscript>
   </head>
-  <noscript>
-  <img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" />
-</noscript>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>

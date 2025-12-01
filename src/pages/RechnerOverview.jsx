@@ -33,6 +33,8 @@ export default function RechnerOverview() {
             alt="E-Auto Rechner 2025 - Kostenrechner und Tools"
             className="w-full h-full object-cover brightness-35"
             loading="lazy"
+            decoding="async"
+
           />
           
           {/* Gradient Overlay */}

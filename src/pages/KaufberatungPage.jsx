@@ -43,6 +43,8 @@ export default function KaufberatungPage() {
               alt="Elektroauto wird geladen - Kaufberatung 2025"
               className="w-full h-full object-cover opacity-90"
               loading="lazy"
+              decoding="async"
+
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-white">
@@ -106,6 +108,8 @@ export default function KaufberatungPage() {
                   alt="Elektroauto Reichweiten-Kategorien 2025: Stadtauto, Mittelklasse und Langstrecke im Vergleich"
                   className="w-full h-auto"
                   loading="lazy"
+              decoding="async"
+                  
                 />
                 <div className="bg-gray-50 p-4 text-xs md:text-sm text-gray-600 italic">
                   Reichweiten-Kategorien: Von Stadtauto (200-300 km) bis Langstrecke (500+ km)
