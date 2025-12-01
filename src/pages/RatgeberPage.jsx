@@ -27,6 +27,7 @@ export default function RatgeberPage() {
             alt="Elektroauto Ratgeber 2025 - Expertenwissen und Kaufberatung"
             className="w-full h-full object-cover brightness-35"
             loading="lazy"
+            decoding="async"
           />
           
           {/* Gradient Overlay */}
@@ -108,6 +109,7 @@ export default function RatgeberPage() {
                     alt="Elektroauto Kaufberatung 2025"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 
@@ -149,6 +151,7 @@ export default function RatgeberPage() {
                     alt="Elektroauto Wertverlust vs Verbrenner"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 
@@ -188,6 +191,7 @@ Der Markt für gebrauchte Elektroautos boomt: 2024 wurden in Deutschland über 1
                     alt="Welche E-Autos sind am effizientesten? Ranking der sparsamsten Elektroautos 2025 mit maximaler Reichweite: Mercedes EQS, Tesla Model 3, Hyundai Ioniq 6 & mehr."
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 
@@ -242,6 +246,7 @@ Der Markt für gebrauchte Elektroautos boomt: 2024 wurden in Deutschland über 1
                     alt="THG-Quote 2025 - Bis zu 400€ verdienen"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 
@@ -284,6 +289,7 @@ Der Markt für gebrauchte Elektroautos boomt: 2024 wurden in Deutschland über 1
                     alt="Elektroauto Wertverlust vs Verbrenner"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 
@@ -335,6 +341,7 @@ Der Markt für gebrauchte Elektroautos boomt: 2024 wurden in Deutschland über 1
                     alt="Elektroauto Mythen aufgeklärt - Fakten statt Vorurteile"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 
@@ -378,6 +385,7 @@ Der Markt für gebrauchte Elektroautos boomt: 2024 wurden in Deutschland über 1
                     alt="Wie lange lädt ein E-Auto? Ladezeiten-Guide 2025"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 
@@ -419,6 +427,7 @@ Der Markt für gebrauchte Elektroautos boomt: 2024 wurden in Deutschland über 1
                     alt="Elektroauto Verkaufszahlen Deutschland 2025"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 
@@ -462,6 +471,7 @@ Der Markt für gebrauchte Elektroautos boomt: 2024 wurden in Deutschland über 1
                     alt="Elektroauto Verkaufszahlen Deutschland 2025"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 

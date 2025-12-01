@@ -57,6 +57,8 @@ export default function EAutoSchiebenPage() {
               alt="Kann man ein E-Auto schieben wenn die Batterie leer ist?"
               className="w-full h-full object-cover opacity-90"
               loading="lazy"
+              decoding="async"
+              
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-white">

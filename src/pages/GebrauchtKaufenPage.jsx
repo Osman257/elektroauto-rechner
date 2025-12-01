@@ -58,6 +58,7 @@ export default function GebrauchtKaufenPage() {
               alt="Gebrauchtes Elektroauto kaufen - Worauf Sie achten sollten"
               className="w-full h-full object-cover opacity-90"
               loading="lazy"
+              decoding="async"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-white">
@@ -460,6 +461,8 @@ export default function GebrauchtKaufenPage() {
                 alt="Probefahrt gebrauchtes Elektroauto - Worauf achten"
                 className="w-full rounded-xl shadow-lg"
                 loading="lazy"
+              decoding="async"
+                
               />
               <p className="text-xs text-gray-500 mt-2 italic text-center">
                 Bei der Probefahrt: Laden, Beschleunigung und Reichweite testen

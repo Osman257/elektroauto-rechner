@@ -295,6 +295,7 @@ const GebrauchtwagenBatterieRechner = () => {
               alt="Gebrauchtwagen E-Auto Batterie Bewertung"
               className="w-full h-full object-cover opacity-95"
               loading="lazy"
+              decoding="async"
               onError={(e) => {
                 // Fallback: Gradient wenn Bild nicht lädt
                 e.target.style.display = 'none';

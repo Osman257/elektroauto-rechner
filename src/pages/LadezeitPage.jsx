@@ -43,6 +43,8 @@ export default function LadezeitPage() {
               alt="Elektroauto wird an Schnellladestation geladen - Ladezeiten im Vergleich"
               className="w-full h-full object-cover opacity-90"
               loading="lazy"
+              decoding="async"
+              
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-white">
@@ -170,6 +172,8 @@ export default function LadezeitPage() {
                   alt="Ladezeiten-Vergleich Elektroauto: Steckdose vs Wallbox vs Schnellladen"
                   className="w-full h-auto"
                   loading="lazy"
+              decoding="async"
+
                 />
                 <div className="bg-gray-50 p-4 text-xs md:text-sm text-gray-600 italic">
                   Vergleich der Ladezeiten: Von 24 Stunden (Steckdose) bis 20 Minuten (Schnellladen)
@@ -323,6 +327,8 @@ export default function LadezeitPage() {
                     alt="Elektroauto an High Power Charging Station (HPC) - Schnellladen mit 350 kW"
                     className="w-full h-auto"
                     loading="lazy"
+              decoding="async"
+
                   />
                   <div className="bg-gray-50 p-4 text-xs md:text-sm text-gray-600 italic">
                     High Power Charging ermöglicht ultraschnelles Laden mit bis zu 350 kW Leistung

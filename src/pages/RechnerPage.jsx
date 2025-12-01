@@ -130,6 +130,8 @@ export default function ElektroAutoRechner() {
       alt="Elektroauto Kostenrechner 2025"
       className="w-full h-full object-cover opacity-95"
       loading="lazy"
+      decoding="async"
+
     />
     {/* Overlays */}
     <div className="absolute inset-0 bg-gradient-to-r from-blue-950/95 via-slate-900/80 to-blue-950/70"></div>

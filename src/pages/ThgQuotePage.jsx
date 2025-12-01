@@ -41,6 +41,8 @@ export default function ThgQuotePage() {
               alt="THG-Quote 2025: Bis zu 400€ Prämie für E-Auto-Besitzer verdienen"
               className="w-full h-full object-cover opacity-90"
               loading="lazy"
+              decoding="async"
+
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 text-white">
@@ -108,6 +110,7 @@ export default function ThgQuotePage() {
                   alt="THG-Quote System: Wie E-Auto-Besitzer CO2-Einsparungen an Mineralölkonzerne verkaufen"
                   className="w-full h-auto"
                   loading="lazy"
+              decoding="async"
                 />
                 <div className="bg-gray-50 p-4 text-xs md:text-sm text-gray-600 italic">
                   Das THG-Quote System: Von der CO₂-Einsparung bis zur Auszahlung an E-Auto-Besitzer
