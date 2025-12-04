@@ -732,7 +732,7 @@ export default function WertverlustPage() {
                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4">
                   <h3 className="font-bold text-gray-800 mb-2">7. Batterie-Check dokumentieren</h3>
                   <p className="text-sm text-gray-700">
-                    Lassen Sie State of Health (SoH) prüfen und dokumentieren. >90% SoH nach 3 Jahren ist ein starkes Verkaufsargument.
+                    Lassen Sie State of Health (SoH) prüfen und dokumentieren. &gt;90% SoH nach 3 Jahren ist ein starkes Verkaufsargument.
                   </p>
                 </div>
 
