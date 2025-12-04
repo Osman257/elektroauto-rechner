@@ -28,7 +28,7 @@ export default function StartPage() {
             alt="Modernes Elektroauto an Ladestation - Kostenvergleich und Nachhaltigkeit"
             className="w-full h-full object-cover brightness-9"
             loading="lazy"
-              decoding="async"
+            decoding="async"
             
           />
           

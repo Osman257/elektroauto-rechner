@@ -39,6 +39,7 @@ export default function Header({ activeTab = '' }) {
       articles: [
         { title: 'THG-Quote verdienen', url: '/ratgeber/thg-quote' },
         { title: 'Wertverlust E-Autos', url: '/ratgeber/wertverlust' },
+        { title: 'Wallbox Installation & Kosten', url: '/ratgeber/wallbox-kosten-installation' },
       ]
     },
     mythen: {
@@ -86,7 +87,7 @@ export default function Header({ activeTab = '' }) {
               )}
             </button>
 
-            {/* Dropdown Menu */}
+            {/* Dropdown Menu - Nach rechts ausgerichtet */}
             {rechnerOpen && (
               <>
                 {/* Backdrop zum Schließen bei Außenklick */}
@@ -95,7 +96,7 @@ export default function Header({ activeTab = '' }) {
                   onClick={() => setRechnerOpen(false)}
                 ></div>
                 
-                <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-100 py-4 z-20">
+                <div className="absolute top-full right-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-100 py-4 z-20">
                   
                   {/* Rechner Übersicht Link */}
                   <a
@@ -154,7 +155,7 @@ export default function Header({ activeTab = '' }) {
               )}
             </button>
 
-            {/* Dropdown Menu */}
+            {/* Dropdown Menu - Breiter (600px), 2 Spalten, nach rechts ausgerichtet */}
             {ratgeberOpen && (
               <>
                 {/* Backdrop zum Schließen bei Außenklick */}
@@ -163,7 +164,7 @@ export default function Header({ activeTab = '' }) {
                   onClick={() => setRatgeberOpen(false)}
                 ></div>
                 
-                <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-100 py-4 z-20">
+                <div className="absolute top-full right-0 mt-2 w-[600px] bg-white rounded-xl shadow-2xl border border-gray-100 py-4 z-20">
                   
                   {/* Ratgeber Übersicht Link */}
                   <a
@@ -181,26 +182,30 @@ export default function Header({ activeTab = '' }) {
 
                   <div className="border-t border-gray-100 my-3"></div>
 
-                  {/* Kategorien & Artikel */}
-                  {Object.entries(ratgeberCategories).map(([key, category]) => (
-                    <div key={key} className="mb-4">
-                      <div className="px-6 py-2">
-                        <span className="text-sm font-bold text-gray-800 uppercase tracking-wide">
-                          {category.title}
-                        </span>
+                  {/* Kategorien & Artikel - 2 Spalten Grid */}
+                  <div className="grid grid-cols-2 gap-x-6 gap-y-4 px-6">
+                    {Object.entries(ratgeberCategories).map(([key, category]) => (
+                      <div key={key}>
+                        <div className="pb-2">
+                          <span className="text-xs font-bold text-gray-800 uppercase tracking-wide">
+                            {category.title}
+                          </span>
+                        </div>
+                        <div className="space-y-1.5">
+                          {category.articles.map((article, index) => (
+                            <a
+                              key={index}
+                              href={article.url}
+                              onClick={() => setRatgeberOpen(false)}
+                              className="block py-1 text-sm text-gray-700 hover:text-blue-600 transition-colors"
+                            >
+                              {article.title}
+                            </a>
+                          ))}
+                        </div>
                       </div>
-                      {category.articles.map((article, index) => (
-                        <a
-                          key={index}
-                          href={article.url}
-                          onClick={() => setRatgeberOpen(false)}
-                          className="block px-8 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-colors"
-                        >
-                          {article.title}
-                        </a>
-                      ))}
-                    </div>
-                  ))}
+                    ))}
+                  </div>
 
                 </div>
               </>

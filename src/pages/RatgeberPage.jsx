@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '../components/SEO';
-import { BookOpen, ShoppingCart, Lightbulb, PlugZap, KeyRound, AlertTriangle, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
+import { BookOpen, ShoppingCart, Lightbulb, PlugZap, Cable, KeyRound, AlertTriangle, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function RatgeberPage() {
@@ -279,7 +279,49 @@ Der Markt für gebrauchte Elektroautos boomt: 2024 wurden in Deutschland über 1
               </div>
             </a>
 
-            {/* Artikel Card 2 - Wertverlust */}
+            {/* Artikel Card 2 - WALLBOX */}
+            <a href="/ratgeber/wallbox-kosten-installation" className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+                {/* Artikel Bild */}
+                <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-500 overflow-hidden">
+                  <img 
+                    src="/images/ratgeber/wallbox-kosten-hero.webp"
+                    alt="Wie lange lädt ein E-Auto? Ladezeiten-Guide 2025"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Cable className="w-5 h-5 text-green-600" />
+                    <span className="text-sm font-semibold text-green-600 uppercase">Ladezeit</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-green-600 transition-colors">
+                Wallbox Kosten & Installation 2025: Was Sie wirklich zahlen
+                  </h3>
+                  
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                Eine eigene Wallbox ist für E-Auto-Besitzer die komfortabelste und günstigste Lösung zum Laden zuhause. Doch was kostet eine Wallbox wirklich? Die Gesamtkosten bewegen sich zwischen <strong>800 und 3.500 Euro</strong> – je nach Modell, Ausstattung und Installationsaufwand. In diesem umfassenden Guide erfahren Sie alles über Anschaffungskosten, Installation, Fördermöglichkeiten und wie sich die Investition rechnet.
+                  </p>
+                  
+                  {/* Meta Info */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-1">
+          
+                    </div>
+                    <span className="text-green-600 font-semibold group-hover:underline flex items-center gap-1">
+                      Weiterlesen <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            {/* Artikel Card 3 - Wertverlust */}
             <a href="/ratgeber/wertverlust" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
                 {/* Artikel Bild */}
@@ -322,6 +364,7 @@ Der Markt für gebrauchte Elektroautos boomt: 2024 wurden in Deutschland über 1
             </a>
 
           </div>
+
         </section>
 
         {/* Mythen & Fakten Section */}

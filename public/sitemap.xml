@@ -37,26 +37,32 @@
   <priority>0.7</priority>
 </url>
 <url>
+  <loc>https://e-autowelt.com/ratgeber/wallbox-kosten-installation</loc>
+  <lastmod>2025-02-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
   <loc>https://e-autowelt.com/ratgeber/effiziente-elektroautos</loc>
-  <lastmod>2025-02-15</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
-</url>
-<url>
-  <loc>https://e-autowelt.com/ratgeber/kaufberatung</loc>
-  <lastmod>2025-02-15</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.7</priority>
-</url>
-<url>
-  <loc>https://e-autowelt.com/ratgeber/thg-quote</loc>
   <lastmod>2025-03-15</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
 <url>
+  <loc>https://e-autowelt.com/ratgeber/kaufberatung</loc>
+  <lastmod>2025-05-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>https://e-autowelt.com/ratgeber/thg-quote</loc>
+  <lastmod>2025-07-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
   <loc>https://e-autowelt.com/ratgeber/e-auto-schieben</loc>
-  <lastmod>2025-02-15</lastmod>
+  <lastmod>2025-09-15</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
@@ -80,7 +86,7 @@
 </url>
 <url>
   <loc>https://e-autowelt.com/ratgeber/verkaufszahlen</loc>
-  <lastmod>2025-04-15</lastmod>
+  <lastmod>2025-10-15</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
