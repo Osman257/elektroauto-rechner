@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Calculator, Battery, ArrowRight, CheckCircle, TrendingUp, Shield, Euro, Zap } from 'lucide-react';
+import { Calculator, Battery, ArrowRight, CheckCircle, Shield } from 'lucide-react';
 import Header from '../components/Header';
 import { Link } from 'react-router-dom';
 
@@ -34,7 +34,6 @@ export default function RechnerOverview() {
             className="w-full h-full object-cover brightness-35"
             loading="lazy"
             decoding="async"
-
           />
           
           {/* Gradient Overlay */}
@@ -110,45 +109,41 @@ export default function RechnerOverview() {
           </div>
         </div>
 
-        {/* Rechner Cards */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        {/* Rechner Cards - Split Layout */}
+        <div className="grid md:grid-cols-1 gap-8 mb-16">
           
           {/* TCO-Rechner Card */}
           <Link to="/rechner/kostenrechner" className="group">
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-2 border-transparent hover:border-blue-500">
+            <div className="relative bg-gradient-to-r from-cyan-400 to-teal-500 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300">
+              {/* Dark Overlay */}
+              <div className="absolute inset-0 bg-black/20"></div>
               
-              {/* Card Header mit Icon */}
-              <div className="relative h-64 bg-gradient-to-br from-blue-500 to-green-500 overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Calculator className="w-32 h-32 text-white/20" />
+              <div className="relative flex flex-col md:flex-row items-center p-8 md:p-12">
+                {/* Icon Section */}
+                <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-12">
+                  <div className="bg-white/20 backdrop-blur-sm p-8 rounded-2xl">
+                    <Calculator className="w-20 h-20 text-white" />
+                  </div>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                <div className="absolute bottom-6 left-6 right-6">
-                  <h3 className="text-3xl font-bold text-white mb-2">
+                
+                {/* Content Section */}
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
                     Kostenrechner
                   </h3>
-                  
-                </div>
-              </div>
-
-              {/* Card Content */}
-              <div className="p-6">
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  Berechnen Sie die <strong>Gesamtkosten (TCO)</strong> über die Nutzungsdauer: 
-                  Anschaffung, Betrieb, Wartung, Steuern, Versicherung und Wertverlust im Vergleich.
-                </p>
-
-                
-
-                {/* CTA Button */}
-                <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                  <span className="text-sm text-gray-500">
-                    ⏱️ ca. 3 Minuten
-                  </span>
-                  <span className="text-blue-600 font-semibold group-hover:underline flex items-center gap-2">
-                    Jetzt berechnen
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </span>
+                  <p className="text-xl text-white leading-relaxed drop-shadow-md">
+                    Berechnen Sie die <strong>Gesamtkosten (TCO)</strong> über die Nutzungsdauer: 
+                    Anschaffung, Betrieb, Wartung, Steuern, Versicherung und Wertverlust im Vergleich.
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
+                    <span className="bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium">
+                      ⏱️ ca. 3 Minuten
+                    </span>
+                    <span className="bg-white text-cyan-600 font-bold px-6 py-2 rounded-full text-sm group-hover:scale-105 transition-transform flex items-center gap-2 shadow-lg">
+                      Jetzt berechnen
+                      <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -156,40 +151,36 @@ export default function RechnerOverview() {
 
           {/* Batterie-Rechner Card */}
           <Link to="/rechner/gebrauchtwagenbatterierechner" className="group">
-                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-2 border-transparent hover:border-blue-500">
+            <div className="relative bg-gradient-to-r from-emerald-400 to-cyan-500 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300">
+              {/* Dark Overlay */}
+              <div className="absolute inset-0 bg-black/20"></div>
               
-              {/* Card Header mit Icon */}
-              <div className="relative h-64 bg-gradient-to-br from-green-500 to-blue-500 overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Battery className="w-32 h-32 text-white/20" />
+              <div className="relative flex flex-col md:flex-row items-center p-8 md:p-12">
+                {/* Icon Section */}
+                <div className="flex-shrink-0 mb-6 md:mb-0 md:mr-12">
+                  <div className="bg-white/20 backdrop-blur-sm p-8 rounded-2xl">
+                    <Battery className="w-20 h-20 text-white" />
+                  </div>
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                <div className="absolute bottom-6 left-6 right-6">
-                                    <h3 className="text-3xl font-bold text-white mb-2">
+                
+                {/* Content Section */}
+                <div className="flex-1 text-center md:text-left">
+                  <h3 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
                     Batterie-Zustand Rechner
                   </h3>
-                  
-                </div>
-              </div>
-
-              {/* Card Content */}
-              <div className="p-6">
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  Ermitteln Sie den <strong>fairen Marktwert</strong> eines gebrauchten E-Autos. Batterieaustauschkosten, Garantiestatus und
-                   <strong> Batteriezustand (SOH) </strong> können verglichen werden. 
-                </p>
-
-              
-
-                {/* CTA Button */}
-                <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                  <span className="text-sm text-gray-500">
-                    ⏱️ ca. 2 Minuten
-                  </span>
-                  <span className="text-green-600 font-semibold group-hover:underline flex items-center gap-2">
-                    Jetzt berechnen
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </span>
+                  <p className="text-xl text-white leading-relaxed drop-shadow-md">
+                    Ermitteln Sie den <strong>fairen Marktwert</strong> eines gebrauchten E-Autos. Batterieaustauschkosten, Garantiestatus und
+                    <strong> Batteriezustand (SOH) </strong> können verglichen werden.
+                  </p>
+                  <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start">
+                    <span className="bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full text-white text-sm font-medium">
+                      ⏱️ ca. 2 Minuten
+                    </span>
+                    <span className="bg-white text-emerald-600 font-bold px-6 py-2 rounded-full text-sm group-hover:scale-105 transition-transform flex items-center gap-2 shadow-lg">
+                      Jetzt berechnen
+                      <ArrowRight className="w-4 h-4" />
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
