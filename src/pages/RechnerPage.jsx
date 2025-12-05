@@ -807,7 +807,6 @@ export default function ElektroAutoRechner() {
           <div className="text-center text-base text-gray-500 mt-6">
             <p>Alle Angaben sind Richtwerte und können je nach individuellem Nutzungsverhalten variieren.</p>
           </div>
-          </div>
           )}
         </div>
         {/* End of Rechner Section */}
