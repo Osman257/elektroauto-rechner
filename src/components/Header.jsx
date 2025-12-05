@@ -48,6 +48,7 @@ export default function Header({ activeTab = '' }) {
         { title: 'Die 10 größten Mythen', url: '/ratgeber/mythen' },
         { title: 'Wie lange lädt ein E-Auto?', url: '/ratgeber/ladezeit' },
         { title: 'Kann man ein E-Auto schieben?', url: '/ratgeber/e-auto-schieben' },
+        { title: 'Elektroauto Reichweite im Winter', url: '/ratgeber/elektroauto-reichweite-winter-test' },
         { title: 'Elektroauto Verkaufszahlen Deutschland 2025', url: '/ratgeber/verkaufszahlen' },
       ]
     }

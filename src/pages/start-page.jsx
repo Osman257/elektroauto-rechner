@@ -8,10 +8,10 @@ export default function StartPage() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
        {/* SEO Component */}
       <SEO
-        title="Elektroauto Kostenrechner 2025 - E-Auto vs Verbrenner | e-Autowelt"
-        description="Kostenloser Elektroauto Rechner: Vergleichen Sie E-Auto vs Verbrenner über die Nutzungsdauer. Anschaffung, Betrieb, Wartung, Steuern - alle Kosten auf einen Blick!"
+        title="Elektroauto Kostenrechner 2025 - E-Auto oder Verbrenner? | e-Autowelt"
+        description="Kostenloser Elektroauto Rechner: Vergleichen Sie E-Auto mit Verbrenner über die Nutzungsdauer. Anschaffung, Betrieb, Wartung, Steuern - alle Kosten auf einen Blick!"
         canonicalPath="/"
-        keywords="elektroauto rechner, e-auto kosten, kostenvergleich elektroauto, e-auto vs verbrenner"
+        keywords="elektroauto rechner, e-auto kosten, euto kostenrechner, e-auto kostenrechner, elektroauto kostenrechner, ev kostenrechner, eauto oder verbenner, kostenvergleich elektroauto, e-auto vs verbrenner"
         ogImage="/images/og-rechner.jpg"
         ogType="website"
       />

@@ -6,6 +6,7 @@ import GebrauchtwagenBatterieRechner from './pages/GebrauchtwagenBatterieRechner
 import RechnerPage from "./pages/RechnerPage";
 import RatgeberPage from "./pages/RatgeberPage";
 import KaufberatungPage from "./pages/KaufberatungPage";
+import ElektroautoReichweiteWinterTest from "./pages/ElektroautoReichweiteWinterTest";
 import MythenPage from "./pages/MythenPage";
 import ThgQuotePage from "./pages/ThgQuotePage";
 import EffizienteElektroautosPage from "./pages/EffizienteElektroautosPage";
@@ -33,6 +34,7 @@ function App() {
         <Route path="/ratgeber/mythen" element={<MythenPage />} />
         <Route path="/ratgeber/wallbox-kosten-installation" element={<WallboxKostenPage />} />
         <Route path="/ratgeber/effiziente-elektroautos" element={<EffizienteElektroautosPage />} />
+        <Route path="/ratgeber/elektroauto-reichweite-winter-test" element={<ElektroautoReichweiteWinterTest />} />
         <Route path="/ratgeber/thg-quote" element={<ThgQuotePage />} />
         <Route path="/ratgeber/e-auto-schieben" element={<EAutoSchiebenPage />} />
         <Route path="/ratgeber/ladezeit" element={<LadezeitPage />} />
