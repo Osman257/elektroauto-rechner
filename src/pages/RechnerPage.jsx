@@ -629,7 +629,7 @@ export default function ElektroAutoRechner() {
               }}
               className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 text-white text-lg md:text-xl font-bold px-8 py-4 md:px-12 md:py-6 rounded-full hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200"
             >
-              <Calculator className="w-6 h-6 md:w-7 md:h-7" />
+              <Calculator className="hidden md:inline-flex w-6 h-6 md:w-7 md:h-7" />
               Kostenvergleich starten
             </button>
           </div>
