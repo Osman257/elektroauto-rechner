@@ -803,30 +803,30 @@ export default function ElektroAutoRechner() {
             </div>
 
             {/* CO2-Bilanz */}
-            <div className="bg-yellow-50 rounded-xl p-8">
-              <div className="flex gap-3 mb-6">
+            <div className="bg-yellow-50 rounded-xl p-6 md:p-8">
+              <div className="flex gap-3 mb-4 md:mb-6 items-center">
                 <Leaf className="w-7 h-7 text-yellow-600" />
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-6">CO₂-Bilanz über {nutzungsdauer} Jahre</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-800">CO₂-Bilanz über {nutzungsdauer} Jahre</h2>
               </div>
-              
-              <div className="bg-gradient-to-br from-yellow-100 to-amber-100 rounded-lg p-6 border-2 border-yellow-400">
-                <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
+
+              <div className="bg-gradient-to-br from-yellow-100 to-amber-100 rounded-lg p-4 md:p-6 border-2 border-yellow-400">
+                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-4">
                   <div>
-                    <p className="text-xl font-semibold text-gray-700 mb-1">CO₂-Ersparnis</p>
+                    <p className="text-lg md:text-xl font-semibold text-gray-700 mb-1">CO₂-Ersparnis</p>
                     <p className={`text-2xl md:text-5xl font-bold text-yellow-700`}>
                       {berechnung.co2Ersparnis} t
                     </p>
                   </div>
-                  <div className="text-right">
-                    <p className="text-lg text-gray-700 font-medium mb-1">Entspricht</p>
-                    <p className="text-2xl font-bold text-yellow-800">
+                  <div className="text-left md:text-right">
+                    <p className="text-sm md:text-lg text-gray-700 font-medium mb-1">Entspricht</p>
+                    <p className="text-xl md:text-2xl font-bold text-yellow-800 leading-tight">
                       {Math.round(parseFloat(berechnung.co2Ersparnis) / 0.8)} Hin- und Rückflüge
                     </p>
-                    <p className="text-base text-gray-600">nach Mallorca (pro Person)</p>
+                    <p className="text-sm md:text-base text-gray-600">nach Mallorca (pro Person)</p>
                   </div>
                 </div>
-                
-                <p className="text-sm text-gray-500 mt-4 text-center">
+
+                <p className="text-sm text-gray-500 mt-4 text-left md:text-center">
                   *Berechnung basiert auf deutschem Strommix (400g CO₂/kWh) und 2,37kg CO₂/Liter Benzin
                 </p>
               </div>
