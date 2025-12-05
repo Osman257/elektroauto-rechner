@@ -27,6 +27,7 @@ export default function ElektroAutoRechner() {
   const [anteilPV, setAnteilPV] = useState(0);
   const [parkgebuehrenErsparnis, setParkgebuehrenErsparnis] = useState(480);
   const [thgQuote, setThgQuote] = useState(250);
+  const [resultsVisible, setResultsVisible] = useState(false);
 
   const berechnung = useMemo(() => {
     const kmGesamt = jahreskilometer * nutzungsdauer;
@@ -593,7 +594,10 @@ export default function ElektroAutoRechner() {
           <div className="mt-12 mb-12 flex justify-center">
             <button
               onClick={() => {
-                document.getElementById('results-section')?.scrollIntoView({ behavior: 'smooth' });
+                setResultsVisible(true);
+                setTimeout(() => {
+                  document.getElementById('results-section')?.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
               }}
               className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 text-white text-lg md:text-xl font-bold px-8 py-4 md:px-12 md:py-6 rounded-full hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200"
             >
@@ -603,6 +607,7 @@ export default function ElektroAutoRechner() {
           </div>
 
           {/* Ergebnisse */}
+          {resultsVisible && (
           <div id="results-section" className="space-y-6">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 flex items-center gap-2 mb-4 md:mb-6">
               <Euro className="w-7 h-7" />
@@ -802,6 +807,8 @@ export default function ElektroAutoRechner() {
           <div className="text-center text-base text-gray-500 mt-6">
             <p>Alle Angaben sind Richtwerte und können je nach individuellem Nutzungsverhalten variieren.</p>
           </div>
+          </div>
+          )}
         </div>
         {/* End of Rechner Section */}
 
