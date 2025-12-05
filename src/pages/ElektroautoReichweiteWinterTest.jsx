@@ -82,7 +82,7 @@ const ElektroautoReichweiteWinterTest = () => {
                 <span className="text-xs md:text-sm bg-white/30 backdrop-blur-md px-3 py-1 rounded-full font-semibold shadow-lg">Aktualisiert am 5. Dezember 2024</span>
               </div>
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                Elektroauto Reichweite im Winter - Test
+                Elektroauto Reichweite im Winter
               </h1>
             </div>
           </div>
