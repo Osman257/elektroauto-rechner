@@ -808,6 +808,7 @@ export default function ElektroAutoRechner() {
             <p>Alle Angaben sind Richtwerte und können je nach individuellem Nutzungsverhalten variieren.</p>
           </div>
           )}
+
         </div>
         {/* End of Rechner Section */}
 
