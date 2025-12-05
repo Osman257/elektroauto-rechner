@@ -589,8 +589,21 @@ export default function ElektroAutoRechner() {
             </div>
           )}
 
+          {/* CTA Button - Calculation Trigger */}
+          <div className="mt-12 mb-12 flex justify-center">
+            <button
+              onClick={() => {
+                document.getElementById('results-section')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 text-white text-lg md:text-xl font-bold px-8 py-4 md:px-12 md:py-6 rounded-full hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200"
+            >
+              <Calculator className="w-6 h-6 md:w-7 md:h-7" />
+              Kostenvergleich berechnen
+            </button>
+          </div>
+
           {/* Ergebnisse */}
-          <div className="space-y-6">
+          <div id="results-section" className="space-y-6">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 flex items-center gap-2 mb-4 md:mb-6">
               <Euro className="w-7 h-7" />
               Kostenvergleich über {nutzungsdauer} Jahre
