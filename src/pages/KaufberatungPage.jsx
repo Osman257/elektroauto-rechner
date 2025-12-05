@@ -20,7 +20,7 @@ export default function KaufberatungPage() {
       <Header activeTab="ratgeber" />
 
       {/* Spacer */}
-      <div className="h-20"></div>
+      <div className="h-20 md:h-24"></div>
 
       <div className="max-w-4xl mx-auto px-3 md:px-4 py-8">
         {/* Breadcrumb */}

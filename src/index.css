@@ -12,11 +12,11 @@ body {
 }
 /* global.css oder index.css */
 .page-content {
-  padding-top: 6rem; /* ca. 96px */
+  padding-top: 4rem; /* ca. 64px on mobile */
 }
 @media (min-width: 768px) {
   .page-content {
-    padding-top: 7rem;
+    padding-top: 6rem; /* ca. 96px on desktop */
   }
 }
 /* Base Slider - Mobile Optimized */

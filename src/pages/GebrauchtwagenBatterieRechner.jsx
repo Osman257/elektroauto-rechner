@@ -342,15 +342,11 @@ const GebrauchtwagenBatterieRechner = () => {
               <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-10">
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
                   <CheckCircle className="w-5 h-5 text-green-300" />
-                  <span className="text-white/90 text-sm md:text-base whitespace-nowrap">25 E-Auto-Modelle</span>
+                  <span className="text-white/90 text-sm md:text-base whitespace-nowrap">100% Kostenlos</span>
                 </div>
                 <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
                   <CheckCircle className="w-5 h-5 text-blue-300" />
                   <span className="text-white/90 text-sm md:text-base whitespace-nowrap">SOH-basierte Bewertung</span>
-                </div>
-                <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
-                  <CheckCircle className="w-5 h-5 text-green-300" />
-                  <span className="text-white/90 text-sm md:text-base whitespace-nowrap">100% Kostenlos</span>
                 </div>
               </div>
             </div>

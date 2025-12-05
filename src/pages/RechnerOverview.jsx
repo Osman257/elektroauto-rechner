@@ -26,7 +26,7 @@ export default function RechnerOverview() {
 
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 mt-8 mb-12">
-        <div className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+        <div className="relative h-[500px] sm:h-[550px] md:h-[650px] rounded-3xl overflow-hidden shadow-2xl">
           {/* Hero Image */}
           <img 
             src="/images/ratgeber/rechner-overview-hero.webp"

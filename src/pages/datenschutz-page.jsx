@@ -9,7 +9,7 @@ export default function DatenschutzPage() {
             {/* Header */}
       <Header activeTab="datenschutz" />
       {/* Spacer for fixed header */}
-      <div className="h-20"></div>
+      <div className="h-20 md:h-24"></div>
 
       <div className="max-w-4xl mx-auto px-4 md:px-8 py-12">
         <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
