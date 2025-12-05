@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import SEO from '../components/SEO';
 import { Droplets, Zap, Euro, Calculator, CheckCircle, ArrowDown, TrendingDown, Leaf, PiggyBank, Gauge} from 'lucide-react';
 import Header from '../components/Header';
@@ -28,6 +28,34 @@ export default function ElektroAutoRechner() {
   const [parkgebuehrenErsparnis, setParkgebuehrenErsparnis] = useState(480);
   const [thgQuote, setThgQuote] = useState(250);
   const [resultsVisible, setResultsVisible] = useState(false);
+
+  useEffect(() => {
+    // Hide results whenever any input value changes so user must re-run calculation
+    setResultsVisible(false);
+  }, [
+    kaufpreisElektro,
+    kaufpreisVerbrenner,
+    jahreskilometer,
+    strompreis,
+    benzinpreis,
+    verbrauchElektro,
+    verbrauchVerbrenner,
+    nutzungsdauer,
+    staatlicheFoerderung,
+    versicherungElektroProJahr,
+    versicherungVerbrennerProJahr,
+    steuerElektroProJahr,
+    steuerVerbrennerProJahr,
+    expertenModus,
+    strompreisZuhause,
+    strompreisOeffentlich,
+    strompreisPV,
+    anteilZuhause,
+    anteilOeffentlich,
+    anteilPV,
+    parkgebuehrenErsparnis,
+    thgQuote,
+  ]);
 
   const berechnung = useMemo(() => {
     const kmGesamt = jahreskilometer * nutzungsdauer;
@@ -602,7 +630,7 @@ export default function ElektroAutoRechner() {
               className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 text-white text-lg md:text-xl font-bold px-8 py-4 md:px-12 md:py-6 rounded-full hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200"
             >
               <Calculator className="w-6 h-6 md:w-7 md:h-7" />
-              Kostenvergleich berechnen
+              Kostenvergleich starten
             </button>
           </div>
 
