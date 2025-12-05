@@ -810,7 +810,6 @@ export default function ElektroAutoRechner() {
           )}
 
         </div>
-        {/* End of Rechner Section */}
 
         {/* Footer Section */}
         <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8 mt-6">
