@@ -608,6 +608,7 @@ export default function ElektroAutoRechner() {
 
           {/* Ergebnisse */}
           {resultsVisible && (
+            <>
           <div id="results-section" className="space-y-6">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 flex items-center gap-2 mb-4 md:mb-6">
               <Euro className="w-7 h-7" />
@@ -807,6 +808,7 @@ export default function ElektroAutoRechner() {
           <div className="text-center text-base text-gray-500 mt-6">
             <p>Alle Angaben sind Richtwerte und können je nach individuellem Nutzungsverhalten variieren.</p>
           </div>
+            </>
           )}
 
         </div>
