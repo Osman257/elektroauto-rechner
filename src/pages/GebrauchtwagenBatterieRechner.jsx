@@ -473,20 +473,26 @@ const GebrauchtwagenBatterieRechner = () => {
                   <Battery className="w-4 h-4" />
                   Batterie SOH (State of Health)
                 </label>
-                <div className="relative">
-                  <input
-                    type="number"
-                    value={sohWert}
-                    onChange={(e) => setSohWert(e.target.value)}
-                    placeholder="z.B. 85"
-                    min="50"
-                    max="100"
-                    className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  />
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 font-medium">
-                    %
-                  </span>
-                </div>
+               <div className="relative">
+  <input
+    type="number"
+    value={sohWert}
+    onChange={(e) => {
+      let value = e.target.value;
+      if (value !== '' && parseFloat(value) > 100) {
+        value = '100';
+      }
+      setSohWert(value);
+    }}
+    placeholder="z.B. 85"
+    min="50"
+    max="100"
+    className="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+  />
+  <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 font-medium">
+    %
+  </span>
+</div>
                 <p className="text-xs text-gray-500 mt-1">
                   Tipp: SOH-Wert bei DEKRA, TÜV oder mit Aviloo-Box messen lassen
                 </p>
@@ -636,10 +642,12 @@ const GebrauchtwagenBatterieRechner = () => {
                     }`} />
                     <div>
                       <h4 className="font-bold mb-2">
-                        {ergebnis.bewertungKlasse === 'danger' ? 'Empfehlung: Vorsicht' : 
-                         ergebnis.bewertungKlasse === 'warning' ? 'Empfehlung: Vorsicht' : 
-                         'Empfehlung: Vorsicht'}
-                      </h4>
+  {ergebnis.bewertungKlasse === 'success' ? 'Ausgezeichnet' : 
+   ergebnis.bewertungKlasse === 'info' ? 'Gut' : 
+   ergebnis.bewertungKlasse === 'warning' ? 'Befriedigend' : 
+   ergebnis.bewertungKlasse === 'danger' ? 'Kritisch' : 
+   'Nicht empfohlen'}
+</h4>
                       <p className="text-sm leading-relaxed">{ergebnis.empfehlung}</p>
                     </div>
                   </div>
