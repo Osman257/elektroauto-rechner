@@ -11,6 +11,7 @@ import MythenPage from "./pages/MythenPage";
 import ThgQuotePage from "./pages/ThgQuotePage";
 import EffizienteElektroautosPage from "./pages/EffizienteElektroautosPage";
 import EAutoSchiebenPage from "./pages/EAutoSchiebenPage";
+import StrompreisePage from "./pages/StrompreisePage";
 import WallboxKostenPage from "./pages/WallboxKostenPage";
 import WertverlustPage from './pages/WertverlustPage';
 import VerkaufszahlenPage from "./pages/VerkaufszahlenPage";
@@ -36,6 +37,7 @@ function App() {
         <Route path="/ratgeber/effiziente-elektroautos" element={<EffizienteElektroautosPage />} />
         <Route path="/ratgeber/elektroauto-reichweite-winter-test" element={<ElektroautoReichweiteWinterTest />} />
         <Route path="/ratgeber/thg-quote" element={<ThgQuotePage />} />
+        <Route path="/ratgeber/strompreise-2025" element={<StrompreisePage />} />
         <Route path="/ratgeber/e-auto-schieben" element={<EAutoSchiebenPage />} />
         <Route path="/ratgeber/ladezeit" element={<LadezeitPage />} />
         <Route path="/ratgeber/wertverlust" element={<WertverlustPage />} />

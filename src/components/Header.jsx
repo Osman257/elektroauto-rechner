@@ -39,6 +39,7 @@ export default function Header({ activeTab = '' }) {
       articles: [
         { title: 'THG-Quote verdienen', url: '/ratgeber/thg-quote' },
         { title: 'Wertverlust E-Autos', url: '/ratgeber/wertverlust' },
+        { title: 'Strompreise E-Autos', url: '/ratgeber/strompreise-2025' },
         { title: 'Wallbox Installation & Kosten', url: '/ratgeber/wallbox-kosten-installation' },
       ]
     },

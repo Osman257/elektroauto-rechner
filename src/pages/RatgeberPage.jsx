@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '../components/SEO';
-import { BookOpen, ShoppingCart, Lightbulb, Snowflake, PlugZap, Cable, KeyRound, AlertTriangle, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
+import { BookOpen, ShoppingCart, Lightbulb, Snowflake, PlugZap, Wallet, Cable, KeyRound, AlertTriangle, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function RatgeberPage() {
@@ -278,7 +278,47 @@ Der Markt für gebrauchte Elektroautos boomt: 2024 wurden in Deutschland über 1
                 </div>
               </div>
             </a>
-
+ {/* Artikel Card - STROMKOSTEN 2025 */}
+            <a href="/ratgeber/strompreise-2025" className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+                {/* Artikel Bild */}
+                <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-500 overflow-hidden">
+                  <img 
+                    src="/images/ratgeber/strompreise-2025-hero.webp"
+                    alt="Strompreise 2025 - Lohnt sich ein E-Auto noch? Kostenvergleich Elektroauto vs Verbrenner"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Wallet className="w-5 h-5 text-green-600" />
+                    <span className="text-sm font-semibold text-green-600 uppercase">Strompreise</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-green-600 transition-colors">
+                Strompreise 2025: Lohnt sich ein E-Auto noch?
+                  </h3>
+                  
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                Die Strompreise in Deutschland sind seit dem Höhepunkt der Energiekrise 2023 zwar deutlich gesunken, bleiben aber auf einem historisch hohen Niveau. Gleichzeitig steigen die Kosten für Benzin und Diesel durch die CO2-Bepreisung kontinuierlich an. Für E-Auto-Interessenten stellt sich daher die entscheidende Frage: <strong>Lohnt sich die Elektromobilität 2025 noch wirtschaftlich?</strong> Die Antwort hängt maßgeblich davon ab, wo und wie Sie laden.
+                  </p>
+                  
+                  {/* Meta Info */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-1">
+          
+                    </div>
+                    <span className="text-green-600 font-semibold group-hover:underline flex items-center gap-1">
+                      Weiterlesen <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
             {/* Artikel Card 2 - WALLBOX */}
             <a href="/ratgeber/wallbox-kosten-installation" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
