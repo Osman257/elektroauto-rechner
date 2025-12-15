@@ -1,59 +1,72 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 export default function Header({ activeTab = '' }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [ratgeberOpen, setRatgeberOpen] = useState(false);
-  const [ratgeberMobileOpen, setRatgeberMobileOpen] = useState(false);
-  const [rechnerOpen, setRechnerOpen] = useState(false);
-  const [rechnerMobileOpen, setRechnerMobileOpen] = useState(false);
+  const [mobileRechnerOpen, setMobileRechnerOpen] = useState(false);
+  const [mobileRatgeberOpen, setMobileRatgeberOpen] = useState(false);
+  const [desktopRechnerOpen, setDesktopRechnerOpen] = useState(false);
+  const [desktopRatgeberOpen, setDesktopRatgeberOpen] = useState(false);
+  
+  const rechnerRef = useRef(null);
+  const ratgeberRef = useRef(null);
+
+  // Close dropdowns when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (rechnerRef.current && !rechnerRef.current.contains(event.target)) {
+        setDesktopRechnerOpen(false);
+      }
+      if (ratgeberRef.current && !ratgeberRef.current.contains(event.target)) {
+        setDesktopRatgeberOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const toggleMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+    if (mobileMenuOpen) {
+      setMobileRechnerOpen(false);
+      setMobileRatgeberOpen(false);
+    }
   };
 
   const closeMenu = () => {
     setMobileMenuOpen(false);
-    setRatgeberMobileOpen(false);
-    setRechnerMobileOpen(false);
+    setMobileRechnerOpen(false);
+    setMobileRatgeberOpen(false);
   };
 
-  // Rechner Liste (ohne Kategorien)
-  const rechnerList = [
-    { title: 'Kostenrechner', url: '/rechner/kostenrechner', description: 'Gesamtkosten berechnen' },
-    { title: 'Batterierechner für Gebrauchtwagen', url: '/rechner/gebrauchtwagenbatterierechner', description: 'SOH-basierte Bewertung' },
+  // Rechner Links
+  const rechnerLinks = [
+    { href: '/rechner', label: 'Alle Rechner', isOverview: true },
+    { href: '/rechner/kostenrechner', label: 'Kostenrechner', description: 'Gesamtkosten berechnen' },
+    { href: '/rechner/batteriegesundheit', label: 'Batterierechner für Gebrauchtwagen', description: 'SOH-basierte Bewertung' },
   ];
 
-  // Ratgeber Artikel nach Kategorien
-  const ratgeberCategories = {
-    kaufberatung: {
-      title: 'Kaufberatung',
-      articles: [
-        { title: 'Kaufberatung 2025', url: '/ratgeber/kaufberatung' },
-        { title: 'Gebrauchtwagen Guide', url: '/ratgeber/gebrauchtwagen' },
-        { title: 'Effizienteste Elektroautos 2025', url: '/ratgeber/effiziente-elektroautos' },
-      ]
-    },
-    kosten: {
-      title: 'Kosten & Förderung',
-      articles: [
-        { title: 'THG-Quote verdienen', url: '/ratgeber/thg-quote' },
-        { title: 'Wertverlust E-Autos', url: '/ratgeber/wertverlust' },
-        { title: 'Strompreise E-Autos', url: '/ratgeber/strompreise-2025' },
-        { title: 'Wallbox Installation & Kosten', url: '/ratgeber/wallbox-kosten-installation' },
-      ]
-    },
-    mythen: {
-      title: 'Mythen & Fakten',
-      articles: [
-        { title: 'Die 10 größten Mythen', url: '/ratgeber/mythen' },
-        { title: 'Wie lange lädt ein E-Auto?', url: '/ratgeber/ladezeit' },
-        { title: 'Kann man ein E-Auto schieben?', url: '/ratgeber/e-auto-schieben' },
-        { title: 'Elektroauto Reichweite im Winter', url: '/ratgeber/elektroauto-reichweite-winter-test' },
-        { title: 'Elektroauto Verkaufszahlen Deutschland 2025', url: '/ratgeber/verkaufszahlen' },
-      ]
-    }
-  };
+  // Ratgeber Links mit Kategorien
+  const ratgeberLinks = [
+    { category: 'KAUFBERATUNG', links: [
+      { href: '/ratgeber/kaufberatung', label: 'Kaufberatung 2025' },
+      { href: '/ratgeber/gebrauchtwagen', label: 'Gebrauchtwagen Guide' },
+      { href: '/ratgeber/effiziente-elektroautos', label: 'Effizienteste Elektroautos 2025' },
+    ]},
+    { category: 'KOSTEN & FÖRDERUNG', links: [
+      { href: '/ratgeber/thg-quote', label: 'THG-Quote verdienen' },
+      { href: '/ratgeber/strompreise-2025', label: 'Strompreise E-Autos' },
+      { href: '/ratgeber/wallbox-kosten-installation', label: 'Wallbox Installation & Kosten' },
+      { href: '/ratgeber/wertverlust', label: 'Wertverlust E-Autos' },
+    ]},
+    { category: 'MYTHEN & FAKTEN', links: [
+      { href: '/ratgeber/mythen', label: 'Die 10 größten Mythen' },
+      { href: '/ratgeber/ladezeit', label: 'Wie lange lädt ein E-Auto?' },
+      { href: '/ratgeber/elektroauto-reichweite-winter-test', label: 'Winter Reichweite Test' },
+      { href: '/ratgeber/verkaufszahlen', label: 'Verkaufszahlen Deutschland' },
+    ]},
+  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
@@ -67,155 +80,113 @@ export default function Header({ activeTab = '' }) {
           />
         </a>
 
-        {/* Desktop Navigation - NUR auf Desktop (ab 768px) */}
-        <nav className="hidden md:flex gap-8 items-center">
-          
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex gap-8">
           {/* Rechner Dropdown */}
-          <div className="relative">
+          <div ref={rechnerRef} className="relative">
             <button
               onClick={() => {
-                setRechnerOpen(!rechnerOpen);
-                setRatgeberOpen(false);
+                setDesktopRechnerOpen(!desktopRechnerOpen);
+                setDesktopRatgeberOpen(false);
               }}
-              className={rechnerOpen 
-                ? 'relative flex items-center gap-1 text-lg font-bold text-blue-600 transition-all duration-200 pb-1'
-                : 'relative flex items-center gap-1 text-lg font-medium text-gray-700 hover:text-blue-600 transition-all duration-200 pb-1'
-              }
+              className={`flex items-center gap-1 relative text-lg font-medium transition-all duration-200 pb-1 ${
+                activeTab === 'rechner' 
+                  ? 'text-blue-600 font-bold' 
+                  : 'text-gray-700 hover:text-blue-600 group'
+              }`}
             >
               Rechner
-              <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${rechnerOpen ? 'rotate-180' : ''}`} />
-              {rechnerOpen && (
+              <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${desktopRechnerOpen ? 'rotate-180' : ''}`} />
+              {activeTab === 'rechner' ? (
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600"></span>
+              ) : (
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
               )}
             </button>
-
-            {/* Dropdown Menu - Nach rechts ausgerichtet */}
-            {rechnerOpen && (
-              <>
-                {/* Backdrop zum Schließen bei Außenklick */}
-                <div 
-                  className="fixed inset-0 z-10" 
-                  onClick={() => setRechnerOpen(false)}
-                ></div>
-                
-                <div className="absolute top-full right-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border border-gray-100 py-4 z-20">
-                  
-                  {/* Rechner Übersicht Link */}
-                  <a
-                    href="/rechner"
-                    onClick={() => setRechnerOpen(false)}
-                    className="block px-6 py-3 hover:bg-blue-50 transition-colors group"
-                  >
-                    <div className="text-base font-bold text-gray-800 group-hover:text-blue-600">
-                      Alle Rechner
-                    </div>
-                    <div className="text-xs text-gray-500 mt-0.5">
-                      Zur Rechner-Übersicht
-                    </div>
-                  </a>
-
-                  <div className="border-t border-gray-100 my-3"></div>
-
-                  {/* Rechner Liste */}
-                  {rechnerList.map((rechner, index) => (
+            
+            {desktopRechnerOpen && (
+              <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 py-2">
+                {rechnerLinks.map((link, index) => (
+                  <React.Fragment key={link.href}>
                     <a
-                      key={index}
-                      href={rechner.url}
-                      onClick={() => setRechnerOpen(false)}
-                      className="block px-6 py-2 hover:bg-gray-50 transition-colors group"
+                      href={link.href}
+                      onClick={() => setDesktopRechnerOpen(false)}
+                      className={`block px-4 py-3 transition-colors ${
+                        link.isOverview 
+                          ? 'text-gray-900 font-semibold hover:bg-blue-50' 
+                          : 'text-gray-700 hover:bg-blue-50'
+                      }`}
                     >
-                      <div className="text-sm text-gray-700 group-hover:text-blue-600 font-medium">
-                        {rechner.title}
+                      <div className={`text-sm ${link.isOverview ? '' : 'font-semibold hover:text-blue-600'}`}>
+                        {link.label}
                       </div>
-                      <div className="text-xs text-gray-500 mt-0.5">
-                        {rechner.description}
-                      </div>
+                      {link.description && (
+                        <div className="text-xs text-gray-500 mt-1">{link.description}</div>
+                      )}
                     </a>
-                  ))}
-
-                </div>
-              </>
+                    {link.isOverview && <div className="border-t border-gray-200 my-2"></div>}
+                  </React.Fragment>
+                ))}
+              </div>
             )}
           </div>
 
           {/* Ratgeber Dropdown */}
-          <div className="relative">
+          <div ref={ratgeberRef} className="relative">
             <button
               onClick={() => {
-                setRatgeberOpen(!ratgeberOpen);
-                setRechnerOpen(false);
+                setDesktopRatgeberOpen(!desktopRatgeberOpen);
+                setDesktopRechnerOpen(false);
               }}
-              className={ratgeberOpen 
-                ? 'relative flex items-center gap-1 text-lg font-bold text-blue-600 transition-all duration-200 pb-1'
-                : 'relative flex items-center gap-1 text-lg font-medium text-gray-700 hover:text-blue-600 transition-all duration-200 pb-1'
-              }
+              className={`flex items-center gap-1 relative text-lg font-medium transition-all duration-200 pb-1 ${
+                activeTab === 'ratgeber' 
+                  ? 'text-blue-600 font-bold' 
+                  : 'text-gray-700 hover:text-blue-600 group'
+              }`}
             >
               Ratgeber
-              <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${ratgeberOpen ? 'rotate-180' : ''}`} />
-              {ratgeberOpen && (
+              <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${desktopRatgeberOpen ? 'rotate-180' : ''}`} />
+              {activeTab === 'ratgeber' ? (
                 <span className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600"></span>
+              ) : (
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
               )}
             </button>
-
-            {/* Dropdown Menu - Breiter (600px), 2 Spalten, nach rechts ausgerichtet */}
-            {ratgeberOpen && (
-              <>
-                {/* Backdrop zum Schließen bei Außenklick */}
-                <div 
-                  className="fixed inset-0 z-10" 
-                  onClick={() => setRatgeberOpen(false)}
-                ></div>
+            
+            {desktopRatgeberOpen && (
+              <div className="absolute top-full right-0 mt-2 w-72 bg-white rounded-lg shadow-xl border border-gray-200 py-2 max-h-[calc(100vh-100px)] overflow-y-auto">
+                <a
+                  href="/ratgeber"
+                  onClick={() => setDesktopRatgeberOpen(false)}
+                  className="block px-4 py-3 text-sm text-gray-900 hover:bg-blue-50 transition-colors font-semibold"
+                >
+                  Alle Artikel ansehen
+                </a>
+                <div className="border-t border-gray-200 my-2"></div>
                 
-                <div className="absolute top-full right-0 mt-2 w-[600px] bg-white rounded-xl shadow-2xl border border-gray-100 py-4 z-20">
-                  
-                  {/* Ratgeber Übersicht Link */}
-                  <a
-                    href="/ratgeber"
-                    onClick={() => setRatgeberOpen(false)}
-                    className="block px-6 py-3 hover:bg-blue-50 transition-colors group"
-                  >
-                    <div className="text-base font-bold text-gray-800 group-hover:text-blue-600">
-                      Alle Artikel
+                {ratgeberLinks.map((section) => (
+                  <div key={section.category} className="mb-4">
+                    <div className="px-4 py-2 text-xs font-bold text-gray-900 uppercase tracking-wide">
+                      {section.category}
                     </div>
-                    <div className="text-xs text-gray-500 mt-0.5">
-                      Zur Ratgeber-Übersicht
-                    </div>
-                  </a>
-
-                  <div className="border-t border-gray-100 my-3"></div>
-
-                  {/* Kategorien & Artikel - 2 Spalten Grid */}
-                  <div className="grid grid-cols-2 gap-x-6 gap-y-4 px-6">
-                    {Object.entries(ratgeberCategories).map(([key, category]) => (
-                      <div key={key}>
-                        <div className="pb-2">
-                          <span className="text-xs font-bold text-gray-800 uppercase tracking-wide">
-                            {category.title}
-                          </span>
-                        </div>
-                        <div className="space-y-1.5">
-                          {category.articles.map((article, index) => (
-                            <a
-                              key={index}
-                              href={article.url}
-                              onClick={() => setRatgeberOpen(false)}
-                              className="block py-1 text-sm text-gray-700 hover:text-blue-600 transition-colors"
-                            >
-                              {article.title}
-                            </a>
-                          ))}
-                        </div>
-                      </div>
+                    {section.links.map((link) => (
+                      <a
+                        key={link.href}
+                        href={link.href}
+                        onClick={() => setDesktopRatgeberOpen(false)}
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                      >
+                        {link.label}
+                      </a>
                     ))}
                   </div>
-
-                </div>
-              </>
+                ))}
+              </div>
             )}
           </div>
         </nav>
 
-        {/* Mobile Burger Button - NUR auf Mobile (unter 768px) */}
+        {/* Mobile Burger Button */}
         <button
           onClick={toggleMenu}
           className="md:hidden p-2 text-gray-700 hover:text-blue-600 transition-colors"
@@ -229,104 +200,92 @@ export default function Header({ activeTab = '' }) {
         </button>
       </div>
 
-      {/* Mobile Dropdown Menu - NUR auf Mobile sichtbar */}
+      {/* Mobile Dropdown Menu - MIT SCROLLBAR FIX */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
+        <div className="md:hidden bg-white border-t border-gray-200 shadow-lg max-h-[calc(100vh-72px)] overflow-y-auto overscroll-contain">
           <nav className="flex flex-col py-4">
-            
-            {/* Rechner mit Kollaps-Funktion */}
+            {/* Rechner Section */}
             <button
-              onClick={() => setRechnerMobileOpen(!rechnerMobileOpen)}
-              className={activeTab === 'rechner'
-                ? 'w-full flex items-center justify-between px-6 py-3 text-base font-bold text-blue-600 bg-blue-50 border-l-4 border-blue-600'
-                : 'w-full flex items-center justify-between px-6 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-all'
-              }
+              onClick={() => setMobileRechnerOpen(!mobileRechnerOpen)}
+              className={`flex items-center justify-between px-6 py-3 text-base font-medium transition-all ${
+                activeTab === 'rechner'
+                  ? 'text-blue-600 bg-blue-50 border-l-4 border-blue-600 font-bold'
+                  : 'text-gray-700 hover:bg-gray-50 hover:text-blue-600'
+              }`}
             >
-              <span>Rechner</span>
-              <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${rechnerMobileOpen ? 'rotate-180' : ''}`} />
+              Rechner
+              <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${mobileRechnerOpen ? 'rotate-180' : ''}`} />
             </button>
-
-            {/* Rechner Liste - Kollabierbar */}
-            {rechnerMobileOpen && (
-              <div className="bg-gray-50 animate-in slide-in-from-top duration-200">
-                {/* Rechner Übersicht */}
-                <a 
-                  href="/rechner"
-                  onClick={closeMenu}
-                  className="block px-8 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-all"
-                >
-                  Alle Rechner ansehen
-                </a>
-
-                <div className="border-t border-gray-200 my-2"></div>
-
-                {/* Rechner Liste */}
-                <div className="pb-2">
-                  {rechnerList.map((rechner, index) => (
+            
+            {mobileRechnerOpen && (
+              <div className="bg-gray-50 border-l-4 border-blue-300">
+                {rechnerLinks.map((link, index) => (
+                  <React.Fragment key={link.href}>
                     <a
-                      key={index}
-                      href={rechner.url}
+                      href={link.href}
                       onClick={closeMenu}
-                      className="block px-8 py-2 text-sm text-gray-600 hover:bg-gray-100 hover:text-blue-600 transition-colors"
+                      className={`block px-10 py-3 transition-colors ${
+                        link.isOverview 
+                          ? 'text-gray-900 font-semibold hover:bg-blue-50' 
+                          : 'text-gray-700 hover:bg-blue-50'
+                      }`}
                     >
-                      {rechner.title}
+                      <div className={`text-sm ${link.isOverview ? '' : 'font-semibold hover:text-blue-600'}`}>
+                        {link.label}
+                      </div>
+                      {link.description && (
+                        <div className="text-xs text-gray-500 mt-1">{link.description}</div>
+                      )}
                     </a>
-                  ))}
-                </div>
+                    {link.isOverview && <div className="border-t border-gray-300 mx-4"></div>}
+                  </React.Fragment>
+                ))}
               </div>
             )}
 
-            {/* Ratgeber mit Kollaps-Funktion */}
+            {/* Ratgeber Section */}
             <button
-              onClick={() => setRatgeberMobileOpen(!ratgeberMobileOpen)}
-              className={activeTab === 'ratgeber'
-                ? 'w-full flex items-center justify-between px-6 py-3 text-base font-bold text-blue-600 bg-blue-50 border-l-4 border-blue-600'
-                : 'w-full flex items-center justify-between px-6 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-blue-600 transition-all'
-              }
+              onClick={() => setMobileRatgeberOpen(!mobileRatgeberOpen)}
+              className={`flex items-center justify-between px-6 py-3 text-base font-medium transition-all ${
+                activeTab === 'ratgeber'
+                  ? 'text-blue-600 bg-blue-50 border-l-4 border-blue-600 font-bold'
+                  : 'text-gray-700 hover:bg-gray-50 hover:text-blue-600'
+              }`}
             >
-              <span>Ratgeber</span>
-              <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${ratgeberMobileOpen ? 'rotate-180' : ''}`} />
+              Ratgeber
+              <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${mobileRatgeberOpen ? 'rotate-180' : ''}`} />
             </button>
-
-            {/* Ratgeber Kategorien & Artikel - Kollabierbar */}
-            {ratgeberMobileOpen && (
-              <div className="bg-gray-50 animate-in slide-in-from-top duration-200">
-                {/* Ratgeber Übersicht */}
-                <a 
+            
+            {mobileRatgeberOpen && (
+              <div className="bg-gray-50 border-l-4 border-blue-300">
+                <a
                   href="/ratgeber"
                   onClick={closeMenu}
-                  className="block px-8 py-3 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-blue-600 transition-all"
+                  className="block px-10 py-3 text-sm text-gray-900 hover:bg-blue-50 transition-colors font-semibold"
                 >
                   Alle Artikel ansehen
                 </a>
-
-                <div className="border-t border-gray-200 my-2"></div>
-
-                {/* Kategorien & Artikel */}
-                <div className="space-y-3 pb-2">
-                  {Object.entries(ratgeberCategories).map(([key, category]) => (
-                    <div key={key}>
-                      <div className="px-8 py-2">
-                        <span className="text-sm font-bold text-gray-800 uppercase">
-                          {category.title}
-                        </span>
-                      </div>
-                      {category.articles.map((article, index) => (
-                        <a
-                          key={index}
-                          href={article.url}
-                          onClick={closeMenu}
-                          className="block px-10 py-2 text-sm text-gray-600 hover:bg-gray-100 hover:text-blue-600 transition-colors"
-                        >
-                          {article.title}
-                        </a>
-                      ))}
+                <div className="border-t border-gray-300 mx-4"></div>
+                
+                {ratgeberLinks.map((section) => (
+                  <div key={section.category} className="mt-3">
+                    <div className="px-10 py-2 text-xs font-bold text-gray-900 uppercase tracking-wide">
+                      {section.category}
                     </div>
-                  ))}
-                </div>
+                    {section.links.map((link) => (
+                      <a
+                        key={link.href}
+                        href={link.href}
+                        onClick={closeMenu}
+                        className="block px-10 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                      >
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
+                ))}
               </div>
             )}
-
           </nav>
         </div>
       )}
