@@ -44,7 +44,7 @@ export default function Header({ activeTab = '' }) {
   const rechnerLinks = [
     { href: '/rechner', label: 'Alle Rechner', isOverview: true },
     { href: '/rechner/kostenrechner', label: 'Kostenrechner', description: 'Gesamtkosten berechnen' },
-    { href: '/rechner/batteriegesundheit', label: 'Batterierechner für Gebrauchtwagen', description: 'SOH-basierte Bewertung' },
+    { href: '/rechner/gebrauchtwagenbatterierechner', label: 'Batterierechner für Gebrauchtwagen', description: 'SOH-basierte Bewertung' },
   ];
 
   // Ratgeber Links mit Kategorien
