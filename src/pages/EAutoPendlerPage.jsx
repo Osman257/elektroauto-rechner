@@ -637,9 +637,7 @@ export default function EAutoPendlerPage() {
             <a href="/ratgeber/strompreise-2025" className="block text-blue-600 hover:underline text-sm md:text-base">
               → Strompreise 2025: Was kostet das Laden wirklich?
             </a>
-            <a href="/rechner/ladekosten" className="block text-blue-600 hover:underline text-sm md:text-base">
-              → Ladekosten-Rechner: Ihre persönlichen Stromkosten berechnen
-            </a>
+          
             <a href="/ratgeber/elektroauto-reichweite-winter-test" className="block text-blue-600 hover:underline text-sm md:text-base">
               → E-Auto Reichweite im Winter: Der große Praxistest
             </a>
