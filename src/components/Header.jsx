@@ -162,7 +162,7 @@ export default function Header({ activeTab = '' }) {
                   onClick={() => setDesktopRatgeberOpen(false)}
                   className="block px-4 py-3 text-sm text-gray-900 hover:bg-blue-50 transition-colors font-semibold"
                 >
-                  Alle Artikel ansehen
+                  Alle Artikel
                 </a>
                 <div className="border-t border-gray-200 my-2"></div>
                 
@@ -265,7 +265,7 @@ export default function Header({ activeTab = '' }) {
                   onClick={closeMenu}
                   className="block px-10 py-3 text-sm text-gray-900 hover:bg-blue-50 transition-colors font-semibold"
                 >
-                  Alle Artikel ansehen
+                  Alle Artikel
                 </a>
                 <div className="border-t border-gray-300 mx-4"></div>
                 
