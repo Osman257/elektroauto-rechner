@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '../components/SEO';
-import { BookOpen, ShoppingCart, Lightbulb, Car, Shield, Snowflake, PlugZap, Wallet, Cable, KeyRound, AlertTriangle, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
+import { BookOpen, ShoppingCart, Lightbulb, Car, Shield, Wrench, Snowflake, PlugZap, Wallet, Cable, KeyRound, AlertTriangle, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function RatgeberPage() {
@@ -570,6 +570,49 @@ Sie fahren elektrisch oder planen den Umstieg auf ein E-Auto? Entscheidend ist d
                   <p className="text-sm text-gray-600 mb-4 line-clamp-3">
                     Von 20 Minuten bis 24 Stunden – alle Ladezeiten im Vergleich. Steckdose, Wallbox, Schnellladen + Formel zur Berechnung.
                   </p>
+                  
+                  {/* Meta Info */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-1">
+          
+                    </div>
+                    <span className="text-yellow-600 font-semibold group-hover:underline flex items-center gap-1">
+                      Weiterlesen <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+                        {/* Artikel Card - WARTUNG */}
+            <a href="/ratgeber/elektroauto-wartung" className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+                {/* Artikel Bild */}
+                <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-500 overflow-hidden">
+                  <img 
+                    src="/images/ratgeber/elektroauto-wartung-hero.webp"
+                    alt="Wartung von Elektroauto - Worauf Sie achten sollten"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Wrench className="w-5 h-5 text-yellow-600" />
+                    <span className="text-sm font-semibold text-yellow-600 uppercase">Wartung</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-yellow-600 transition-colors">
+                Elektroauto Wartung: Was ist anders als beim Verbrenner?
+                  </h3>
+                  
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+Kein Ölwechsel, keine Zündkerzen, keine Kupplung – Elektroautos gelten als wartungsarm. 
+                Doch stimmt das wirklich? Und was müssen Sie bei der <strong>E-Auto Wartung</strong> trotzdem 
+                beachten? Wir erklären, welche Inspektionen anfallen, was sie kosten und wo Sie bei der 
+                <strong> Elektroauto Wartung</strong> tatsächlich sparen.                  </p>
                   
                   {/* Meta Info */}
                   <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
