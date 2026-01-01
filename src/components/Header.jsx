@@ -53,6 +53,7 @@ export default function Header({ activeTab = '' }) {
       { href: '/ratgeber/kaufberatung', label: 'Kaufberatung 2025' },
       { href: '/ratgeber/gebrauchtwagen', label: 'Gebrauchtwagen Guide' },
       { href: '/ratgeber/effiziente-elektroautos', label: 'Effizienteste Elektroautos 2025' },
+      { href: '/ratgeber/laden-ohne-wallbox-mieter', label: 'Laden ohne Wallbox: Alternativen für Mieter' },
       { href: '/ratgeber/e-auto-pendler', label: 'E-Auto für Pendler' },
     ]},
     { category: 'KOSTEN & FÖRDERUNG', links: [

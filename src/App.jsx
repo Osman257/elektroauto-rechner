@@ -14,6 +14,7 @@ import EffizienteElektroautosPage from "./pages/EffizienteElektroautosPage";
 import EAutoVersicherungPage from "./pages/EAutoVersicherungPage";
 import EAutoSchiebenPage from "./pages/EAutoSchiebenPage";
 import ElektroautoWartungPage from "./pages/ElektroautoWartungPage";
+import LadenOhneWallboxPage from "./pages/LadenOhneWallboxPage";
 import StrompreisePage from "./pages/StrompreisePage";
 import WallboxKostenPage from "./pages/WallboxKostenPage";
 import WertverlustPage from './pages/WertverlustPage';
@@ -42,6 +43,7 @@ function App() {
         <Route path="/ratgeber/thg-quote" element={<ThgQuotePage />} />
         <Route path="/ratgeber/strompreise-2025" element={<StrompreisePage />} />
         <Route path="/ratgeber/elektroauto-wartung" element={<ElektroautoWartungPage />} />
+        <Route path="/ratgeber/laden-ohne-wallbox-mieter" element={<LadenOhneWallboxPage />} />
         <Route path="/ratgeber/e-auto-pendler" element={<EAutoPendlerPage />} />
         <Route path="/ratgeber/elektroauto-versicherung" element={<EAutoVersicherungPage />} />
         <Route path="/ratgeber/e-auto-schieben" element={<EAutoSchiebenPage />} />
