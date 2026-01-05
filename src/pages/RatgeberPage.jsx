@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '../components/SEO';
-import { BookOpen, ShoppingCart, Lightbulb, Car, Shield, MapPin, Wrench, Snowflake, PlugZap, Wallet, Cable, KeyRound, AlertTriangle, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
+import { BookOpen, ShoppingCart, Lightbulb, Car, ScrollText, Shield, MapPin, Wrench, Snowflake, PlugZap, Wallet, Cable, KeyRound, AlertTriangle, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function RatgeberPage() {
@@ -262,7 +262,49 @@ Der Markt für gebrauchte Elektroautos boomt: 2024 wurden in Deutschland über 1
                   </div>
                 </div>
               </div>
-            </a>              {/* here the new artikel starts */}
+            </a>
+            {/* Artikel Card - Leasing */}
+            <a href="/ratgeber/elektroauto-leasing-oder-kauf" className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+                {/* Artikel Bild */}
+                <div className="relative h-48 bg-gradient-to-br from-red-500 to-orange-500 overflow-hidden">
+                  <img 
+                    src="/images/ratgeber/elektroauto-leasing-kauf-hero.webp"
+                    alt="Elektroauto Wertverlust vs Verbrenner"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <ScrollText className="w-5 h-5 text-blue-600" />
+                    <span className="text-sm font-semibold text-blue-600 uppercase">Leasing</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors">
+                    Leasing oder Kauf
+                  </h3>
+                  
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+Ein neues Elektroauto anschaffen – aber wie finanzieren? Die Frage "Leasing oder Kauf" ist bei E-Autos komplexer als bei Verbrennern: Rasante Technologie-Entwicklung, hoher Wertverlust und attraktive Steuervorteile für Dienstwagen machen die Entscheidung zur strategischen Frage.
+
+                   </p>
+                  
+                  {/* Meta Info */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-1">
+            
+                    </div>
+                    <span className="text-blue-600 font-semibold group-hover:underline flex items-center gap-1">
+                      Weiterlesen <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
             {/* Artikel Card 3 - Energieeffizient  */}
             <a href="/ratgeber/effiziente-elektroautos" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
