@@ -21,8 +21,8 @@ export default function EffizienteElektroautosPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       <SEO
-        title="Die effizientesten Elektroautos 2025: Top Reichweite | e-Autowelt"
-        description="Welche E-Autos sind am effizientesten? Ranking der sparsamsten Elektroautos 2025 mit maximaler Reichweite: Mercedes EQS, Tesla Model 3, Hyundai Ioniq 6 & mehr."
+        title="Die effizientesten E-Autos 2025: Reichweite pro kWh Ranking"
+        description="Welches E-Auto verbraucht am wenigsten? Top 20 Ranking nach kWh/100km. ✓ Mehr Reichweite ✓ Weniger Stromkosten → Jetzt vergleichen!"
         canonicalPath="/ratgeber/effiziente-elektroautos"
         keywords="effiziente elektroautos, elektroauto reichweite, sparsame e-autos, verbrauch elektroauto, beste reichweite e-auto"
         ogImage="/images/ratgeber/effiziente-elektroautos-og.jpg"

@@ -14,8 +14,8 @@ export default function WertverlustPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       <SEO
-        title="Wertverlust bei Elektroautos 2025: Restwert-Vergleich | e-Autowelt"
-        description="Elektroauto Wertverlust vs Verbrenner: Aktuelle Zahlen 2025. E-Autos verlieren 38-50% in 3 Jahren, Verbrenner 29-32%. Alle Fakten, Ursachen & Prognosen im Vergleich."
+        title="Wertverlust E-Auto: So viel verliert Ihr Stromer wirklich (2025)"
+        description="E-Auto Wertverlust nach 3 Jahren: ~50% vs. 36% beim Benziner. ✓ Tabelle mit Restwerten ✓ Die wertstabilsten Modelle → Jetzt checken!"
         canonicalPath="/ratgeber/wertverlust"
         keywords="elektroauto wertverlust, e-auto restwert, wertverlust verbrenner, elektroauto vs verbrenner wertverlust, restwert elektroauto"
         ogImage="/images/ratgeber/wertverlust-og.jpg"

@@ -7,8 +7,8 @@ export default function LadezeitPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
 <SEO
-  title="Wie lange lädt ein E-Auto? Ladezeiten-Guide 2025 | e-Autowelt"
-  description="Wie lange lädt ein E-Auto? Von 20 Min bis 24h - alle Ladezeiten im Vergleich. Steckdose, Wallbox, Schnellladen + Berechnungsformel erklärt!"
+  title="Wie lange lädt ein E-Auto? ⚡ Ladezeiten-Tabelle (2025)"
+  description="E-Auto Ladezeit: 30 Min bis 12 Stunden – je nach Ladeart. ✓ Schnellladen vs. Wallbox vs. Schuko im Vergleich ✓ Tabelle aller Modelle → Jetzt prüfen!"
   canonicalPath="/ratgeber/ladezeit"
   keywords="elektroauto ladezeit, e-auto laden, wie lange lädt elektroauto, wallbox ladezeit, schnellladen, ladegeschwindigkeit"
   ogImage="/images/ratgeber/ladezeit-og.jpg"

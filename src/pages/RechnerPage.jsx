@@ -134,8 +134,8 @@ export default function ElektroAutoRechner() {
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50">
       {/* Header */}
             <SEO
-        title="Elektroauto Kostenrechner 2025 - E-Auto vs Verbrenner | e-Autowelt"
-        description="Kostenloser Elektroauto Rechner: Vergleichen Sie die Kosten von E-Auto und Verbrenner über die Nutzungsdauer. Anschaffung, Betrieb, Wartung, Steuern - alle Kosten auf einen Blick!"
+        title="E-Auto Kostenrechner 2025: Vergleich mit Verbrenner | e-Autowelt"
+        description="Was kostet ein E-Auto wirklich? Vergleichen Sie Strom vs. Benzin, Wartung & Wertverlust. ✓ Kostenloser Rechner ✓ Sofort Ergebnis → Jetzt berechnen!"
         canonicalPath="/rechner/kostenrechner"
         keywords="elektroauto rechner, e-auto kosten, tco eauto, e-auto kostenrechner, eauto kostenvergleich, e-auto kostenvergleich, e-auto reichweitenrechner, elektroauto kostenvergleich"
         ogImage="/images/ratgeber/rechner-og.jpg"
