@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '../components/SEO';
-import { BookOpen, ShoppingCart, Lightbulb, Car, ScrollText, Shield, MapPin, Wrench, Snowflake, PlugZap, Wallet, Cable, KeyRound, AlertTriangle, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
+import { BookOpen, ShoppingCart, Lightbulb, Car, History, ScrollText, Shield, MapPin, Wrench, Snowflake, PlugZap, Wallet, Cable, KeyRound, AlertTriangle, BarChart2, DollarSign, Battery, Zap, ArrowRight, Clock, Calendar, TrendingDown } from 'lucide-react';
 import Header from '../components/Header';
 
 export default function RatgeberPage() {
@@ -792,6 +792,47 @@ Wie viel Reichweite verlieren E-Autos wirklich im Winter? Aktuelle Tests zeigen 
               </div>
             </a>
 
+ {/* Artikel Card - Geschichte EAutos */}
+            <a href="/ratgeber/erstes-elektroauto-geschichte" className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+                {/* Artikel Bild */}
+                <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-500 overflow-hidden">
+                  <img 
+                    src="/images/ratgeber/elektro-geschichte-hero.webp"
+                    alt="Geschichte des Elektroautos: Wann wurde das erste E-Auto gebaut?"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <History className="w-5 h-5 text-yellow-600" />
+                    <span className="text-sm font-semibold text-yellow-600 uppercase">Geschichte</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-yellow-600 transition-colors">
+                    Geschichte des Elektroautos: Wann wurde das erste E-Auto gebaut?
+                  </h3>
+                  
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                    Die Geschichte des Elektroautos reicht weit zurück: Das erste elektrische Auto wurde 1834 von Thomas Davenport gebaut. In diesem Artikel erfahren Sie mehr über die Entwicklung der Elektromobilität und die ersten E-Autos.
+                  </p>
+                  
+                  {/* Meta Info */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-1">
+          
+                    </div>
+                    <span className="text-yellow-600 font-semibold group-hover:underline flex items-center gap-1">
+                      Weiterlesen <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
         
 
          {/* Artikel Card 4 - Schieben Panne (NEU!) */}

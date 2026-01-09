@@ -15,6 +15,7 @@ import ElektroautoLeasingKaufPage from "./pages/ElektroautoLeasingKaufPage";
 import EAutoVersicherungPage from "./pages/EAutoVersicherungPage";
 import EAutoSchiebenPage from "./pages/EAutoSchiebenPage";
 import ElektroautoWartungPage from "./pages/ElektroautoWartungPage";
+import ErstesElektroautoGeschichtePage from "./pages/ErstesElektroautoGeschichtePage";
 import LadenOhneWallboxPage from "./pages/LadenOhneWallboxPage";
 import StrompreisePage from "./pages/StrompreisePage";
 import WallboxKostenPage from "./pages/WallboxKostenPage";
@@ -42,6 +43,7 @@ function App() {
         <Route path="/ratgeber/effiziente-elektroautos" element={<EffizienteElektroautosPage />} />
         <Route path="/ratgeber/elektroauto-reichweite-winter-test" element={<ElektroautoReichweiteWinterTest />} />
         <Route path="/ratgeber/thg-quote" element={<ThgQuotePage />} />
+        <Route path="/ratgeber/erstes-elektroauto-geschichte" element={<ErstesElektroautoGeschichtePage />} />
         <Route path="/ratgeber/strompreise-2025" element={<StrompreisePage />} />
         <Route path="/ratgeber/elektroauto-wartung" element={<ElektroautoWartungPage />} />
         <Route path="/ratgeber/laden-ohne-wallbox-mieter" element={<LadenOhneWallboxPage />} />

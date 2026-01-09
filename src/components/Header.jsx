@@ -68,6 +68,7 @@ export default function Header({ activeTab = '' }) {
       { href: '/ratgeber/mythen', label: 'Die 10 größten Mythen' },
       { href: '/ratgeber/ladezeit', label: 'Wie lange lädt ein E-Auto?' },
       { href: '/ratgeber/elektroauto-wartung', label: 'Wartung von E-Auto' },
+      { href: '/ratgeber/erstes-elektroauto-geschichte', label: 'Geschichte des Elektroautos' },
       { href: '/ratgeber/elektroauto-reichweite-winter-test', label: 'Winter Reichweite Test' },
       { href: '/ratgeber/verkaufszahlen', label: 'Verkaufszahlen Deutschland' },
     ]},
