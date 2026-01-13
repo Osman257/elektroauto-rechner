@@ -305,6 +305,49 @@ Ein neues Elektroauto anschaffen – aber wie finanzieren? Die Frage "Leasing od
                 </div>
               </div>
             </a>
+            
+
+ {/* Artikel Card - Probefahrt */}
+            <a href="/ratgeber/elektroauto-probefahrt-checkliste" className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+                {/* Artikel Bild */}
+                <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-500 overflow-hidden">
+                  <img 
+                    src="/images/ratgeber/probefahrt-hero.webp"
+                    alt="Elektroauto Probefahrt Checkliste 2026: Worauf achten? | e-Autowelt"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Car className="w-5 h-5 text-blue-600" />
+                    <span className="text-sm font-semibold text-blue-600 uppercase">Probefahrt</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors">
+                    Elektroauto Probefahrt Checkliste 2026: Worauf achten?
+                  </h3>
+                  
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                    Die Probefahrt eines Elektroautos ist ein entscheidender Schritt vor dem Kauf. In dieser Checkliste erfahren Sie, was Sie bei der Probefahrt beachten sollten, um das richtige E-Auto für Ihre Bedürfnisse zu finden.</p>
+                  
+                  {/* Meta Info */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-1">
+          
+                    </div>
+                    <span className="text-blue-600 font-semibold group-hover:underline flex items-center gap-1">
+                      Weiterlesen <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+        
             {/* Artikel Card 3 - Energieeffizient  */}
             <a href="/ratgeber/effiziente-elektroautos" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">

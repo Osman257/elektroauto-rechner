@@ -15,6 +15,7 @@ import ElektroautoLeasingKaufPage from "./pages/ElektroautoLeasingKaufPage";
 import EAutoVersicherungPage from "./pages/EAutoVersicherungPage";
 import EAutoSchiebenPage from "./pages/EAutoSchiebenPage";
 import ElektroautoWartungPage from "./pages/ElektroautoWartungPage";
+import ElektroautoProbefahrtChecklistePage from "./pages/ElektroautoProbefahrtChecklistePage";
 import ErstesElektroautoGeschichtePage from "./pages/ErstesElektroautoGeschichtePage";
 import LadenOhneWallboxPage from "./pages/LadenOhneWallboxPage";
 import StrompreisePage from "./pages/StrompreisePage";
@@ -50,6 +51,7 @@ function App() {
         <Route path="/ratgeber/elektroauto-leasing-oder-kauf" element={<ElektroautoLeasingKaufPage />} />
         <Route path="/ratgeber/e-auto-pendler" element={<EAutoPendlerPage />} />
         <Route path="/ratgeber/elektroauto-versicherung" element={<EAutoVersicherungPage />} />
+        <Route path="/ratgeber/elektroauto-probefahrt-checkliste" element={<ElektroautoProbefahrtChecklistePage />} />
         <Route path="/ratgeber/e-auto-schieben" element={<EAutoSchiebenPage />} />
         <Route path="/ratgeber/ladezeit" element={<LadezeitPage />} />
         <Route path="/ratgeber/wertverlust" element={<WertverlustPage />} />
