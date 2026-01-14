@@ -56,6 +56,7 @@ export default function Header({ activeTab = '' }) {
       { href: '/ratgeber/laden-ohne-wallbox-mieter', label: 'Laden ohne Wallbox: Alternativen für Mieter' },
       { href: '/ratgeber/elektroauto-probefahrt-checkliste', label: 'Elektroauto Probefahrt Checkliste' },
       { href: '/ratgeber/elektroauto-leasing-oder-kauf', label: 'Leasing oder Kauf' },
+      { href: '/ratgeber/wallbox-typen-vergleich', label: 'Wallbox Typen Vergleich' },
       { href: '/ratgeber/e-auto-pendler', label: 'E-Auto für Pendler' },
     ]},
     { category: 'KOSTEN & FÖRDERUNG', links: [
