@@ -1376,8 +1376,8 @@ export default function WallboxTypenPage() {
             <a href="/ratgeber/strompreise-2025" className="block text-blue-600 hover:underline text-sm md:text-base">
               → Strompreise 2025: Was kostet das Laden zu Hause?
             </a>
-            <a href="/rechner/tco" className="block text-blue-600 hover:underline text-sm md:text-base">
-              → TCO-Rechner: Gesamtkosten Elektroauto berechnen
+            <a href="/rechner/kostenrechner" className="block text-blue-600 hover:underline text-sm md:text-base">
+              → TCO Rechner: Gesamtkosten Elektroauto berechnen
             </a>
             <a href="/ratgeber/elektroauto-reichweite-winter" className="block text-blue-600 hover:underline text-sm md:text-base">
               → E-Auto Reichweite im Winter: Realistische Werte & Tipps
