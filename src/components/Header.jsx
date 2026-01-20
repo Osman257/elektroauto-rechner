@@ -63,6 +63,7 @@ export default function Header({ activeTab = '' }) {
       { href: '/ratgeber/thg-quote', label: 'THG-Quote verdienen' },
       { href: '/ratgeber/strompreise-2025', label: 'Strompreise E-Autos' },
       { href: '/ratgeber/wallbox-kosten-installation', label: 'Wallbox Installation & Kosten' },
+      { href: '/ratgeber/oeffentliches-laden-kosten-apps-ladekarten', label: 'Öffentliches Laden: Kosten, Apps & Ladekarten-Vergleich' },
       { href: '/ratgeber/elektroauto-versicherung', label: 'Elektroauto Versicherung' },
       { href: '/ratgeber/wertverlust', label: 'Wertverlust E-Autos' },
     ]},

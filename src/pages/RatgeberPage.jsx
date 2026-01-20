@@ -569,6 +569,48 @@ Sie fahren elektrisch oder planen den Umstieg auf ein E-Auto? Entscheidend ist d
                 </div>
               </div>
             </a>
+
+             {/* Artikel Card - Öffentliches Laden */}
+            <a href="/ratgeber/oeffentliches-laden-kosten-apps-ladekarten" className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+                {/* Artikel Bild */}
+                <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-500 overflow-hidden">
+                  <img 
+                    src="/images/ratgeber/oeffentliches-laden-hero.webp"
+                    alt="Öffentliches Laden 2026: Kosten, Apps & Ladekarten-Vergleich"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Shield className="w-5 h-5 text-green-600" />
+                    <span className="text-sm font-semibold text-green-600 uppercase">Ladekosten</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-green-600 transition-colors">
+Öffentliches Laden 2026: Kosten, Apps & Ladekarten-Vergleich                  </h3>
+                  
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                    Öffentliches Laden ist eine gängige Alternative zum Eigenen Laden zu Hause. Doch was kostet es wirklich? In diesem Artikel vergleichen wir die Kosten für öffentliche Ladestationen, Apps und Ladekarten – und zeigen, wie Sie den besten Deal für Ihr E-Auto finden.
+                  </p>
+
+                  {/* Meta Info */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-1">
+          
+                    </div>
+                    <span className="text-green-600 font-semibold group-hover:underline flex items-center gap-1">
+                      Weiterlesen <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
             {/* Artikel Card 2 - WALLBOX */}
             <a href="/ratgeber/wallbox-kosten-installation" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">

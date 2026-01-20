@@ -13,6 +13,7 @@ import EAutoPendlerPage from "./pages/EAutoPendlerPage";
 import EffizienteElektroautosPage from "./pages/EffizienteElektroautosPage";
 import ElektroautoLeasingKaufPage from "./pages/ElektroautoLeasingKaufPage";
 import EAutoVersicherungPage from "./pages/EAutoVersicherungPage";
+import OeffentlichesLadenPage from "./pages/OeffentlichesLadenPage";
 import EAutoSchiebenPage from "./pages/EAutoSchiebenPage";
 import WallboxTypenPage from "./pages/WallboxTypenPage";
 import ElektroautoWartungPage from "./pages/ElektroautoWartungPage";
@@ -52,6 +53,7 @@ function App() {
         <Route path="/ratgeber/wallbox-typen-vergleich" element={<WallboxTypenPage />} />
         <Route path="/ratgeber/elektroauto-leasing-oder-kauf" element={<ElektroautoLeasingKaufPage />} />
         <Route path="/ratgeber/e-auto-pendler" element={<EAutoPendlerPage />} />
+        <Route path="/ratgeber/oeffentliches-laden-kosten-apps-ladekarten" element={<OeffentlichesLadenPage />} />
         <Route path="/ratgeber/elektroauto-versicherung" element={<EAutoVersicherungPage />} />
         <Route path="/ratgeber/elektroauto-probefahrt-checkliste" element={<ElektroautoProbefahrtChecklistePage />} />
         <Route path="/ratgeber/e-auto-schieben" element={<EAutoSchiebenPage />} />
