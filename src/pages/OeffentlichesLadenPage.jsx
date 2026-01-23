@@ -123,7 +123,7 @@ export default function OeffentlichesLadenPage() {
               </h2>
 
               <p className="text-gray-700 mb-4 leading-relaxed">
-                Die Kosten für das <strong>öffentliche Laden</strong> Ihres Elektroautos variieren 2025 stark – 
+                Die Kosten für das <strong>öffentliche Laden</strong> Ihres Elektroautos variieren 2026 stark – 
                 je nach Anbieter, Ladeart und Tarifmodell. Grundsätzlich gilt: Wer mit Ladekarte oder App lädt, 
                 zahlt weniger als beim spontanen Ad-hoc-Laden ohne Vertrag.
               </p>
@@ -594,7 +594,6 @@ export default function OeffentlichesLadenPage() {
                 <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl p-4 text-white text-center">
                   <div className="text-3xl font-bold mb-1">17:1</div>
                   <div className="text-sm text-white/80">E-Autos pro Ladepunkt</div>
-                  <div className="text-xs text-white/60 mt-1">gutes Verhältnis</div>
                 </div>
               </div>
 

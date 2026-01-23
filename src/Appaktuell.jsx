@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import StartPage from "./pages/start-page";
 import RechnerOverview from "./pages/RechnerOverview";
 import GebrauchtwagenBatterieRechner from './pages/GebrauchtwagenBatterieRechner';
@@ -29,21 +29,9 @@ import GebrauchtKaufenPage from './pages/GebrauchtKaufenPage';
 import ImpressumPage from "./pages/impressum-page";
 import DatenschutzPage from "./pages/datenschutz-page";
 
-// ScrollToTop Komponente - scrollt bei jedem Route-Wechsel nach oben
-function ScrollToTop() {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-}
-
 function App() {
   return (
     <Router>
-      <ScrollToTop />
       <Routes>
         <Route path="/" element={<StartPage />} />
         <Route path="/rechner" element={<RechnerOverview />} />
