@@ -9,6 +9,7 @@ import KaufberatungPage from "./pages/KaufberatungPage";
 import ElektroautoReichweiteWinterTest from "./pages/ElektroautoReichweiteWinterTest";
 import MythenPage from "./pages/MythenPage";
 import ThgQuotePage from "./pages/ThgQuotePage";
+import EAutoUnter10000Page from "./pages/EAutoUnter10000Page";
 import EAutoPendlerPage from "./pages/EAutoPendlerPage";
 import EffizienteElektroautosPage from "./pages/EffizienteElektroautosPage";
 import ElektroautoLeasingKaufPage from "./pages/ElektroautoLeasingKaufPage";
@@ -60,6 +61,7 @@ function App() {
         <Route path="/ratgeber/thg-quote" element={<ThgQuotePage />} />
         <Route path="/ratgeber/erstes-elektroauto-geschichte" element={<ErstesElektroautoGeschichtePage />} />
         <Route path="/ratgeber/strompreise-2025" element={<StrompreisePage />} />
+        <Route path="/ratgeber/e-auto-neuwagen-unter-10000-euro" element={<EAutoUnter10000Page />} />
         <Route path="/ratgeber/elektroauto-wartung" element={<ElektroautoWartungPage />} />
         <Route path="/ratgeber/laden-ohne-wallbox-mieter" element={<LadenOhneWallboxPage />} />
         <Route path="/ratgeber/wallbox-typen-vergleich" element={<WallboxTypenPage />} />

@@ -485,6 +485,47 @@ Ein neues Elektroauto anschaffen – aber wie finanzieren? Die Frage "Leasing od
                 </div>
               </div>
             </a>
+            {/* Artikel Card - Eauto unter 10.000 */}
+            <a href="/ratgeber/e-auto-neuwagen-unter-10000-euro" className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">
+                {/* Artikel Bild */}
+                <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-500 overflow-hidden">
+                  <img 
+                    src="/images/ratgeber/e-auto-unter-10000-hero.webp"
+                    alt="E-Auto Neuwagen unter 10.000€ 2026: Günstigste Elektroautos"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                
+                {/* Content */}
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Wallet className="w-5 h-5 text-green-600" />
+                    <span className="text-sm font-semibold text-green-600 uppercase">Förderung</span>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-green-600 transition-colors">
+                E-Auto Neuwagen unter 10.000€: Günstigste Elektroautos 2026
+                  </h3>
+                  
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-3">
+                Ein Elektroauto-Neuwagen für unter 10.000 Euro – was vor wenigen Jahren noch undenkbar schien, ist 2026 Realität. Dank der neuen staatlichen E-Auto-Förderung und aggressiven Herstellerrabatten können Sie jetzt zu Preisen in die Elektromobilität einsteigen, die unter manchem Gebrauchtwagen liegen.
+                  </p>
+                  
+                  {/* Meta Info */}
+                  <div className="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                    <div className="flex items-center gap-1">
+          
+                    </div>
+                    <span className="text-green-600 font-semibold group-hover:underline flex items-center gap-1">
+                      Weiterlesen <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
  {/* Artikel Card - STROMKOSTEN 2025 */}
             <a href="/ratgeber/strompreise-2025" className="group">
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full">

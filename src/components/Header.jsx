@@ -61,6 +61,7 @@ export default function Header({ activeTab = '' }) {
     ]},
     { category: 'KOSTEN & FÖRDERUNG', links: [
       { href: '/ratgeber/thg-quote', label: 'THG-Quote verdienen' },
+      { href: '/ratgeber/e-auto-neuwagen-unter-10000-euro', label: 'E-Auto Neuwagen unter 10.000 Euro' },
       { href: '/ratgeber/strompreise-2025', label: 'Strompreise E-Autos' },
       { href: '/ratgeber/wallbox-kosten-installation', label: 'Wallbox Installation & Kosten' },
       { href: '/ratgeber/oeffentliches-laden-kosten-apps-ladekarten', label: 'Öffentliches Laden: Kosten, Apps & Ladekarten-Vergleich' },
