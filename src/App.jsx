@@ -10,6 +10,7 @@ import ElektroautoReichweiteWinterTest from "./pages/ElektroautoReichweiteWinter
 import MythenPage from "./pages/MythenPage";
 import ThgQuotePage from "./pages/ThgQuotePage";
 import EAutoUnter10000Page from "./pages/EAutoUnter10000Page";
+import BafaFoerderungFirmenwagenPage from "./pages/BafaFoerderungFirmenwagenPage";
 import EAutoPendlerPage from "./pages/EAutoPendlerPage";
 import EffizienteElektroautosPage from "./pages/EffizienteElektroautosPage";
 import ElektroautoLeasingKaufPage from "./pages/ElektroautoLeasingKaufPage";
@@ -64,6 +65,7 @@ function App() {
         <Route path="/ratgeber/e-auto-neuwagen-unter-10000-euro" element={<EAutoUnter10000Page />} />
         <Route path="/ratgeber/elektroauto-wartung" element={<ElektroautoWartungPage />} />
         <Route path="/ratgeber/laden-ohne-wallbox-mieter" element={<LadenOhneWallboxPage />} />
+        <Route path="/ratgeber/bafa-foerderung-elektroauto-firmenwagen" element={<BafaFoerderungFirmenwagenPage />} />
         <Route path="/ratgeber/wallbox-typen-vergleich" element={<WallboxTypenPage />} />
         <Route path="/ratgeber/elektroauto-leasing-oder-kauf" element={<ElektroautoLeasingKaufPage />} />
         <Route path="/ratgeber/e-auto-pendler" element={<EAutoPendlerPage />} />
