@@ -24,7 +24,7 @@ export default function EAutoUnter10000Page() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       <SEO 
-        title="E-Auto Neuwagen unter 10.000€ 2026: Günstigste Elektroautos | e-Autowelt"
+        title="E-Auto unter 10.000€: Diese 5 Modelle gibt es 2026 wirklich | e-Autowelt"
         description="E-Auto Neuwagen unter 10.000€ kaufen ✓ Dacia Spring ab 5.900€ ✓ Citroën ë-C3 ab 7.990€ ✓ Alle Förderungen 2026 ✓ Preisvergleich & Tipps für den günstigsten Stromer!"
         keywords="E-Auto unter 10000 Euro, günstigstes Elektroauto 2026, Dacia Spring Preis, Citroën e-C3 günstig, E-Auto Förderung 2026, Elektroauto Neuwagen billig"
         canonicalPath="/ratgeber/e-auto-neuwagen-unter-10000-euro"
